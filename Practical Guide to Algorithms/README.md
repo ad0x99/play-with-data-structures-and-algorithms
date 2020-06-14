@@ -11,7 +11,7 @@
 | O(n), linear      | 2n              | Find min and max numbers         |
 | O(1), constant    | 2               | Sorted list, find first and last |
 
-**FAST** -----------------------------------------------------> **SLOW**
+**FAST** --------------------------------------------------------------------------> **SLOW**
 
 | Name     | constant | logarithmic | linear | quadratic | exponential |
 | -------- | -------- | ----------- | ------ | --------- | ----------- |
