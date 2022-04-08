@@ -7,6 +7,27 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+// Solution 1
+/**
+ * If the string is the same as the string reversed, then it's a palindrome
+ * @param str - the string to be checked
+ * @returns true
+ */
+const palindrome = (str) => {
+  return str.split('').reverse().join('') === str;
+};
 
-module.exports = palindrome;
+// Solution 2
+/**
+ * We split the string into an array of characters, then we loop through each character and compare it
+ * to its mirror character on the other side of the array
+ * @param str - the string we're checking
+ * @returns a boolean value.
+ */
+const palindrome2 = (str) => {
+  return str.split('').every((char, index) => {
+    return char === str[str.length - index - 1];
+  });
+};
+
+module.exports = { palindrome, palindrome2 };
