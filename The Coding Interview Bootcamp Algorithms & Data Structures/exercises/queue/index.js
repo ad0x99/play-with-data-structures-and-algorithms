@@ -8,6 +8,20 @@
 //     q.add(1);
 //     q.remove(); // returns 1;
 
-class Queue {}
+/* A queue is a data structure that allows you to add elements to the beginning of the queue and remove
+elements from the end of the queue. */
+class Queue {
+  constructor() {
+    this.data = [];
+  }
+
+  add(element) {
+    this.data.unshift(element);
+  }
+
+  remove() {
+    return this.data.pop();
+  }
+}
 
 module.exports = Queue;

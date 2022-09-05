@@ -19,6 +19,7 @@ Data structure and Algorithms with JS
 - Space Complexity (How much **memory** is used?)
 - Time Complexity (How many primitive **operations** are executed?): Time complexity of an algorithm signifies the total time required by the program to run to completion. The time complexity of algorithms is most commonly expressed using the big O notation.
 - Big O notation gives us an industry-standard language to discuss the performance of algorithms. Not knowing how to speak this language can make you stand out as an inexperienced programmer.
+- Memoization is the action of storing the arguments of each function call along with the result. If the function is called again with the same arguments, return the precomputed result, rather than running the function again
 
 | Big-O, name                        | # of Operations | Algorithm                        |
 | ---------------------------------- | --------------- | -------------------------------- |
