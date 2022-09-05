@@ -17,7 +17,7 @@
  * @param n - the number of the Fibonacci number we want to find.
  * @returns The nth number in the Fibonacci sequence.
  */
-const fib = (n) => {
+const slowFib1 = (n) => {
   const result = [0, 1];
 
   for (let i = 2; i <= n; i++) {
@@ -36,12 +36,41 @@ const fib = (n) => {
  * @param n - The number of the Fibonacci number we want to find.
  * @returns The nth number in the Fibonacci sequence.
  */
-const fib2 = (n) => {
+const slowFib2 = (n) => {
   if (n < 2) {
     return n;
   }
 
-  return fib(n - 1) + fib(n - 2);
+  return fib2(n - 1) + fib2(n - 2);
 };
+
+// Solution 3 - Using Memoization
+/**
+ * "If the function has been called with the same arguments before, return the cached result, otherwise
+ * call the function and cache the result."
+ *
+ * The function takes a function as an argument and returns a new function. The new function will check
+ * if it has been called with the same arguments before. If it has, it will return the cached result.
+ * If it hasn't, it will call the original function, cache the result, and return it
+ * @param fn - The function to be memoized.
+ * @returns A function that takes in a function and returns a function that takes in arguments.
+ */
+const memoize = (fn) => {
+  const cache = {};
+
+  return (...args) => {
+    if (cache[args]) {
+      return cache[args];
+    }
+
+    const result = fn.apply(this, args);
+    cache[args] = result;
+
+    return result;
+  };
+};
+
+const fib = memoize(slowFib1);
+const fib2 = memoize(slowFib2);
 
 module.exports = fib;
