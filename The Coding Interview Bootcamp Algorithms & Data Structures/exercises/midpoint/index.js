@@ -12,6 +12,22 @@
 //   l.insertLast('c')
 //   midpoint(l); // returns { data: 'b' }
 
-function midpoint(list) {}
+/**
+ * We traverse the list with two pointers, one moving twice as fast as the other. When the fast pointer
+ * reaches the end of the list, the slow pointer will be at the middle.
+ * @param list - the linked list
+ * @returns The middle node of the linked list.
+ */
+const midpoint = (list) => {
+  let slow = list.getFirst();
+  let fast = list.getFirst();
+
+  while (fast.next && fast.next.next) {
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+
+  return slow;
+};
 
 module.exports = midpoint;

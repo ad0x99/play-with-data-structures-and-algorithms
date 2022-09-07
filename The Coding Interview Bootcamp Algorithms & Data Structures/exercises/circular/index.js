@@ -12,6 +12,25 @@
 //   c.next = b;
 //   circular(l) // true
 
-function circular(list) {}
+/**
+ * If the fast pointer ever catches the slow pointer, then there is a cycle.
+ * @param list - the linked list
+ * @returns the value of the node that is the middle of the linked list.
+ */
+const circular = (list) => {
+  let slow = list.getFirst();
+  let fast = list.getFirst();
+
+  while (fast.next && fast.next.next) {
+    slow = slow.next;
+    fast = fast.next.next;
+
+    if (slow === fast) {
+      return true;
+    }
+  }
+
+  return false;
+};
 
 module.exports = circular;

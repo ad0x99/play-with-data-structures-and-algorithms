@@ -11,6 +11,56 @@
 //    list.insertLast('d');
 //    fromLast(list, 2).data // 'b'
 
-function fromLast(list, n) {}
+// Solution 1
+/**
+ * We create a slow pointer that moves one node at a time and a fast pointer that moves n nodes at a
+ * time. When the fast pointer reaches the end of the list, the slow pointer will be at the node we're
+ * looking for
+ * @param list - the linked list
+ * @param n - the number of nodes from the end of the list
+ * @returns The node that is n nodes from the end of the list.
+ */
+const fromLast = (list, n) => {
+  let slow = list.getFirst();
+  let fast = list.getFirst();
+  let node = list.getAt(n);
+
+  while (fast.next) {
+    fast = node;
+
+    if (fast.next) {
+      slow = slow.next;
+      fast = fast.next;
+    }
+  }
+
+  return slow;
+};
+
+// Solution 2
+/**
+ * "Move fast n nodes from the head, then move both pointers until fast reaches the end."
+ * 
+ * The above function is linear time and constant space
+ * @param list - the linked list
+ * @param n - the number of nodes from the end of the list
+ * @returns The node that is n nodes from the end of the list.
+ */
+const fromLast2 = (list, n) => {
+  let slow = list.getFirst();
+  let fast = list.getFirst();
+
+  while (n > 0) {
+    fast = fast.next;
+    n--;
+  }
+
+  while (fast.next) {
+    slow = slow.next;
+    fast = fast.next;
+  }
+
+  return slow;
+};
 
 module.exports = fromLast;
