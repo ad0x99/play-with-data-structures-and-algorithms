@@ -7,7 +7,7 @@ Data structure and Algorithms with JS
 | Title                                                      | Link                                                                                                 |
 | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | Practical Guide to Algorithms                              | [Link](https://github.com/ad0x99/algorithms-with-js/tree/master/Practical%20Guide%20to%20Algorithms) |
-| The Coding Interview Bootcamp Algorithms & Data Structures | [Link](https://github.com/ad0x99/algorithms-with-js/tree/master/Practical%20Guide%20to%20Algorithm)  |
+| The Coding Interview Bootcamp Algorithms & Data Structures | [Link](https://github.com/ad0x99/algorithms-with-js/tree/master/The%20Coding%20Interview%20Bootcamp%20Algorithms%20%26%20Data%20Structures)  |
 | LeetCode                                                   | [Link](https://github.com/ad0x99/algorithms-with-js/tree/master/LeetCode)                            |
 
 # Algorithms Theory
