@@ -53,7 +53,7 @@
 | sort                                | O(n \* log n)       |
 | forEach/map/filter/reduce/etc.      | O(n)                |
 
-## Problem Solving
+## Problem Solving Approach
 
 ### What is an algorithms?
 
@@ -106,3 +106,20 @@
   - Can you improve performance of your solution?
   - Can you think of other ways to refactor?
   - How have other people solved this problem?
+
+## Problem Solving Patterns
+
+- Some patterns:
+  - Frequency Counter
+  - Multiple Pointers
+  - Sliding Window
+  - Divide and Conquer
+  - Dynamic Programming
+  - Greedy Algorithms
+  - Backtracking
+
+### Frequency Counter
+
+- This pattern uses objects or sets to collect values/frequencies of values
+- This can often avoid the need for nested loops or O(n^2) operations with array/strings
+- [See the example](./Problem%20Solving%20Pattern%20Examples//frequency-counter.js)
