@@ -1,5 +1,12 @@
 # JavaScript Algorithms and Data Structure
 
+## The Big O Shorthands
+
+- Arithmetic operations are constant
+- Variable assignment is constant
+- Accessing elements in an array (by index) or object (by key) is constant
+- In a loop, the complexity is the length of the loop times the complexity of whatever happens inside of the loop
+
 ## The Big O of Objects
 
 - When to use objects
