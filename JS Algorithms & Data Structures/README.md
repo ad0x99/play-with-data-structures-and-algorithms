@@ -128,14 +128,34 @@
 
 - Create pointers or values that correspond to an index or position and move towards the beginning, end or middle based on a certain condition
 - Very efficient for solving problems with minimal space complexity as well
+- [See the example](./Problem%20Solving%20Pattern%20Examples/Multiple%20Pointer%20Pattern/)
 
 ### Sliding Window
 
 - This pattern involves creating a **window** which can either be an array or number form one position to another
 - Depending on a certain condition, the window either increases or closes (and a new window is created)
 - This pattern is very useful for keeping track of a subset of data in an array/string, etc.
+- [See the example](./Problem%20Solving%20Pattern%20Examples/Sliding%20Window%20Pattern/)
 
 ### Divide and Conquer
 
 - This pattern involves dividing a data set into smaller chunks and the repeating a process with a subset of data
 - This pattern can tremendously decrease time complexity
+- [See the example](./Problem%20Solving%20Pattern%20Examples/Divide%20and%20Conquer%20Pattern/)
+
+## Recursion
+
+- The recursion is a **process (function)** that **calls itself**
+- [See the example](./Recursion%20Examples/)
+
+### The Call Stack
+
+- A **call stack** is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple functions
+- Any time a function is invoked, it's placed (**pushed**) on the top of the stack
+- When JavaScript sees the **return** keyword or when the function ends, the compiler will remove (**pop**) function out of the stack
+
+### How Recursion Functions Work
+
+- We invoke the **same** function with a different input until you reach your **base case**
+- The **base case** is the condition when the recursion ends
+- In summary, 2 essential parts of a recursion function are base case and different input
