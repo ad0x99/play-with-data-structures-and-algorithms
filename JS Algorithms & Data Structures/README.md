@@ -159,3 +159,24 @@
 - We invoke the **same** function with a different input until you reach your **base case**
 - The **base case** is the condition when the recursion ends
 - In summary, 2 essential parts of a recursion function are base case and different input
+
+### Helper Method Recursion
+
+- A helper method is a **recursive method** that makes use of additional parameters to keep track of values. It is any method you use to help in the execution of other methods or functions and which is not used outside of that context
+
+```js
+function outer(input) {
+  let outerScopedVariable = [];
+
+  function helper(helperInput) {
+    // Modify the outerScopedVariable
+    helper(helperInput--);
+  }
+
+  helper(input);
+
+  return outerScopedVariable;
+}
+```
+
+- [See the example](./Recursion%20Examples/helper-method-example.js)
