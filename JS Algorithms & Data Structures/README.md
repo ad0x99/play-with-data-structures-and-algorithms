@@ -180,3 +180,13 @@ function outer(input) {
 ```
 
 - [See the example](./Recursion%20Examples/helper-method-example.js)
+
+### Pure Recursion
+
+- A function is pure if it does not change any non-local variables, read files or network connections, or make any output
+- A function qualifies as a pure function if:
+
+  - It will always return the same result if given the same arguments. This is also known as referential transparency. This means that pure functions rely on their own arguments and immutable values to determine their return value. For example, mathematical functions are considered to be referentially transparent .
+  - It doesn’t produce any side effects. What this means is that a function does not change the association between its name and value within a given scope. Side effects are harmful because they introduce uncertainty to the code. Consequently, this leads to difficulty tracing and debugging should an issue arise.
+
+- [See the example](./Recursion%20Examples/pure-recursion-example.js)
