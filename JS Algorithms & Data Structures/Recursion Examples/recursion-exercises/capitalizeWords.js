@@ -16,7 +16,7 @@
  */
 const capitalizeWords = (array) => {
   if (array.length === 1) {
-    return array[0].toUpperCase();
+    return [array[0].toUpperCase()];
   }
 
   /* `array.slice(0, -1)` is creating a new array that includes all
