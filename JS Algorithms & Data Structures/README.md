@@ -196,7 +196,7 @@ function outer(input) {
 | Searching Algorithms                                          | Best case | Average Case | Worst Case |
 | ------------------------------------------------------------- | --------- | ------------ | ---------- |
 | [Linear Search](https://www.geeksforgeeks.org/linear-search/) | O(1)      | O(n)         | O(n)       |
+| [Binary Search](https://www.geeksforgeeks.org/binary-search/) | O(1)      | O(log n)     | O(log n)   |
 
 - [See the example](./Searching%20Algorithms/)
 - [Read more about searching algorithms](https://www.geeksforgeeks.org/searching-algorithms/)
-- [Learn more about Linear Search](https://www.geeksforgeeks.org/linear-search/)
