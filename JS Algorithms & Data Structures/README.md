@@ -190,3 +190,13 @@ function outer(input) {
   - It doesn’t produce any side effects. What this means is that a function does not change the association between its name and value within a given scope. Side effects are harmful because they introduce uncertainty to the code. Consequently, this leads to difficulty tracing and debugging should an issue arise.
 
 - [See the example](./Recursion%20Examples/pure-recursion-example.js)
+
+## Searching Algorithms
+
+| Searching Algorithms                                          | Best case | Average Case | Worst Case |
+| ------------------------------------------------------------- | --------- | ------------ | ---------- |
+| [Linear Search](https://www.geeksforgeeks.org/linear-search/) | O(1)      | O(n)         | O(n)       |
+
+- [See the example](./Searching%20Algorithms/)
+- [Read more about searching algorithms](https://www.geeksforgeeks.org/searching-algorithms/)
+- [Learn more about Linear Search](https://www.geeksforgeeks.org/linear-search/)
