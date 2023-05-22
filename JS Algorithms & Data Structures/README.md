@@ -200,3 +200,21 @@ function outer(input) {
 
 - [See the example](./Searching%20Algorithms/)
 - [Read more about searching algorithms](https://www.geeksforgeeks.org/searching-algorithms/)
+
+## Sorting Algorithms
+
+- Sorting is the process of rearranging the items in a collection (e.g. an array) so that the items are in some kind of order
+
+| Searching Algorithms                                            | Best case  | Average Case | Worst Case |
+| --------------------------------------------------------------- | ---------- | ------------ | ---------- |
+| [Bubble Sort](https://www.geeksforgeeks.org/bubble-sort/)       | O(n)       | O(n^2)       | O(n^2)     |
+| [Selection Sort](https://www.geeksforgeeks.org/selection-sort/) | O(n^2)     | O(n^2)       | O(n^2)     |
+| [Insertion Sort](https://www.geeksforgeeks.org/insertion-sort/) | O(n)       | O(n^2)       | O(n^2)     |
+| [Merge Sort](https://www.geeksforgeeks.org/merge-sort/)         | O(n log n) | O(n log n)   | O(n log n) |
+| [Quick Sort](https://www.geeksforgeeks.org/quick-sort/)         | O(n log n) | O(n log n)   | O(n^2)     |
+| [Radix Sort](https://www.geeksforgeeks.org/radix-sort/)         | O(a(n+b))  | O(p\*(n+d))  | O(n^2)     |
+
+- [Read more about sorting algorithms](https://www.geeksforgeeks.org/sorting-algorithms/)
+- [Sorting Algorithms Animations](https://www.toptal.com/developers/sorting-algorithms)
+- [Visualgo - Sorting Algorithms](https://visualgo.net/en/sorting)
+- [See example of bubble sort](./Sorting%20Algorithms//Bubble%20Sort/)
