@@ -193,12 +193,11 @@ function outer(input) {
 
 ## Searching Algorithms
 
-| Searching Algorithms                                          | Best case | Average Case | Worst Case |
-| ------------------------------------------------------------- | --------- | ------------ | ---------- |
-| [Linear Search](https://www.geeksforgeeks.org/linear-search/) | O(1)      | O(n)         | O(n)       |
-| [Binary Search](https://www.geeksforgeeks.org/binary-search/) | O(1)      | O(log n)     | O(log n)   |
+| Searching Algorithms                                          | Best case | Average Case | Worst Case | Examples                                                                  |
+| ------------------------------------------------------------- | --------- | ------------ | ---------- | ------------------------------------------------------------------------- |
+| [Linear Search](https://www.geeksforgeeks.org/linear-search/) | O(1)      | O(n)         | O(n)       | [See example of linear search](./Searching%20Algorithms/linear-search.js) |
+| [Binary Search](https://www.geeksforgeeks.org/binary-search/) | O(1)      | O(log n)     | O(log n)   | [See example of binary search](./Searching%20Algorithms/binary-search.js) |
 
-- [See the example](./Searching%20Algorithms/)
 - [Read more about searching algorithms](https://www.geeksforgeeks.org/searching-algorithms/)
 
 ## Sorting Algorithms
