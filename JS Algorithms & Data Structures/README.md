@@ -205,14 +205,14 @@ function outer(input) {
 
 - Sorting is the process of rearranging the items in a collection (e.g. an array) so that the items are in some kind of order
 
-| Searching Algorithms                                            | Best case  | Average Case | Worst Case | Examples                                                                  |
-| --------------------------------------------------------------- | ---------- | ------------ | ---------- | ------------------------------------------------------------------------- |
-| [Bubble Sort](https://www.geeksforgeeks.org/bubble-sort/)       | O(n)       | O(n^2)       | O(n^2)     | [See example of bubble sort](./Sorting%20Algorithms//Bubble%20Sort/)      |
-| [Selection Sort](https://www.geeksforgeeks.org/selection-sort/) | O(n^2)     | O(n^2)       | O(n^2)     | [See example of selection sort](./Sorting%20Algorithms/Selection%20Sort/) |
-| [Insertion Sort](https://www.geeksforgeeks.org/insertion-sort/) | O(n)       | O(n^2)       | O(n^2)     | [See example of insertion sort]()                                         |
-| [Merge Sort](https://www.geeksforgeeks.org/merge-sort/)         | O(n log n) | O(n log n)   | O(n log n) | [See example of merge sort]()                                             |
-| [Quick Sort](https://www.geeksforgeeks.org/quick-sort/)         | O(n log n) | O(n log n)   | O(n^2)     | [See example of quick sort]()                                             |
-| [Radix Sort](https://www.geeksforgeeks.org/radix-sort/)         | O(a(n+b))  | O(p\*(n+d))  | O(n^2)     | [See example of radix sort]()                                             |
+| Searching Algorithms                                            | Best case  | Average Case | Worst Case | Space Complexity | Examples                                                                  |
+| --------------------------------------------------------------- | ---------- | ------------ | ---------- | ---------------- | ------------------------------------------------------------------------- |
+| [Bubble Sort](https://www.geeksforgeeks.org/bubble-sort/)       | O(n)       | O(n^2)       | O(n^2)     | O(1)             | [See example of bubble sort](./Sorting%20Algorithms//Bubble%20Sort/)      |
+| [Insertion Sort](https://www.geeksforgeeks.org/insertion-sort/) | O(n)       | O(n^2)       | O(n^2)     | O(1)             | [See example of insertion sort](./Sorting%20Algorithms/Insertion%20Sort/) |
+| [Selection Sort](https://www.geeksforgeeks.org/selection-sort/) | O(n^2)     | O(n^2)       | O(n^2)     | O(1)             | [See example of selection sort](./Sorting%20Algorithms/Selection%20Sort/) |
+| [Merge Sort](https://www.geeksforgeeks.org/merge-sort/)         | O(n log n) | O(n log n)   | O(n log n) |                  | [See example of merge sort]()                                             |
+| [Quick Sort](https://www.geeksforgeeks.org/quick-sort/)         | O(n log n) | O(n log n)   | O(n^2)     |                  | [See example of quick sort]()                                             |
+| [Radix Sort](https://www.geeksforgeeks.org/radix-sort/)         | O(a(n+b))  | O(p\*(n+d))  | O(n^2)     |                  | [See example of radix sort]()                                             |
 
 - [Read more about sorting algorithms](https://www.geeksforgeeks.org/sorting-algorithms/)
 - [Sorting Algorithms Animations](https://www.toptal.com/developers/sorting-algorithms)
