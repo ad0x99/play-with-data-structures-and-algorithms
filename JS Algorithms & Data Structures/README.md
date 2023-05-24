@@ -1,5 +1,40 @@
 # JavaScript Algorithms and Data Structure
 
+## Table of Contents
+
+- [The Big O Shorthands](#the-big-o-shorthands)
+- [Space Complexity in JS](#space-complexity-in-js)
+- [The Big O of Objects](#the-big-o-of-objects)
+- [Big O of Arrays (Ordered Lists)](#big-o-of-arrays-ordered-lists)
+
+- [Problem Solving Approach](#problem-solving-approach)
+
+  - [What is an algorithms?](#what-is-an-algorithms)
+  - [How to approach a problem?](#how-to-approach-a-problem)
+    - [Understand the problem](#understand-the-problem)
+    - [Explore concrete examples](#explore-concrete-examples)
+    - [Break it down](#break-it-down)
+    - [Solve or Simplify](#solve-or-simplify)
+    - [Look Back and Refactor](#look-back-and-refactor)
+
+- [Problem Solving Patterns](#problem-solving-patterns)
+
+  - [Frequency Counter](#frequency-counter)
+  - [Multiple Pointers](#multiple-pointers)
+  - [Sliding Window](#sliding-window)
+  - [Divide and Conquer](#divide-and-conquer)
+
+- [Recursion](#recursion)
+
+  - [The Call Stack](#the-call-stack)
+  - [How Recursion Functions Work](#how-recursion-functions-work)
+  - [Helper Method Recursion](#helper-method-recursion)
+  - [Pure Recursion](#pure-recursion)
+
+- [Searching Algorithms](#searching-algorithms)
+
+- [Sorting Algorithms](#sorting-algorithms)
+
 ## The Big O Shorthands
 
 - Arithmetic operations are constant
