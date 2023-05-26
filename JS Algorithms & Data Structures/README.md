@@ -244,7 +244,7 @@ function outer(input) {
 | [Bubble Sort](https://www.geeksforgeeks.org/bubble-sort/)       | O(n)       | O(n^2)       | O(n^2)     | O(1)             | [See example of bubble sort](./Sorting%20Algorithms//Bubble%20Sort/)      |
 | [Insertion Sort](https://www.geeksforgeeks.org/insertion-sort/) | O(n)       | O(n^2)       | O(n^2)     | O(1)             | [See example of insertion sort](./Sorting%20Algorithms/Insertion%20Sort/) |
 | [Selection Sort](https://www.geeksforgeeks.org/selection-sort/) | O(n^2)     | O(n^2)       | O(n^2)     | O(1)             | [See example of selection sort](./Sorting%20Algorithms/Selection%20Sort/) |
-| [Merge Sort](https://www.geeksforgeeks.org/merge-sort/)         | O(n log n) | O(n log n)   | O(n log n) |                  | [See example of merge sort]()                                             |
+| [Merge Sort](https://www.geeksforgeeks.org/merge-sort/)         | O(n log n) | O(n log n)   | O(n log n) | O(n)             | [See example of merge sort](./Sorting%20Algorithms/Merge%20Sort/)         |
 | [Quick Sort](https://www.geeksforgeeks.org/quick-sort/)         | O(n log n) | O(n log n)   | O(n^2)     |                  | [See example of quick sort]()                                             |
 | [Radix Sort](https://www.geeksforgeeks.org/radix-sort/)         | O(a(n+b))  | O(p\*(n+d))  | O(n^2)     |                  | [See example of radix sort]()                                             |
 
