@@ -35,6 +35,11 @@
 
 - [Sorting Algorithms](#sorting-algorithms)
 
+- [Data Structure Introduction](#data-structure-introduction)
+
+- [Linked List](#linked-list)
+  - [Singly Linked List](#singly-linked-list)
+
 ## The Big O Shorthands
 
 - Arithmetic operations are constant
@@ -259,3 +264,23 @@ function outer(input) {
 
 - [Data Structures](https://www.geeksforgeeks.org/data-structures/)
 - [What is Data Structure: Types, Classifications and Applications](https://www.geeksforgeeks.org/what-is-data-structure-types-classifications-and-applications/)
+
+## Linked List
+
+- Linked list is a data structure that contains a `head`, `tail` and `length` property
+- It consists of nodes, and each `node` has a `value` and a `pointer` to another node or null
+- A `node` stores piece of data
+
+| Linked List                               | Array                                       |
+| ----------------------------------------- | ------------------------------------------- |
+| Do not have indexes                       | Indexed in order                            |
+| Connected via nodes with a `next` pointer | Insertion and deletion can be expensive     |
+| Random access is not allowed              | Can quickly be accessed at a specific index |
+
+- [Learn more about Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/)
+
+### Singly Linked List
+
+- A singly linked list is a linear data structure in which the elements are not stored in contiguous memory locations and each element is connected only to its next element using a pointer.
+
+- [Learn more about Singly Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)
