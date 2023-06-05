@@ -251,3 +251,11 @@ function outer(input) {
 - [Read more about sorting algorithms](https://www.geeksforgeeks.org/sorting-algorithms/)
 - [Sorting Algorithms Animations](https://www.toptal.com/developers/sorting-algorithms)
 - [Visualgo - Sorting Algorithms](https://visualgo.net/en/sorting)
+
+## Data Structure Introduction
+
+- A data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently.
+- Data structure are collections of values, the relationships among them, and the functions or operations that can be applied to the data
+
+- [Data Structures](https://www.geeksforgeeks.org/data-structures/)
+- [What is Data Structure: Types, Classifications and Applications](https://www.geeksforgeeks.org/what-is-data-structure-types-classifications-and-applications/)
