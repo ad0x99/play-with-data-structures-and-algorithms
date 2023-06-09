@@ -284,3 +284,4 @@ function outer(input) {
 - A singly linked list is a linear data structure in which the elements are not stored in contiguous memory locations and each element is connected only to its next element using a pointer.
 
 - [Learn more about Singly Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)
+- [See the example of Singly Linked List](/Data%20Structures/Linked%20Lists/Singly%20Linked%20List/)
