@@ -1,15 +1,6 @@
 // @ts-nocheck
 import { Node } from '../../index.js';
 
-/**
- * Pseudocode - Pushing
- *
- * 1. This function should accept a value
- * 2. Create a new node using the value passed to the function
- * 3. If there is no head property on the list, set the head and tail to be the newly created node
- * 4. Otherwise, set the next property on the tail to be the new node and set the tail property on the list to be the newly created node
- * 5. Increment the length by one
- */
 class SinglyLinkedList {
   constructor() {
     this.head = null;
@@ -20,7 +11,7 @@ class SinglyLinkedList {
   /**
    * This function adds a new node with a given value to the end of a linked list.
    *
-   *  * Pseudocode - Pushing
+   *  * Pseudocode - Push
    *
    * 1. This function should accept a value
    * 2. Create a new node using the value passed to the function
@@ -201,6 +192,33 @@ class SinglyLinkedList {
 
     return false;
   }
+
+  /**
+   * Pseudocode - Insert
+   *
+   * 1. This function should accept a value and an index
+   * 2. If the index is less than 0 or greater than the length, return false
+   * 3. If the index is the same as the length, push a new node to the end of the list
+   * 4. If the index is 0, `unshift` a new node to start of the list
+   * 5. Otherwise, using the `get` method, access the node at the index -1
+   * 6. Set the next property on that node to be the new node
+   * 7. Set the next property on the new node to be the previous next
+   * 8. Increment the length and return true
+   */
+  insert(index, value) {
+    if (index < 0 || index >= this.length) return false;
+
+    if (index === this.length) return this.push(value);
+    if (index === 0) return this.unshift(value);
+
+    const newNode = new Node(value);
+    let previous = this.get(index - 1);
+    let temp = previous.next;
+    previous.next = newNode;
+    newNode.next = temp;
+    this.length++;
+    return true;
+  }
 }
 
 const list = new SinglyLinkedList();
@@ -250,3 +268,11 @@ console.log(list);
 console.log(`head: ${list.head?.value}`);
 console.log(`tail: ${list.tail?.value}`);
 console.log('=====Set=====');
+
+console.log('=====Insert=====');
+list.insert(1, 'Mr Robot');
+console.log(list);
+console.log(list.get(2));
+console.log(`head: ${list.head?.value}`);
+console.log(`tail: ${list.tail?.value}`);
+console.log('=====Insert=====');
