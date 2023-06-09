@@ -194,6 +194,8 @@ class SinglyLinkedList {
   }
 
   /**
+   * This function inserts a new node with a given value at a specified index in a linked list.
+   *
    * Pseudocode - Insert
    *
    * 1. This function should accept a value and an index
@@ -204,6 +206,11 @@ class SinglyLinkedList {
    * 6. Set the next property on that node to be the new node
    * 7. Set the next property on the new node to be the previous next
    * 8. Increment the length and return true
+   *
+   * @param index - The index at which the new value should be inserted in the linked list.
+   * @param value - The value to be inserted into the linked list.
+   * @returns The method is returning a boolean value indicating whether the insertion was successful or
+   * not. It returns `true` if the insertion was successful and `false` if the index is out of bounds.
    */
   insert(index, value) {
     if (index < 0 || index >= this.length) return false;
