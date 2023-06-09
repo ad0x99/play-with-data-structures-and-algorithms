@@ -87,7 +87,7 @@ class SinglyLinkedList {
   /**
    * This is a shift function that removes the first element from a linked list and returns it.
    *
-   * Pseudocode - Shifting
+   * Pseudocode - Shift
    *
    * 1. If there are no nodes, return undefined
    * 2. Store the current head property in a variable
@@ -116,7 +116,7 @@ class SinglyLinkedList {
   /**
    * This function adds a new node with the given value to the beginning of a linked list.
    *
-   * Pseudocode - Unshifting
+   * Pseudocode - Unshift
    *
    * 1. This function should accept a value
    * 2. Create a new node using the value passed to the function
@@ -143,6 +143,63 @@ class SinglyLinkedList {
 
     this.length++;
     return this;
+  }
+
+  /**
+   * This function retrieves the node at a specified index in a linked list.
+   *
+   * Pseudocode - Get
+   *
+   * 1. This function should accept an index
+   * 2. If the index is less than zero or greater than or equal to the length of the list, return null
+   * 3. Loop through the list until reach the index and return the node at that specific index
+   *
+   * @param index - The index parameter is the position of the node that we want to retrieve from the
+   * linked list. It starts from 0 for the first node and goes up to length-1 for the last node.
+   * @returns The `get(index)` method returns the node at the specified index position in the linked
+   * list. If the index is out of range (less than 0 or greater than or equal to the length of the list),
+   * it returns `null`.
+   */
+  get(index) {
+    if (index < 0 || index >= this.length) return null;
+
+    let counter = 0;
+    let current = this.head;
+
+    while (counter !== index) {
+      current = current.next;
+      counter++;
+    }
+
+    return current;
+  }
+
+  /**
+   * This function sets the value of a node at a specific index in a data structure.
+   *
+   * Pseudocode - Set
+   *
+   * 1. This function should accept a value and an index
+   * 2. Use `get` method to find the specific node
+   * 3. If the node is not found, return false
+   * 4. If the node is found, set the value of that node to be the value which passed to the function and return true
+   *
+   * @param index - The index parameter is the position of the node in the linked list where the value
+   * needs to be updated.
+   * @param value - The new value that we want to set for the node at the specified index in the linked
+   * list.
+   * @returns The `set` method returns a boolean value. It returns `true` if the node at the specified
+   * index is found and its value is updated successfully, and `false` if the node is not found.
+   */
+  set(index, value) {
+    let foundNode = this.get(index);
+
+    if (foundNode) {
+      foundNode.value = value;
+      return true;
+    }
+
+    return false;
   }
 }
 
@@ -179,3 +236,17 @@ console.log(list);
 console.log(`head: ${list.head?.value}`);
 console.log(`tail: ${list.tail?.value}`);
 console.log('=====Unshift=====');
+
+console.log('=====Get=====');
+const value = list.get(1);
+console.log(value);
+console.log(`head: ${list.head?.value}`);
+console.log(`tail: ${list.tail?.value}`);
+console.log('=====Get=====');
+
+console.log('=====Set=====');
+list.set(1, 'Anonymous');
+console.log(list);
+console.log(`head: ${list.head?.value}`);
+console.log(`tail: ${list.tail?.value}`);
+console.log('=====Set=====');
