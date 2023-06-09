@@ -83,6 +83,67 @@ class SinglyLinkedList {
 
     return current;
   }
+
+  /**
+   * This is a shift function that removes the first element from a linked list and returns it.
+   *
+   * Pseudocode - Shifting
+   *
+   * 1. If there are no nodes, return undefined
+   * 2. Store the current head property in a variable
+   * 3. Set the head property to be the current head's next property
+   * 4. Decrement the length by 1
+   * 5. Return the value of the node removed
+   *
+   * @returns The method `shift()` is returning the node that was removed from the beginning of the
+   * linked list. If the linked list is empty, it returns `undefined`.
+   */
+  shift() {
+    if (!this.head) return undefined;
+
+    let currentHead = this.head;
+    this.head = currentHead.next;
+    this.length--;
+
+    if (this.length === 0) {
+      this.head = null;
+      this.tail = null;
+    }
+
+    return currentHead;
+  }
+
+  /**
+   * This function adds a new node with the given value to the beginning of a linked list.
+   *
+   * Pseudocode - Unshifting
+   *
+   * 1. This function should accept a value
+   * 2. Create a new node using the value passed to the function
+   * 3. If there is no head property on the list, set the head and tail to be the newly created node
+   * 4. Otherwise, set the newly created node's next property to be the current head property on the list
+   * 5. Set the head property on the list to be that newly created node
+   * 6. Increment the length of the list by 1
+   * 7. Return the linked list
+   *
+   * @param value - The value parameter represents the value of the node that we want to add to the
+   * beginning of the linked list.
+   * @returns The updated linked list is being returned.
+   */
+  unshift(value) {
+    const newNode = new Node(value);
+
+    if (!this.head) {
+      this.head = newNode;
+      this.tail = newNode;
+    } else {
+      newNode.next = this.head;
+      this.head = newNode;
+    }
+
+    this.length++;
+    return this;
+  }
 }
 
 const list = new SinglyLinkedList();
@@ -104,3 +165,17 @@ console.log(list);
 console.log(`head: ${list.head?.value}`);
 console.log(`tail: ${list.tail?.value}`);
 console.log('=====Pop=====');
+
+console.log('=====Shift=====');
+list.shift();
+console.log(list);
+console.log(`head: ${list.head?.value}`);
+console.log(`tail: ${list.tail?.value}`);
+console.log('=====Shift=====');
+
+console.log('=====Unshift=====');
+list.unshift('Hi');
+console.log(list);
+console.log(`head: ${list.head?.value}`);
+console.log(`tail: ${list.tail?.value}`);
+console.log('=====Unshift=====');
