@@ -283,5 +283,17 @@ function outer(input) {
 
 - A singly linked list is a linear data structure in which the elements are not stored in contiguous memory locations and each element is connected only to its next element using a pointer.
 
+- Singly Linked Lists are an excellent alternative to arrays when insertion and deletion at the beginning are frequently required
+
+- Arrays contain a built in index whereas Linked Lists do not
+- The idea of a list data structure that consists of nodes is the foundation for other data structures like `Stacks` and `Queues`
+
+| Linked List Methods | Time Complexity           |
+| ------------------- | ------------------------- |
+| Insertion           | O(1)                      |
+| Removal             | O(1) or O(n) (It depends) |
+| Searching           | O(n)                      |
+| Accessing           | O(n)                      |
+
 - [Learn more about Singly Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)
 - [See the example of Singly Linked List](/Data%20Structures/Linked%20Lists/Singly%20Linked%20List/)
