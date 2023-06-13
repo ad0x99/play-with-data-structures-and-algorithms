@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { Node } from '../../index.js';
 
-class SinglyLinkedList {
+export class SinglyLinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -260,6 +260,8 @@ class SinglyLinkedList {
   }
 
   /**
+   * This function reverses the order of a linked list.
+   *
    * Pseudocode - Reverse
    *
    * 1. Swap the head and tail
@@ -271,6 +273,8 @@ class SinglyLinkedList {
    * 7. Set the next property on the node to be whatever `previous` is
    * 8. Set `previous` to be the value of the node variable
    * 9. Set the node variable to be the value of the `next` variable
+   *
+   * @returns The updated linked list with its nodes reversed is being returned.
    */
   reverse() {
     let currentNode = this.head;
@@ -305,77 +309,3 @@ class SinglyLinkedList {
     console.log(array);
   }
 }
-
-const list = new SinglyLinkedList();
-
-console.log('=====Push=====');
-list.push('Hello');
-list.push('Thomas');
-list.push('Is');
-list.push('Me');
-
-console.log(list);
-console.log(`head: ${list.head?.value}`);
-console.log(`tail: ${list.tail?.value}`);
-console.log('=====Push=====');
-
-console.log('=====Pop=====');
-list.pop();
-console.log(list);
-console.log(`head: ${list.head?.value}`);
-console.log(`tail: ${list.tail?.value}`);
-console.log('=====Pop=====');
-
-console.log('=====Shift=====');
-list.shift();
-console.log(list);
-console.log(`head: ${list.head?.value}`);
-console.log(`tail: ${list.tail?.value}`);
-console.log('=====Shift=====');
-
-console.log('=====Unshift=====');
-list.unshift('Hi');
-console.log(list);
-console.log(`head: ${list.head?.value}`);
-console.log(`tail: ${list.tail?.value}`);
-console.log('=====Unshift=====');
-
-console.log('=====Get=====');
-const value = list.get(1);
-console.log(value);
-console.log(`head: ${list.head?.value}`);
-console.log(`tail: ${list.tail?.value}`);
-console.log('=====Get=====');
-
-console.log('=====Set=====');
-list.set(1, 'Anonymous');
-console.log(list);
-console.log(`head: ${list.head?.value}`);
-console.log(`tail: ${list.tail?.value}`);
-console.log('=====Set=====');
-
-console.log('=====Insert=====');
-list.insert(1, 'Mr Robot');
-list.insert(2, 'Hacker');
-console.log(list);
-console.log(list.get(2));
-console.log(`head: ${list.head?.value}`);
-console.log(`tail: ${list.tail?.value}`);
-console.log('=====Insert=====');
-
-console.log('=====Remove=====');
-list.remove(1);
-console.log(list);
-console.log(`head: ${list.head?.value}`);
-console.log(`tail: ${list.tail?.value}`);
-console.log('=====Remove=====');
-
-console.log('=====Remove=====');
-console.log(`List before reverse: ${list.print()}`);
-
-list.reverse();
-console.log(list);
-console.log(`List after reversed: ${list.print()}`);
-console.log(`head: ${list.head?.value}`);
-console.log(`tail: ${list.tail?.value}`);
-console.log('=====Remove=====');
