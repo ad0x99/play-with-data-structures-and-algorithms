@@ -258,6 +258,52 @@ class SinglyLinkedList {
     this.length--;
     return removed;
   }
+
+  /**
+   * Pseudocode - Reverse
+   *
+   * 1. Swap the head and tail
+   * 2. Create a variable to keep track next value which is called `next`
+   * 3. Create a variable to keep track previous value which is called `previous`
+   * 4. Create a variable called node and initialize it to the head property
+   * 5. Loop through the list
+   * 6. Set next to be the `next` property on whatever node is
+   * 7. Set the next property on the node to be whatever `previous` is
+   * 8. Set `previous` to be the value of the node variable
+   * 9. Set the node variable to be the value of the `next` variable
+   */
+  reverse() {
+    let currentNode = this.head;
+    this.head = this.tail;
+    this.tail = currentNode;
+
+    let next;
+    let previous = null;
+
+    for (let i = 0; i < this.length; i++) {
+      next = currentNode.next;
+      currentNode.next = previous;
+      previous = currentNode;
+      currentNode = next;
+    }
+
+    return this;
+  }
+
+  /**
+   * The function prints the values of a linked list in an array format.
+   */
+  print() {
+    let array = [];
+    let current = this.head;
+
+    while (current) {
+      array.push(current.value);
+      current = current.next;
+    }
+
+    console.log(array);
+  }
 }
 
 const list = new SinglyLinkedList();
@@ -310,6 +356,7 @@ console.log('=====Set=====');
 
 console.log('=====Insert=====');
 list.insert(1, 'Mr Robot');
+list.insert(2, 'Hacker');
 console.log(list);
 console.log(list.get(2));
 console.log(`head: ${list.head?.value}`);
@@ -319,6 +366,16 @@ console.log('=====Insert=====');
 console.log('=====Remove=====');
 list.remove(1);
 console.log(list);
+console.log(`head: ${list.head?.value}`);
+console.log(`tail: ${list.tail?.value}`);
+console.log('=====Remove=====');
+
+console.log('=====Remove=====');
+console.log(`List before reverse: ${list.print()}`);
+
+list.reverse();
+console.log(list);
+console.log(`List after reversed: ${list.print()}`);
 console.log(`head: ${list.head?.value}`);
 console.log(`tail: ${list.tail?.value}`);
 console.log('=====Remove=====');
