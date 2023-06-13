@@ -226,6 +226,38 @@ class SinglyLinkedList {
     this.length++;
     return true;
   }
+
+  /**
+   * This function removes a node from a linked list at a specified index.
+   *
+   * Pseudocode - Remove
+   *
+   * 1. If the index is less than zero or greater than the length, then return undefined
+   * 2. If the index is the same as the length - 1, `pop`
+   * 3. If the index is 0, `shift`
+   * 4. Otherwise, using `get` method, access the node at the index `-1`
+   * 5. Set the next property on that node to be the next of the next node
+   * 6. Decrement the length
+   * 7. Return the removed value
+   *
+   * @param index - The index parameter represents the index of the node to be removed from the linked
+   * list.
+   * @returns The method is returning the node that was removed from the linked list. If the index is
+   * invalid (less than 0 or greater than or equal to the length of the list), the method returns
+   * undefined. If the index is the last index of the list, the method removes and returns the last node
+   * using the pop() method. If the index is the first index of the list, the method removes
+   */
+  remove(index) {
+    if (index < 0 || index >= this.length) return undefined;
+    if (index === this.length) return this.shift();
+    if (index === this.length - 1) return this.pop();
+
+    let previousNode = this.get(index - 1);
+    let removed = previousNode.next;
+    previousNode.next = removed.next;
+    this.length--;
+    return removed;
+  }
 }
 
 const list = new SinglyLinkedList();
@@ -283,3 +315,10 @@ console.log(list.get(2));
 console.log(`head: ${list.head?.value}`);
 console.log(`tail: ${list.tail?.value}`);
 console.log('=====Insert=====');
+
+console.log('=====Remove=====');
+list.remove(1);
+console.log(list);
+console.log(`head: ${list.head?.value}`);
+console.log(`tail: ${list.tail?.value}`);
+console.log('=====Remove=====');
