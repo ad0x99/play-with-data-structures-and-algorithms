@@ -77,6 +77,40 @@ export class DoublyLinkedList {
   }
 
   /**
+   * This is a shift function that removes the first element from a doubly linked list and returns it.
+   *
+   * Pseudocode - Shift
+   *
+   * 1. If there is no node, return undefined
+   * 2. Store the current head in the variable which is called `old head`
+   * 3. If the length is 1, then set the head and tail to be null
+   * 4. Otherwise, update the head to be the next of the old head
+   * 5. Set the head's previous value to null
+   * 6. Set the old head's next to null
+   * 7. Decrement the length and return old head
+   *
+   * @returns The `shift()` method is returning the old head node that was removed from the doubly linked
+   * list.
+   */
+  shift() {
+    if (!this.length) return undefined;
+
+    let oldHead = this.head;
+
+    if (this.length === 1) {
+      this.head = null;
+      this.tail = null;
+    } else {
+      this.head = oldHead.next;
+      this.head.previous = null;
+      oldHead.next = null;
+    }
+
+    this.length--;
+    return oldHead;
+  }
+
+  /**
    * This function prints the values of a doubly linked list as an array.
    */
   print() {
