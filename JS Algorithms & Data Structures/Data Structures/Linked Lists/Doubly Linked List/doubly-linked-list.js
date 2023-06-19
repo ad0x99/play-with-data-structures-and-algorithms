@@ -41,6 +41,42 @@ export class DoublyLinkedList {
   }
 
   /**
+   *
+   */
+  /**
+   * This is a pop function that removes the last node from a doubly linked list.
+   *
+   * Pseudocode - Pop
+   *
+   * 1. If there is no head, return undefined
+   * 2. Store the current tail in a temporary variable
+   * 3. If the length is 1, set the head and tail to be null
+   * 4. Otherwise, update the tail to be the previous node
+   * 5. Set the new tail's next to null
+   * 6. Decrement the length
+   * 7. Return the removed value
+   *
+   * @returns The `pop()` method is returning the node that was removed from the end of the doubly linked
+   * list.
+   */
+  pop() {
+    if (!this.head) return undefined;
+
+    let poppedNode = this.tail;
+
+    if (this.length === 1) {
+      this.head = null;
+      this.tail = null;
+    } else {
+      this.tail = poppedNode.previous;
+      this.tail.next = null;
+    }
+
+    this.length--;
+    return poppedNode;
+  }
+
+  /**
    * This function prints the values of a doubly linked list as an array.
    */
   print() {
