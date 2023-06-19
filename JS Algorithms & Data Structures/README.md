@@ -296,4 +296,11 @@ function outer(input) {
 | Accessing           | O(n)                      |
 
 - [Learn more about Singly Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)
-- [See the example of Singly Linked List](/Data%20Structures/Linked%20Lists/Singly%20Linked%20List/)
+- [See the example of Singly Linked List](./Data%20Structures/Linked%20Lists/Singly%20Linked%20List/)
+
+### Doubly Linked List
+
+- A doubly linked list (DLL) is a special type of linked list in which each node contains a pointer to the previous node as well as the next node of the linked list. Therefore, in a doubly linked list, a node consists of three parts: node data, pointer to the next node in sequence (next pointer) , pointer to the previous node (previous pointer).
+
+- [Learn more about Doubly Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/doubly-linked-list/)
+- [See the example of Doubly Linked List](./Data%20Structures/Linked%20Lists/Doubly%20Linked%20List/)
