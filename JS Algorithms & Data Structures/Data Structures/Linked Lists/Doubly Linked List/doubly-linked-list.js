@@ -111,6 +111,37 @@ export class DoublyLinkedList {
   }
 
   /**
+   * This function adds a new node to the beginning of a doubly linked list.
+   *
+   * Pseudocode - Unshift
+   *
+   * 1. Create a new node with the value passed to the function
+   * 2. If the length is, then set the head and tail to be the new node
+   * 3. Otherwise, set the previous node on the head of the list to be the new node
+   * 4. Set the next node on the new node to be the head property
+   * 5. Update the head to be the new node
+   * 6. Increment the length and return the list
+   *
+   * @param value - The value to be added to the beginning of the doubly linked list.
+   * @returns The `unshift` method is returning the updated doubly linked list instance (`this`).
+   */
+  unshift(value) {
+    const newNode = new DoublyNode(value);
+
+    if (!this.length) {
+      this.head = newNode;
+      this.tail = newNode;
+    } else {
+      this.head.previous = newNode;
+      newNode.next = this.head;
+      this.head = newNode;
+    }
+
+    this.length++;
+    return this;
+  }
+
+  /**
    * This function prints the values of a doubly linked list as an array.
    */
   print() {
