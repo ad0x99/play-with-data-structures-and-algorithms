@@ -78,3 +78,15 @@ console.log(`tail: ${list.tail.value}`);
 console.log(`head.next: ${list.head.next.value}`);
 console.log(`tail.previous: ${list.tail.previous.value}`);
 console.log('======Set======');
+
+console.log('======Insert======');
+console.log(list.insert(1, 87));
+console.log(list.insert(4, 32));
+list.print();
+console.log(list);
+
+console.log(`head: ${list.head.value}`);
+console.log(`tail: ${list.tail.value}`);
+console.log(`head.next: ${list.head.next.value}`);
+console.log(`tail.previous: ${list.tail.previous.value}`);
+console.log('======Insert======');

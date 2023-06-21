@@ -211,6 +211,47 @@ export class DoublyLinkedList {
   }
 
   /**
+   * This function inserts a new node with a given value at a specified index in a doubly linked list.
+   *
+   * Pseudocode - Insert
+   *
+   * 1. If the index is less than 0 or greater than or equal to the length of the list, then return false
+   * 2. If the index is 0, `unshift`
+   * 3. If the index is equal to the length of the list, `push`
+   * 4. Otherwise, use the `get` method to access the index -1
+   * 5. Set the next and previous properties on the correct nodes to link with new node
+   * 6. Increment the length and return true
+   *
+   * @param index - The index at which the new value should be inserted in the Doubly Linked List.
+   * @param value - The value to be inserted into the Doubly Linked List.
+   * @returns The `insert` method returns a boolean value indicating whether the insertion was successful
+   * or not. It returns `true` if the insertion was successful and `false` if the index is out of range.
+   */
+  insert(index, value) {
+    if (index < 0 || index >= this.length) return false;
+    if (index === 0) {
+      return !!this.unshift(value);
+    }
+    if (index === this.length) {
+      return !!this.push(value);
+    }
+
+    let newNode = new DoublyNode(value);
+    let beforeNode = this.get(index - 1);
+    let afterNode = beforeNode.next;
+
+    if (beforeNode !== null) {
+      beforeNode.next = newNode;
+      newNode.previous = beforeNode;
+      newNode.next = afterNode;
+      afterNode.previous = newNode;
+    }
+
+    this.length++;
+    return true;
+  }
+
+  /**
    * This function prints the values of a doubly linked list as an array.
    */
   print() {
