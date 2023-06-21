@@ -41,3 +41,15 @@ console.log(`tail: ${list.tail.value}`);
 console.log(`head.next: ${list.head.next.value}`);
 console.log(`tail.previous: ${list.tail.previous.value}`);
 console.log('======Shift======');
+
+console.log('======Unshift======');
+list.unshift(24);
+
+console.log(list);
+list.print();
+
+console.log(`head: ${list.head.value}`);
+console.log(`tail: ${list.tail.value}`);
+console.log(`head.next: ${list.head.next.value}`);
+console.log(`tail.previous: ${list.tail.previous.value}`);
+console.log('======Unshift======');
