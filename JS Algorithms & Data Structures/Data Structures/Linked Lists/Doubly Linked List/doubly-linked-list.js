@@ -183,6 +183,34 @@ export class DoublyLinkedList {
   }
 
   /**
+   * The "set" function updates the value of a node at a given index in a doubly linked list.
+   *
+   * Pseudocode - Set
+   *
+   * 1. Create a variable which is the result of the `get` method at the index passed to the function
+   * 2. If the `get` method returns a valid node, set the value of that node to be the value passed to the function
+   * 3. Return true
+   * 4. Otherwise, return false
+   *
+   * @param index - The index parameter is the position of the node in the linked list where the value
+   * needs to be updated.
+   * @param value - The new value that we want to set for the node at the specified index in the linked
+   * list.
+   * @returns The `set` method returns a boolean value. It returns `true` if the node at the specified
+   * index is found and its value is updated successfully, and `false` if the node is not found.
+   */
+  set(index, value) {
+    const foundNode = this.get(index);
+
+    if (foundNode !== null) {
+      foundNode.value = value;
+      return true;
+    }
+
+    return false;
+  }
+
+  /**
    * This function prints the values of a doubly linked list as an array.
    */
   print() {
