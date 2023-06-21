@@ -142,6 +142,47 @@ export class DoublyLinkedList {
   }
 
   /**
+   * This function retrieves a node from a doubly linked list based on its index.
+   *
+   * Pseudocode - Get
+   *
+   * 1. If the index is less than 0 or greater or equal to the length, return null
+   * 2. If the index is less than or equal to half the length of the list, loop through the list starting from the head and loop towards the middle, then return the node once it's found
+   * 3. If the index is greater than half of the length of the list, loop through the list starting from the tail and loop towards the middle, then return the node once it's found
+   *
+   * @param index - The index of the node to be retrieved from the doubly linked list.
+   * @returns The method `get(index)` returns the node at the specified index in the doubly linked list.
+   * If the index is out of range (less than 0 or greater than or equal to the length of the list), it
+   * returns `null`.
+   */
+  get(index) {
+    if (index < 0 || index >= this.length) return null;
+
+    let count, current;
+    const mid = Math.floor(this.length / 2);
+
+    if (index <= mid) {
+      count = 0;
+      current = this.head;
+
+      while (count !== index) {
+        current = current.next;
+        count++;
+      }
+    } else {
+      count = this.length - 1;
+      current = this.tail;
+
+      while (count !== index) {
+        current = current.previous;
+        count--;
+      }
+    }
+
+    return current;
+  }
+
+  /**
    * This function prints the values of a doubly linked list as an array.
    */
   print() {
