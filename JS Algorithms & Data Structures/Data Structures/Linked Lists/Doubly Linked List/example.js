@@ -90,3 +90,15 @@ console.log(`tail: ${list.tail.value}`);
 console.log(`head.next: ${list.head.next.value}`);
 console.log(`tail.previous: ${list.tail.previous.value}`);
 console.log('======Insert======');
+
+console.log('======Remove======');
+console.log(list.remove(5));
+console.log(list.remove(1).value);
+list.print();
+console.log(list);
+
+console.log(`head: ${list.head.value}`);
+console.log(`tail: ${list.tail.value}`);
+console.log(`head.next: ${list.head.next.value}`);
+console.log(`tail.previous: ${list.tail.previous.value}`);
+console.log('======Remove======');

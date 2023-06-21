@@ -252,6 +252,45 @@ export class DoublyLinkedList {
   }
 
   /**
+   * This function removes a node from a doubly linked list at a specified index.
+   *
+   * Pseudocode - Remove
+   *
+   * 1. If the index is less than 0 or greater than or equal to the length, return undefined
+   * 2. If the index is 0, `shift`
+   * 3. If the index equals the length - 1, `pop`
+   * 4. Use the `get` method to retrieve the node to be removed
+   * 5. Update the next and previous node to remove the found node from the list
+   * 6. Set the next and previous node to null on the found node
+   * 7. Decrement the length and return the removed node
+   *
+   * @param index - The index parameter in the remove method represents the index of the node that needs
+   * to be removed from the doubly linked list.
+   * @returns The method is returning the removed node from the doubly linked list. If the index is
+   * invalid, it returns undefined. If the index is 0, it removes the first node and returns it. If the
+   * index is the last node, it removes the last node and returns it. Otherwise, it removes the node at
+   * the specified index and returns it.
+   */
+  remove(index) {
+    if (index < 0 || index >= this.length) return undefined;
+    if (index === 0) return this.shift(index);
+    if (index === this.length - 1) return this.pop(index);
+
+    let removedNode = this.get(index);
+    let beforeNode = removedNode.previous;
+    let afterNode = removedNode.next;
+
+    beforeNode.next = afterNode;
+    afterNode.previous = beforeNode.next;
+
+    removedNode.next = null;
+    removedNode.previous = null;
+
+    this.length--;
+    return removedNode;
+  }
+
+  /**
    * This function prints the values of a doubly linked list as an array.
    */
   print() {
