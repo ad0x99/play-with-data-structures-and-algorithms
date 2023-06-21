@@ -67,3 +67,14 @@ console.log(`tail: ${list.tail.value}`);
 console.log(`head.next: ${list.head.next.value}`);
 console.log(`tail.previous: ${list.tail.previous.value}`);
 console.log('======Get======');
+
+console.log('======Set======');
+console.log(list.set(0, 10));
+console.log(list.set(4, 10));
+list.print();
+
+console.log(`head: ${list.head.value}`);
+console.log(`tail: ${list.tail.value}`);
+console.log(`head.next: ${list.head.next.value}`);
+console.log(`tail.previous: ${list.tail.previous.value}`);
+console.log('======Set======');
