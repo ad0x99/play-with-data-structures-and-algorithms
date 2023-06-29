@@ -311,3 +311,16 @@ function outer(input) {
 
 - [Learn more about Doubly Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/doubly-linked-list/)
 - [See the example of Doubly Linked List](./Data%20Structures/Linked%20Lists/Doubly%20Linked%20List/)
+
+## Stack
+
+- Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
+- LIFO implies that the element that is inserted last, comes out first and FILO implies that the element that is inserted first, comes out last.
+
+- [Learn more about Stack](https://www.geeksforgeeks.org/stack-data-structure/)
+
+### Where Stacks are used
+
+- Managing [function invocations](https://www.geeksforgeeks.org/javascript-function-invocation/)
+- Undo / Redo functionality
+- Routing (the history object) is treated like a stack
