@@ -39,6 +39,9 @@
 
 - [Linked List](#linked-list)
   - [Singly Linked List](#singly-linked-list)
+  - [Doubly Linked List](#doubly-linked-list)
+- [Stack](#stack)
+  - [Where Stacks are used](#where-stacks-are-used)
 
 ## The Big O Shorthands
 
