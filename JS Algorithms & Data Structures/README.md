@@ -43,6 +43,8 @@
 - [Stack](#stack)
   - [Where Stacks are used](#where-stacks-are-used)
 - [Queue](#queue)
+- [Binary Search Tree](#binary-search-tree)
+  - [How Trees are used](#how-trees-are-used)
 
 ## The Big O Shorthands
 
@@ -356,3 +358,39 @@ function outer(input) {
 
 - [Learn more about Queue](https://www.geeksforgeeks.org/queue-data-structure/)
 - [See the example of Queue](./Data%20Structures/Queues)
+
+## Binary Search Tree
+
+### Trees
+
+- Tree Terminology
+  - **Root**: the top node in a tree
+  - **Child**: a node directly connected to another node when moving away from the Root
+  - **Parent**: the converse notion of a child
+  - **Siblings**: a group of nodes with the same parent
+  - **Leaf**: a node with no children
+  - **Edge**: the connection between one node and another
+
+![Tree](./images/bst.png)
+
+### How Trees are used?
+
+- Trees are used in computer science for various tasks, including storing information, representing hierarchical data, and providing efficient algorithms for operations such as insertion, deletion, and searching.
+
+- For examples: [HTML DOM](https://en.wikipedia.org/wiki/Document_Object_Model), [Network Routing](https://en.wikipedia.org/wiki/Routing), [Abstract Syntax Tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree), [Folders in OS](https://www.geeksforgeeks.org/structures-of-directory-in-operating-system/), [JSON](https://en.wikipedia.org/wiki/JSON), etc.
+
+- Kinds of Trees: Trees, Binary Trees, Binary Search Trees
+
+### BST
+
+- Every parent node has at most `2 children`
+- Every node to the `left` of a parent node is always `less than` the parent
+- Every node to the `right` of a parent node is always `greater than` the parent
+
+| Big O of BST | Time Complexity |
+| ------------ | --------------- |
+| Insertion    | O(log n)        |
+| Searching    | O(log n)        |
+
+- [Learn more about BST](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
+- [BST Visualization](https://visualgo.net/en/bst?slide=1)
