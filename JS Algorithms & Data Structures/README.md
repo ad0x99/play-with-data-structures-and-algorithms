@@ -44,7 +44,12 @@
   - [Where Stacks are used](#where-stacks-are-used)
 - [Queue](#queue)
 - [Binary Search Tree](#binary-search-tree)
+  - [Trees](#trees)
   - [How Trees are used](#how-trees-are-used)
+  - [BST](#bst)
+- [Tree Traversal](#tree-traversal)
+  - [Breadth First Search - BFS](#breadth-first-search-bfs)
+  - [Depth First Search - DFS](#depth-first-search-dfs)
 
 ## The Big O Shorthands
 
@@ -394,3 +399,37 @@ function outer(input) {
 
 - [Learn more about BST](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
 - [BST Visualization](https://visualgo.net/en/bst?slide=1)
+- [See the example of BST](./Binary%20Search%20Trees/)
+
+## Tree Traversal
+
+- Tree traversal, also known as tree search, is a process of `visiting each node` of a tree data structure. During tree traversal, you visit each node of a tree `exactly once` and perform an operation on the nodes like checking the node data (search) or updating the node.
+
+- Tree traversal algorithms can be classified broadly in the following two categories by the order in which the nodes are visited:
+
+  - **Depth-first search (DFS) algorithm**: It starts with the root node and first visits all nodes of one branch as deep as possible before backtracking. It visits all other branches in a similar fashion. There are three subtypes under this that we will cover in this article.
+  - **Breadth-first search (BFS) algorithm**: This also starts from the root node and visits all nodes of current depth before moving to the next depth in the tree. We will cover one algorithm of BFS type in the upcoming section.
+
+![Difference between DFS & BFS](./images/dfs-bfs-comparison.png)
+
+- [Learn more about Tree Traversal from GeeksforGeeks](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
+- [Read more about 4 Types of Tree Traversal Algorithms from Built in](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
+- [Difference between BFS and DFS from GeeksforGeeks](https://www.geeksforgeeks.org/difference-between-bfs-and-dfs/)
+
+### Breadth First Search (BFS)
+
+- The `Breadth First Search (BFS) algorithm` is used to search a `graph data structure` for a node that meets a set of criteria. It starts at the root of the graph and visits all nodes at the current depth level before moving on to the nodes at the next depth level.
+
+![Breadth First Search](./images/bfs.png)
+
+- [Learn more about Breadth First Search from GeeksforGeeks](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
+- [See the example of BFS](./Binary%20Search%20Trees/)
+
+### Depth First Search (DFS)
+
+- `Depth First Traversal (or DFS)` for a graph is similar to `Depth First Traversal` of a tree. It's a recursive algorithm for searching all the vertices of a graph or tree data structure. `Traversal` means visiting all the nodes of a graph. Unlike trees, `graphs` may contain cycles (a node may be visited twice). To avoid processing a node more than once, use a boolean visited array. A graph can have more than one DFS traversal.
+
+![Breadth First Search](./images/dfs.png)
+
+- [Learn more about Depth First Search from GeeksforGeeks](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
+- [See the example of DFS](./Binary%20Search%20Trees/)

@@ -42,3 +42,19 @@ try {
 console.log(
   '==========Print tree into json file for watching easier=========='
 );
+
+console.log('==========BFS Tree==========');
+console.log(tree.bfs());
+console.log('==========BFS Tree==========');
+
+console.log('==========DFS PreOrder Tree==========');
+console.log(tree.dfsPreOrder());
+console.log('==========DFS PreOrder Tree==========');
+
+console.log('==========DFS PostOrder Tree==========');
+console.log(tree.dfsPostOrder());
+console.log('==========DFS PostOrder Tree==========');
+
+console.log('==========DFS InOrder Tree==========');
+console.log(tree.dfsInOrder());
+console.log('==========DFS InOrder Tree==========');
