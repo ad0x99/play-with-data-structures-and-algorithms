@@ -1,6 +1,6 @@
 import { Node } from '../index.js';
 /**
- * Stack with Array Implementation
+ * Stack with Class Implementation
  */
 
 export class Stack {
