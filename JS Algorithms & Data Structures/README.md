@@ -42,6 +42,7 @@
   - [Doubly Linked List](#doubly-linked-list)
 - [Stack](#stack)
   - [Where Stacks are used](#where-stacks-are-used)
+- [Queue](#queue)
 
 ## The Big O Shorthands
 
@@ -317,8 +318,8 @@ function outer(input) {
 
 ## Stack
 
-- Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
-- LIFO implies that the element that is inserted last, comes out first and FILO implies that the element that is inserted first, comes out last.
+- Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be `LIFO(Last In First Out)` or `FILO(First In Last Out)`.
+- `LIFO` implies that the element that is `inserted last, comes out first` and `FILO` implies that the element that is `inserted first, comes out last`.
 
 | Big O of Stack Methods | Time Complexity |
 | ---------------------- | --------------- |
@@ -328,9 +329,30 @@ function outer(input) {
 | Accessing              | O(n)            |
 
 - [Learn more about Stack](https://www.geeksforgeeks.org/stack-data-structure/)
+- [See the example of Stack](./Data%20Structures/Stack)
 
 ### Where Stacks are used
 
 - Managing [function invocations](https://www.geeksforgeeks.org/javascript-function-invocation/)
 - Undo / Redo functionality
 - Routing (the history object) is treated like a stack
+
+## Queue
+
+- A Queue is defined as a linear data structure that is open at both ends and the operations are performed in `First In First Out (FIFO)` order.
+
+- How do we use queue in programming?
+
+  - Background tasks
+  - Uploading resources
+  - Printing / Task processing
+
+| Stack Methods | Time Complexity |
+| ------------- | --------------- |
+| Insertion     | O(1)            |
+| Removal       | O(1)            |
+| Searching     | O(n)            |
+| Accessing     | O(n)            |
+
+- [Learn more about Queue](https://www.geeksforgeeks.org/queue-data-structure/)
+- [See the example of Queue](./Data%20Structures/Queues)
