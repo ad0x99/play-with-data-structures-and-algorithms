@@ -19,6 +19,18 @@ export class DoublyNode {
 }
 
 /**
+ * The BSTNode class represents a node in a binary search tree with a value, left child, and right
+child.
+ */
+export class BSTNode {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+}
+
+/**
  * The function takes a linked list and a name as input, and returns a string representation of the
  * linked list as an array.
  * @param head - The `head` parameter is the starting node of a linked list.
