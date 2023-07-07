@@ -50,6 +50,10 @@
 - [Tree Traversal](#tree-traversal)
   - [Breadth First Search - BFS](#breadth-first-search-bfs)
   - [Depth First Search - DFS](#depth-first-search-dfs)
+- [Binary Heap](#binary-heap)
+  - [Why should we need to know about Binary Heap?](#why-should-we-need-to-know-about-binary-heap)
+  - [Max Binary Heap](#max-binary-heap)
+  - [Min Binary Heap](#min-binary-heap)
 
 ## The Big O Shorthands
 
@@ -369,6 +373,7 @@ function outer(input) {
 ### Trees
 
 - Tree Terminology
+
   - **Root**: the top node in a tree
   - **Child**: a node directly connected to another node when moving away from the Root
   - **Parent**: the converse notion of a child
@@ -433,3 +438,46 @@ function outer(input) {
 
 - [Learn more about Depth First Search from GeeksforGeeks](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
 - [See the example of DFS](./Binary%20Search%20Trees/)
+
+## Binary Heap
+
+- A binary heap is a `heap` data structure that takes the form of a `binary tree` (a tree in which each node has at most two children) which satisfies the following additional constraints:
+
+  - The binary tree is complete, i.e. every level except the `bottom-most (deepest one) level` is completely filled and if the last level of the tree is not complete, then the nodes of the bottom-most level are filled from `left to right`.
+  - `Max-heap` property: The key of every node is `larger` than or `equal` to its children.
+  - In a `Max Binary Heap`, parent nodes are always larger then child nodes, and in a `Min Binary Heap`, parent nodes are always smaller than child nodes
+
+![Min Heap & Max Heap - Visualization](./images/max-heap-and-min-heap-vis.png)
+
+- [Binary Heap visualization - VisualAlgo](https://visualgo.net/en/heap?slide=1)
+- [Learn more about Binary Heap from GeeksforGeeks](https://www.geeksforgeeks.org/binary-heap/)
+- [Learn more about Binary Heap from Wikipedia](https://en.wikipedia.org/wiki/Binary_heap)
+- [Difference between Min Heap & Max Heap - GeeksforGeeks](https://www.geeksforgeeks.org/difference-between-min-heap-and-max-heap/)
+
+### Why should we need to know about Binary Heap?
+
+- Binary Heap has `constant time` (`O(1)`) time complexity, this means that we know where the value will be no matter what data structure we use
+- Binary Heaps are used to implement `Priority Queues` or `Schedulers`, where the earliest item is desired
+- They are also used quite a bit, with `graph traversal` algorithms
+
+### Max Binary Heap
+
+- Each parent has at most 2 child nodes
+- The value of each parent node is `always greater ` than its child nodes
+- The parent is `greater` than the children, but there are `no guarantees between sibling nodes`
+- A binary heap is as compact as possible. All the children of each node are as full as they can be and `left children are filled out first`
+
+![Max Heap](./images/max-heap.jpeg)
+
+- [See the example of Max Binary Heap](./Binary%20Heap/)
+
+### Min Binary Heap
+
+- Each parent has at most 2 child nodes
+- The value of each parent node is `always less` than its child nodes
+- The parent is `less` than the children, but there are `no guarantees between sibling nodes`
+- A binary heap is as compact as possible. All the children of each node are as full as they can be and `left children are filled out first`
+
+![Min Heap](./images/min-heap.jpeg)
+
+- [See the example of Min Binary Heap](./Binary%20Heap/)
