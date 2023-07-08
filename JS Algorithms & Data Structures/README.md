@@ -448,6 +448,12 @@ function outer(input) {
   - `Max-heap` property: The key of every node is `larger` than or `equal` to its children.
   - In a `Max Binary Heap`, parent nodes are always larger then child nodes, and in a `Min Binary Heap`, parent nodes are always smaller than child nodes
 
+| Big O of Binary Heaps | Time Complexity |
+| --------------------- | --------------- |
+| Insertion             | O(log n)        |
+| Removal               | O(log n)        |
+| Searching             | O(n)            |
+
 ![Min Heap & Max Heap - Visualization](./images/max-heap-and-min-heap-vis.png)
 
 - [Binary Heap visualization - VisualAlgo](https://visualgo.net/en/heap?slide=1)
@@ -487,4 +493,5 @@ function outer(input) {
 
 - Priority Queue is a data structure where each element has a `priority`. Elements with `higher` priorities are `served before` elements with `lower` priorities
 
-[Learn more about Priority Queue from GeeksforGeeks](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)
+- [Learn more about Priority Queue from GeeksforGeeks](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)
+- [See the example of Priority Queue](./Binary%20Heap/)

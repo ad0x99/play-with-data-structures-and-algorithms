@@ -25,14 +25,14 @@ export class MaxBinaryHeap {
     // Push the new value to the last of the array on the heap
     this.values.push(value);
     // Bubble it up
-    this.bubbleUp();
+    this.#bubbleUp();
     return this;
   }
 
   /**
    * The function `bubbleUp()` is used to move a value up in a binary heap until it reaches its correct position.
    */
-  bubbleUp() {
+  #bubbleUp() {
     let index = this.values.length - 1;
     const value = this.values[index];
 
@@ -44,7 +44,7 @@ export class MaxBinaryHeap {
 
       if (value <= parent) break;
 
-      // Swap new value with the parent update
+      // Swap new value with the parent value
       this.values[parentIndex] = value;
       this.values[index] = parent;
       // Update index of new value and parent value
@@ -81,7 +81,7 @@ export class MaxBinaryHeap {
     // Take the last value and assign it to be the new root
     const end = this.values.pop();
     this.values[0] = end;
-    this.sinkDown();
+    this.#sinkDown();
 
     return max;
   }
@@ -93,7 +93,7 @@ export class MaxBinaryHeap {
    *
    * @returns Nothing is being returned. The function does not have a return statement.
    */
-  sinkDown() {
+  #sinkDown() {
     let index = 0;
     const length = this.values.length;
     const value = this.values[index];
@@ -110,7 +110,7 @@ export class MaxBinaryHeap {
       if (leftChildIndex < length) {
         leftChild = this.values[leftChildIndex];
 
-        // If leftChild is greater than current root and swap
+        // If leftChild is greater than current root, then swap
         if (leftChild > value) {
           swap = leftChildIndex;
         }
