@@ -54,6 +54,7 @@
   - [Why should we need to know about Binary Heap?](#why-should-we-need-to-know-about-binary-heap)
   - [Max Binary Heap](#max-binary-heap)
   - [Min Binary Heap](#min-binary-heap)
+  - [Priority Queue](#priority-queue)
 
 ## The Big O Shorthands
 
@@ -481,3 +482,9 @@ function outer(input) {
 ![Min Heap](./images/min-heap.jpeg)
 
 - [See the example of Min Binary Heap](./Binary%20Heap/)
+
+### Priority Queue
+
+- Priority Queue is a data structure where each element has a `priority`. Elements with `higher` priorities are `served before` elements with `lower` priorities
+
+[Learn more about Priority Queue from GeeksforGeeks](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)
