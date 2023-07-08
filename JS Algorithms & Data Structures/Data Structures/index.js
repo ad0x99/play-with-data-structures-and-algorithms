@@ -30,6 +30,14 @@ export class BSTNode {
   }
 }
 
+/* The PriorityNode class represents a node with a value and priority in a priority queue. */
+export class PriorityNode {
+  constructor(value, priority) {
+    this.value = value;
+    this.priority = priority;
+  }
+}
+
 /**
  * The function takes a linked list and a name as input, and returns a string representation of the
  * linked list as an array.
