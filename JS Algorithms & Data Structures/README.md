@@ -55,6 +55,9 @@
   - [Max Binary Heap](#max-binary-heap)
   - [Min Binary Heap](#min-binary-heap)
   - [Priority Queue](#priority-queue)
+- [Hash Tables](#hash-tables)
+  - [Hash Function](#hash-function)
+  - [Hash Collision](#hash-collision)
 
 ## The Big O Shorthands
 
@@ -495,3 +498,50 @@ function outer(input) {
 
 - [Learn more about Priority Queue from GeeksforGeeks](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)
 - [See the example of Priority Queue](./Binary%20Heap/)
+
+## Hash Tables
+
+- A `hash table (aka hash map)` is a data structure that implements an associative `array` or `dictionary`. It is an abstract data type that maps `keys` to `values`. A hash table uses a hash function to compute an `index`, also called a `hash code`, into an array of buckets or slots, from which the desired value can be found. During lookup, the key is hashed and the resulting hash indicates where the corresponding value is stored.
+- Hash tables are used to store `key-value` pairs, with the keys are not ordered
+- Unlike arrays, hash tables are `fast` for all of the following operations: `finding values`, `adding new values`, and `removing values`
+- In a hash table, a new `index` is processed using the `keys`. And, the element corresponding to that key is stored in the index. This process is called `hashing`.
+
+| Big O of Hash Tables | Time Complexity (average cases) |
+| -------------------- | ------------------------------- |
+| Insertion            | O(1)                            |
+| Deletion             | O(1)                            |
+| Accessing            | O(1)                            |
+
+![Hashing](./images/hashing.png)
+
+- [Hash table - Wikipedia](https://en.wikipedia.org/wiki/Hash_table)
+- [Hashing Data Structure - Geeksforgeeks](https://www.geeksforgeeks.org/hashing-data-structure/)
+- [Hash Table - Programiz](https://www.programiz.com/dsa/hash-table)
+- [See the example of Hash Tables](./Hash%20Tables/)
+
+### Hash Function
+
+- The hash function creates a mapping between `key` and `value`, this is done through the use of `mathematical formulas` known as hash functions. The result of the hash function is referred to as a `hash value` or `hash`. The hash value is a representation of the `original string` of characters but usually `smaller` than the original.
+
+- Using a prime number for the size of a hash table array can help to `reduce collisions` and `improve performance`. Prime numbers are `not divisible` by any other number other than `1 and itself`, so they are `less likely to have a common factor` with the hash code of an object being inserted into the table. This means that there is a `lower chance of two objects being assigned to the same slot` in the array, which can lead to fewer collisions and faster retrieval times. Additionally, using a prime number allows for a more evenly distributed hash code, which can also help to reduce collisions.
+
+- [Prime numbers — and why blockchains can’t exist without them! - Medium](https://levelup.gitconnected.com/prime-numbers-and-why-blockchains-cant-exist-without-them-f629bdc54bb3)
+- [Why Should the Length of Your Hash Table Be a Prime Number? - Medium](https://medium.com/swlh/why-should-the-length-of-your-hash-table-be-a-prime-number-760ec65a75d1)
+- [Does making array size a prime number help in hash table implementation? Why? - Quora](https://www.quora.com/Does-making-array-size-a-prime-number-help-in-hash-table-implementation-Why)
+
+### Hash Collision
+
+- `Hash collision` happens when the hash function generates the `same index for multiple keys`, there will be a conflict (what value to be stored in that index). To resolve the has collision, we can use one of the following techniques:
+
+  - `Collision resolution by chaining`: In chaining, if a hash function produces the same index for multiple elements, these elements are `stored` in the same index by using a `doubly-linked list`
+  - `Open Addressing - Linear/Quadratic Probing and Double Hashing`: Open addressing doesn't store multiple elements into the same slot. Here, each slot is either `filled` with a `single key` or left `NIL`
+
+    - **Linear Probing**: In linear probing, the hash table is searched sequentially that starts from the original location of the hash. If in case the location that we get is already occupied, then we check for the next location.
+
+    - **Quadratic Probing (aka Mid-Square method)**: Quadratic probing operates by taking the original hash index and adding successive values of an arbitrary quadratic polynomial until an open slot is found.
+
+    - **Double Hashing**: Double hashing make use of two hash function
+      - The first hash function is **h1(k)** which takes the key and gives out a location on the hash table. But if the new location is not occupied or empty then we can easily place our key.
+      - But in case the location is occupied (collision) we will use secondary hash-function **h2(k)** in combination with the first hash-function **h1(k)** to find the new location on the hash table.
+
+![Hash Collision](./images/hash-collision.png)
