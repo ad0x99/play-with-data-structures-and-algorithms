@@ -58,6 +58,13 @@
 - [Hash Tables](#hash-tables)
   - [Hash Function](#hash-function)
   - [Hash Collision](#hash-collision)
+- [Graphs](#graphs)
+  - [What is Graphs?](#what-is-graphs)
+  - [How Graphs are used](#how-graphs-are-used)
+  - [Graph Terminology](#graph-terminology)
+  - [Graph Representation](#graph-representation)
+    - [Adjacency Matrix](#adjacency-matrix)
+    - [Adjacency List](#adjacency-list)
 
 ## The Big O Shorthands
 
@@ -545,3 +552,78 @@ function outer(input) {
       - But in case the location is occupied (collision) we will use secondary hash-function **h2(k)** in combination with the first hash-function **h1(k)** to find the new location on the hash table.
 
 ![Hash Collision](./images/hash-collision.png)
+
+## Graphs
+
+### What is Graphs?
+
+- A graph data structure consists of a `finite` (and possibly mutable) set of `vertices` (or `nodes`) together with a set of `unordered pairs` of these `vertices` for an `undirected graph` or a set of `ordered pairs` for a `directed graph`
+
+- A Graph is a `non-linear` data structure consisting of `vertices` and `edges`. It is a `collection of nodes` that have data and are `connected to other nodes`. The `vertices` are sometimes also referred to as `nodes` and the `edges` are `lines` or `arcs` that connect `any two nodes` in the graph. More formally a Graph is composed of a set of `vertices( V )` and a set of `edges( E )`.The graph is denoted by `G(E, V)`.
+
+![Graphs](./images/graphs.png)
+
+**Big O of Graphs**
+
+- `|V|`: number of vertices
+- `|E|`: number of edges
+
+| **Big O of Graphs** | **Adjacency List** | **Adjacency Matrix** |
+| ------------------- | ------------------ | -------------------- |
+| Add Vertex          | O(1)               | O(V^2)               |
+| Add Edge            | O(1)               | O(1)                 |
+| Remove Vertex       | O(V + E)           | O(V^2)               |
+| Remove Edge         | O(E)               | O(1)                 |
+| Query               | O(V + E)           | O(1)                 |
+| Storage             | O(V + E)           | O(V^2)               |
+
+| **Adjacency List**                        | **Adjacency Matrix**                  |
+| ----------------------------------------- | ------------------------------------- |
+| Can take up less space (in sparse graphs) | Take up more space (in sparse graphs) |
+| Faster to iterate over all edges          | Slower to iterate over all edges      |
+| Can be slower to lookup specific edge     | Faster to lookup specific edge        |
+
+- [Learn more about Graphs - GeeksforGeeks](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
+- [Learn more about Graphs - Programiz](https://www.programiz.com/dsa/graph)
+- [Learn more about Graphs - Wikipedia](<https://en.wikipedia.org/wiki/Graph_(abstract_data_type)>)
+- [See the example of Graphs](./Graphs/)
+
+### How Graphs are used?
+
+- Social Networks
+- Location / Mapping
+- Routing Algorithms
+- Visual Hierarchy
+- File System Optimization
+- etc...
+
+### Graph Terminology
+
+- **Adjacency**: A vertex is said to be adjacent to another vertex if there is an edge connecting them.
+- **Path**: A sequence of edges that allows you to go from `vertex A` to `vertex B` is called a `path`.
+- **Directed Graph**: A `directed graph` is a set of `vertices (nodes)` connected `by edges`, with each node having a direction associated with it. A graph in which an `edge (u,v)` doesn't necessarily mean that there is an edge (v, u) as well. The `edges` in such a graph are `represented by arrows` to show the `direction of the edge`.
+- **Undirected Graph**: In an `undirected graph` the `edges` are `bidirectional`, with no direction associated with them. Hence, the graph can be traversed in either direction. The absence of an arrow tells us that the graph is undirected.
+
+![Directed & Undirected Graphs](./images/directed-and-undirected-graphs.png)
+
+- **Weighted Graph**: A `weighted graph` is defined as a special type of graph in which the edges are assigned some weights which represent cost, distance, and many other relative measuring units.
+- **Unweighted Graph**: An unweighted graph is `a graph in which the edges do not have weights or costs associated with them`. Instead, they simply represent the presence of a connection between two vertices
+
+![Weighted & Unweighted Graphs](./images/weighted-unweighted-graphs.png)
+
+- [Learn more about Weighted Graph - GeeksforGeeks](https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-weighted-graph/)
+- [Learn more about Unweighted Graph - GeeksforGeeks](https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-unweighted-graph/)
+
+### Graph Representation
+
+#### Adjacency Matrix
+
+- An adjacency matrix is a 2D array of `V x V` vertices. Each row and column represent a vertex. If the value of any element `a[i][j]` is `1`, it represents that there is an `edge` connecting vertex i and vertex j.
+
+![Adjacency Matrix](./images/adjacency-matrix.png)
+
+#### Adjacency List
+
+- An adjacency list represents a graph as an array of linked lists. The index of the array represents a vertex and each element in its linked list represents the other vertices that form an edge with the vertex.
+
+![Adjacency List](./images/adjacency-list.png)
