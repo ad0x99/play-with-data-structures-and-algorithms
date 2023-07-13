@@ -627,3 +627,20 @@ function outer(input) {
 - An adjacency list represents a graph as an array of linked lists. The index of the array represents a vertex and each element in its linked list represents the other vertices that form an edge with the vertex.
 
 ![Adjacency List](./images/adjacency-list.png)
+
+### Graph Traversal
+
+- Graph traversal is a technique used to `search` for a `vertex` in a `graph`. It is also used to `decide` the `order of vertices` to be visited in the search process. A graph traversal `finds the edges` to be used in the search process `without creating loops`.
+
+- [Learn more about Graph Traversal - Wikipedia](https://en.wikipedia.org/wiki/Graph_traversal)
+- [DFS & BFS Visualization - Visualgo](https://visualgo.net/en/dfsbfs)
+
+#### Graph Traversal Uses
+
+- Peer to peer networking
+- Web crawlers
+- Finding `closest` matching / recommendations
+- Shortest path problems
+  - GPS Navigation
+  - Solving mazes
+  - AI (shortest path to win the game)

@@ -106,4 +106,47 @@ export class Graph {
     }
     return this.adjacencyList[vertex].filter((v) => v !== edge);
   }
+
+  /**
+   * The dfsRecursive function performs a depth-first search on a graph starting from a given vertex and returns an array of visited vertices.
+   *
+   * Pseudocode - DFS
+   *
+   * 1. The function should accepts a starting node (vertex)
+   * 2. Create a list to store the result, to be returned at the end of the function
+   * 3. Create an object to store visited vertices
+   * 4. Create a helper function which accepts a vertex
+   * 5. If the vertex is empty, then return `null`
+   * 6. Otherwise, place the vertex that it accepts into the visited object and push that vertex into the result list
+   * 7. Loop over all of the values in the adjacencyList for that vertex, if any of those values have not been visited, recursively invoke the helper function with that vertex
+   * 8. Return the result list
+   *
+   * @param vertex - The `vertex` parameter represents the starting vertex from which the Depth First Search (DFS) algorithm will begin traversing the graph.
+   * @returns an array containing the vertices visited during the depth-first search traversal starting from the given vertex.
+   */
+  dfsRecursive(vertex) {
+    const result = [];
+    const visited = {};
+
+    const dfs = (vertex) => {
+      // If there is no vertex then return null
+      if (!vertex || !this.adjacencyList[vertex]) return null;
+
+      // Otherwise, mark current vertex as visited
+      // and push into result list
+      visited[vertex] = true;
+      result.push(vertex);
+
+      // Loop through neighbor of current vertex
+      // If it has not visited yet, then recursively call dfs to find neighbor of neighbor until all the neighbors are visited
+      this.adjacencyList[vertex].forEach((neighbor) => {
+        if (!visited[neighbor]) {
+          return dfs(neighbor);
+        }
+      });
+    };
+    dfs.call(this, vertex);
+
+    return result;
+  }
 }

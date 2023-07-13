@@ -10,11 +10,13 @@ console.log(newGraph);
 console.log('============addVertex============');
 
 console.log('============addEdge============');
-console.log(newGraph.addEdge('helsinki', 'frankfurt'));
-console.log(newGraph.addEdge('san francisco', 'new york'));
-console.log(newGraph.addEdge('singapore', 'seoul'));
-console.log(newGraph.addEdge('singapore', 'tokyo'));
-console.log(newGraph.addEdge('seoul', 'tokyo'));
+newGraph.addEdge('helsinki', 'frankfurt');
+newGraph.addEdge('helsinki', 'new york');
+newGraph.addEdge('san francisco', 'new york');
+newGraph.addEdge('singapore', 'seoul');
+newGraph.addEdge('singapore', 'tokyo');
+newGraph.addEdge('seoul', 'tokyo');
+console.log(newGraph);
 console.log('============addEdge============');
 
 console.log('============removeEdge============');
