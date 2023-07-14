@@ -201,4 +201,57 @@ export class Graph {
 
     return result;
   }
+
+  /**
+   *
+   */
+  /**
+   * The bfs function performs a breadth-first search starting from a given vertex and returns an array of vertices visited in the order they were visited.
+   *
+   * Pseudocode - BFS
+   *
+   * 1. This function accepts a start vertex
+   * 2. Create a queue and place the starting vertex in it as initial value
+   * 3. Create an array to store the result (visited nodes)
+   * 4. Create an object to store the visited nodes
+   * 5. Make the starting vertex as visited
+   * 6. Loop through the queue until it's empty
+   * 7. Remove the first vertex from the queue and push it into the array that store visited nodes
+   * 8. Loop over each vertex in the current vertex's adjacency list
+   * 9. If it's not visited yet, mark it as visited and enqueue that vertex
+   * 10. Once finished looping, return the array of visited nodes
+   *
+   * @param vertex - The parameter "vertex" represents the starting vertex from which the breadth-first search (BFS) algorithm will begin traversing the graph.
+   * @returns an array containing the vertices visited in breadth-first order.
+   */
+  bfs(vertex) {
+    const queue = [];
+    const result = [];
+    const visited = {};
+
+    // Push the starting vertex into the stack
+    queue.push(vertex);
+    // Mark the starting vertex as visited
+    visited[vertex] = true;
+
+    // If the queue is not empty
+    while (queue.length) {
+      // Get first vertex from queue
+      // And push it into result array
+      const currentVertex = queue.shift();
+      result.push(currentVertex);
+
+      // Loop through current vertex's adjacency list to get all of its neighbors
+      this.adjacencyList[currentVertex].forEach((neighbor) => {
+        // If neighbor is not marked visited yet
+        // The mark it as visited and push into the queue
+        if (!visited[neighbor]) {
+          visited[neighbor] = true;
+          queue.push(neighbor);
+        }
+      });
+    }
+
+    return result;
+  }
 }

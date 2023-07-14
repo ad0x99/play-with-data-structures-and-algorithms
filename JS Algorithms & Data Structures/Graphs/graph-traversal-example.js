@@ -50,3 +50,14 @@ console.log(
   _.isEqual(expectedResult, actualResult)
 );
 console.log('============dfsIterative============');
+
+console.log('============bfs============');
+console.log(dfsGraph);
+actualResult = dfsGraph.bfs('A');
+expectedResult = ['A', 'B', 'C', 'D', 'E', 'F'];
+console.log(actualResult);
+console.log(
+  'Is actual result correct as expected: ',
+  _.isEqual(expectedResult, actualResult)
+);
+console.log('============bfs============');
