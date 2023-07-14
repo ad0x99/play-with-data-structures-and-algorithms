@@ -110,7 +110,7 @@ export class Graph {
   /**
    * The dfsRecursive function performs a depth-first search on a graph starting from a given vertex and returns an array of visited vertices.
    *
-   * Pseudocode - DFS
+   * Pseudocode - DFS Recursive
    *
    * 1. The function should accepts a starting node (vertex)
    * 2. Create a list to store the result, to be returned at the end of the function
@@ -146,6 +146,58 @@ export class Graph {
       });
     };
     dfs.call(this, vertex);
+
+    return result;
+  }
+
+  /**
+   * The dfsIterative function performs a depth-first search on a graph starting from a given vertex.
+   *
+   * Pseudocode - DFS Iterative
+   *
+   * 1. The function accepts a starting node (vertex)
+   * 2. Create a stack to keep track of vertices
+   * 3. Create a list to store the result
+   * 4. Create an object to store visited vertices
+   * 5. Add the starting vertex to the stack, and mark it visited
+   * 6. If stack is not empty then pop the next vertex from the stack
+   * 7. If that vertex has not been visited yet, then
+   *  7.1 Mark it as visited
+   *  7.2 Add it to the result list
+   *  7.3 Push all of its neighbors into the stack
+   * 8. Return the result list
+   *
+   * @param vertex - The `vertex` parameter represents the starting vertex from which the Depth First Search (DFS) traversal will begin.
+   * @returns an array containing the vertices visited during the Depth First Search traversal.
+   */
+  dfsIterative(vertex) {
+    const stack = [];
+    const result = [];
+    const visited = {};
+    let currentVertex;
+
+    // Push the starting vertex into the stack
+    stack.push(vertex);
+    // Mark the starting vertex as visited
+    visited[vertex] = true;
+
+    // If stack is not empty
+    while (stack.length) {
+      // Get the last vertex from stack
+      // And push to result list
+      currentVertex = stack.pop();
+      result.push(currentVertex);
+
+      // Loop through current vertex's neighbor until out of neighbors
+      this.adjacencyList[currentVertex].forEach((neighbor) => {
+        // If its neighbor is not marked as visited yet
+        // Then mark it as visited and push to the stack
+        if (!visited[neighbor]) {
+          visited[neighbor] = true;
+          stack.push(neighbor);
+        }
+      });
+    }
 
     return result;
   }
