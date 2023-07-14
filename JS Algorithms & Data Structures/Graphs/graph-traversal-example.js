@@ -1,6 +1,5 @@
 import { Graph } from './graphs.js';
-
-console.log('============dfsRecursive============');
+import _ from 'lodash';
 
 const dfsGraph = new Graph();
 
@@ -30,6 +29,24 @@ dfsGraph.addEdge('D', 'E');
 dfsGraph.addEdge('D', 'F');
 dfsGraph.addEdge('E', 'F');
 
-console.log(dfsGraph);
-console.log(dfsGraph.dfsRecursive('A'));
 console.log('============dfsRecursive============');
+console.log(dfsGraph);
+let actualResult = dfsGraph.dfsRecursive('A');
+let expectedResult = ['A', 'B', 'D', 'E', 'C', 'F'];
+console.log(actualResult);
+console.log(
+  'Is actual result correct as expected: ',
+  _.isEqual(expectedResult, actualResult)
+);
+console.log('============dfsRecursive============');
+
+console.log('============dfsIterative============');
+console.log(dfsGraph);
+actualResult = dfsGraph.dfsIterative('A');
+expectedResult = ['A', 'C', 'E', 'F', 'D', 'B'];
+console.log(actualResult);
+console.log(
+  'Is actual result correct as expected: ',
+  _.isEqual(expectedResult, actualResult)
+);
+console.log('============dfsIterative============');
