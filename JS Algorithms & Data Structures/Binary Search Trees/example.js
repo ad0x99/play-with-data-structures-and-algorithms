@@ -17,31 +17,13 @@ tree.insert(10);
 
 console.log('==========Insert value to tree==========');
 console.log(tree);
-console.log(JSON.stringify(tree));
+console.log(JSON.stringify(tree, null, '\t'));
 console.log('==========Insert value to tree==========');
 
 console.log('==========Find value in tree==========');
 console.log(tree.find(10));
 console.log(tree.find(12));
 console.log('==========Find value in tree==========');
-
-console.log(
-  '==========Print tree into json file for watching easier=========='
-);
-try {
-  fs.writeFileSync(
-    `${path.resolve()}/JS Algorithms & Data Structures/Binary Search Trees/bst-example.json`,
-    JSON.stringify(tree),
-    'utf8'
-  );
-
-  console.log('Saved!');
-} catch (e) {
-  throw new Error(e);
-}
-console.log(
-  '==========Print tree into json file for watching easier=========='
-);
 
 console.log('==========BFS Tree==========');
 console.log(tree.bfs());
