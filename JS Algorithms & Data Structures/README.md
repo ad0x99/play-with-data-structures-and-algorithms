@@ -65,6 +65,9 @@
   - [Graph Representation](#graph-representation)
     - [Adjacency Matrix](#adjacency-matrix)
     - [Adjacency List](#adjacency-list)
+- [Dijkastra's Algorithm](#dijkastras-algorithm)
+  - [What is Dijkastra's Algorithm?](#what-is-dijkastras-algorithm)
+  - [Why is it useful?](#why-is-it-useful)
 
 ## The Big O Shorthands
 
@@ -644,3 +647,25 @@ function outer(input) {
   - GPS Navigation
   - Solving mazes
   - AI (shortest path to win the game)
+
+## Dijkastra's Algorithm
+
+### What is Dijkastra's Algorithm?
+
+- Dijkastra's Algorithm was created by `Edsger Dijkastra`, a Dutch programmer, physicist, essayist, and all-around smarty-pants. He helped to advance the field of computer science from an art to an academic discipline
+- Dijkstra's Algorithm is a shortest path algorithm which finds the `shortest path between 2 vertices on a graph`
+- This algorithm uses the `weights of the edges` to find the path that minimizes the total distance (weight) between the root node and all other nodes
+
+- [Learn more about Dijkastra's Algorithm - Wikipedia](https://en.wikipedia.org/wiki/Dijkstra's_algorithm)
+- [Learn more about Dijkastra's Algorithm - Programiz](https://www.programiz.com/dsa/dijkstra-algorithm)
+- [Dijkstra's Shortest Path Algorithm - A Detailed and Visual Introduction - Freecodecamp](https://www.freecodecamp.org/news/dijkstras-shortest-path-algorithm-visual-introduction/)
+- [See the example of Dijkastra's Algorithm](./Dijkstra's%20Algorithm/)
+
+### Why is it useful?
+
+- It's commonly used such as:
+  - GPS - find fastest route
+  - Network Routing - finds open shortest path for data
+  - Biology - used to model the spread of viruses among humans
+  - Airline tickets - finding cheapest route to your destination
+  - Many other uses!
