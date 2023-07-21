@@ -1,4 +1,4 @@
-import { printAsArray } from '../index.js';
+import { printAsArray } from '../../helpers/print-tree-as-array.js';
 import { Queue } from './queue.js';
 
 let queue = new Queue();

@@ -68,6 +68,9 @@
 - [Dijkastra's Algorithm](#dijkastras-algorithm)
   - [What is Dijkastra's Algorithm?](#what-is-dijkastras-algorithm)
   - [Why is it useful?](#why-is-it-useful)
+- [Dynamic Programming](#dynamic-programming)
+  - [Overlapping Sub-Problems](#overlapping-sub-problems)
+  - [Optimal Sub-Structure](#optimal-sub-structure)
 
 ## The Big O Shorthands
 
@@ -669,3 +672,34 @@ function outer(input) {
   - Biology - used to model the spread of viruses among humans
   - Airline tickets - finding cheapest route to your destination
   - Many other uses!
+
+## Dynamic Programming
+
+- Dynamic Programming is a method for solving a complex problem by `breaking it down into a collection of simpler sub-problems`, solving each of those sub-problems just once, and storing their solutions
+
+- [Learn more about Dynamic Programming - GeeksforGeeks](https://www.geeksforgeeks.org/dynamic-programming/)
+- [Learn more about Dynamic Programming - Wikipedia](https://en.wikipedia.org/wiki/Dynamic_programming)
+- [Learn more about Dynamic Programming - Programiz](https://www.programiz.com/dsa/dynamic-programming)
+- [See the example of Dynamic Programming](./Dynamic%20Programming)
+
+### Overlapping Sub-Problems
+
+- A problem is said to have `overlapping sub-problems` if it can be broken down into `sub-problems` which are `reused` several times
+
+- [Learn more about Overlapping Sub-Problems - Wikipedia](https://en.wikipedia.org/wiki/Overlapping_subproblems)
+- [Learn more about Overlapping Sub-Problems - GeeksforGeeks](https://www.geeksforgeeks.org/overlapping-subproblems-property-in-dynamic-programming-dp-1/)
+
+### Optimal Sub-Structure
+
+- A problem is said to have `optimal sub-structure` if an optimal solution can be `constructed` from optimal solutions of its sub-problems
+
+- [Learn more about Optimal Sub-Structure - Wikipedia](https://en.wikipedia.org/wiki/Optimal_substructure)
+- [Learn more about Optimal Sub-Structure - GeeksforGeeks](https://www.geeksforgeeks.org/optimal-substructure-property-in-dynamic-programming-dp-2/)
+- [Learn more about Optimal Sub-Structure - labuladong](https://labuladong.gitbook.io/algo-en/i.-dynamic-programming/optimalsubstructure)
+
+### Memoization
+
+- Storing the results of expensive function calls and returning the cached result when the same inputs occur again
+
+- [What is memoization? - GeeksforGeeks](https://www.geeksforgeeks.org/what-is-memoization-a-complete-tutorial/)
+- [See the example of Memoization](./Dynamic%20Programming/fibonacci.js)
