@@ -1,4 +1,4 @@
-import { printAsArray } from '../index.js';
+import { printAsArray } from '../../helpers/print-tree-as-array.js';
 import { Stack } from './stack.js';
 
 const stack = new Stack();
