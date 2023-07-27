@@ -700,6 +700,18 @@ function outer(input) {
 ### Memoization
 
 - Storing the results of expensive function calls and returning the cached result when the same inputs occur again
+- It is a `Top-down method`
 
 - [What is memoization? - GeeksforGeeks](https://www.geeksforgeeks.org/what-is-memoization-a-complete-tutorial/)
 - [See the example of Memoization](./Dynamic%20Programming/fibonacci.js)
+
+### Tabulation
+
+- Storing the result of a previous result in a `table` (usually an array)
+- Usually done using `iteration`
+- It is a `Bottom-up method`. We start solving the problems from the base cases (bottom) and gathering answers to the top
+- Better `space complexity`
+
+- [Memoization vs Tabulation - GeeksforGeeks ](https://www.geeksforgeeks.org/tabulation-vs-memoization/)
+- [Memoization vs Tabulation in DP - Medium](https://medium.com/@aryan.jain19/memoization-vs-tabulation-in-dp-4ff137da8044)
+- [Memoization vs Tabulation - codingninjas](https://www.codingninjas.com/studio/library/memoization-vs-tabulation)
