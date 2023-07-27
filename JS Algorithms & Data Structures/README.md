@@ -71,6 +71,8 @@
 - [Dynamic Programming](#dynamic-programming)
   - [Overlapping Sub-Problems](#overlapping-sub-problems)
   - [Optimal Sub-Structure](#optimal-sub-structure)
+  - [Memoization](#memoization)
+  - [Tabulation](#tabulation)
 
 ## The Big O Shorthands
 
@@ -715,3 +717,4 @@ function outer(input) {
 - [Memoization vs Tabulation - GeeksforGeeks ](https://www.geeksforgeeks.org/tabulation-vs-memoization/)
 - [Memoization vs Tabulation in DP - Medium](https://medium.com/@aryan.jain19/memoization-vs-tabulation-in-dp-4ff137da8044)
 - [Memoization vs Tabulation - codingninjas](https://www.codingninjas.com/studio/library/memoization-vs-tabulation)
+- [See the example of Tabulation](./Dynamic%20Programming/fibonacci.js)
