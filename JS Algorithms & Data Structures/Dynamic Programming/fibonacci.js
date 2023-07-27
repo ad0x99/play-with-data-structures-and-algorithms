@@ -31,8 +31,31 @@ const fibWithMemo = (num, memo = []) => {
   return result;
 };
 
+/**
+ * The function `fibWithTabulated` calculates the Fibonacci number at a given position using tabulation.
+ * @param num - The parameter `num` represents the position of the Fibonacci number that you want to calculate.
+ * @returns The function `fibWithTabulated` returns the Fibonacci number at the given index `num`.
+ *
+ * Time complexity: O(n)
+ * Space complexity: 0(1)
+ */
+const fibWithTabulated = (num) => {
+  if (num <= 2) return 1;
+  let fibNums = [0, 1, 1];
+
+  for (let i = 3; i <= num; i++) {
+    fibNums[i] = fibNums[i - 1] + fibNums[i - 2];
+  }
+
+  return fibNums[num];
+};
+
 console.log(fib(5));
 console.log(fibWithMemo(5));
+// console.log(fibWithMemo(10000)); // => led to stack overflow error
+console.log(fibWithTabulated(5));
+console.log(fibWithTabulated(10000)); // => Prevent stack overflow error
 
 performanceTimer(fib(5));
 performanceTimer(fibWithMemo(5));
+performanceTimer(fibWithTabulated(5));
