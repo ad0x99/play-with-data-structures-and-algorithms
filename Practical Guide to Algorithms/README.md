@@ -29,9 +29,9 @@
 | O(n^2)     | Double nested loop                             |
 | O(n^3)     | Triple nested loop                             |
 
-![Big O Notation Graph](https://github.com/m14ghost/algorithms-with-js/blob/master/Practical%20Guide%20to%20Algorithms/img/bigOnotation.PNG)
+![Big O Notation Graph](../images/bigOnotation.PNG)
 
-![Big O Complexity Chart](https://github.com/m14ghost/algorithms-with-js/blob/master/Practical%20Guide%20to%20Algorithms/img/bigOcomplexitychart.PNG)
+![Big O Complexity Chart](../images/bigOcomplexitychart.PNG)
 
 #### Useful Resources for Algorithms
 
