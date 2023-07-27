@@ -196,7 +196,7 @@
 
 - This pattern uses objects or sets to collect values/frequencies of values
 - This can often avoid the need for nested loops or O(n^2) operations with array/strings
-- [See the example](./Problem%20Solving%20Pattern%20Examples//frequency-counter.js)
+- [See the example](./Problem%20Solving%20Pattern%20Examples/Frequency%20Pointer%20Pattern/)
 
 ### Multiple Pointers
 
@@ -400,7 +400,7 @@ function outer(input) {
   - **Leaf**: a node with no children
   - **Edge**: the connection between one node and another
 
-![Tree](./images/bst.png)
+![Tree](../images/bst.png)
 
 ### How Trees are used?
 
@@ -434,7 +434,7 @@ function outer(input) {
   - **Depth-first search (DFS) algorithm**: It starts with the root node and first visits all nodes of one branch as deep as possible before backtracking. It visits all other branches in a similar fashion. There are three subtypes under this that we will cover in this article.
   - **Breadth-first search (BFS) algorithm**: This also starts from the root node and visits all nodes of current depth before moving to the next depth in the tree. We will cover one algorithm of BFS type in the upcoming section.
 
-![Difference between DFS & BFS](./images/dfs-bfs-comparison.png)
+![Difference between DFS & BFS](../images/dfs-bfs-comparison.png)
 
 - [Learn more about Tree Traversal from GeeksforGeeks](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
 - [Read more about 4 Types of Tree Traversal Algorithms from Built in](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
@@ -444,7 +444,7 @@ function outer(input) {
 
 - The `Breadth First Search (BFS) algorithm` is used to search a `graph data structure` for a node that meets a set of criteria. It starts at the root of the graph and visits all nodes at the current depth level before moving on to the nodes at the next depth level.
 
-![Breadth First Search](./images/bfs.png)
+![Breadth First Search](../images/bfs.png)
 
 - [Learn more about Breadth First Search from GeeksforGeeks](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 - [See the example of BFS](./Binary%20Search%20Trees/)
@@ -453,7 +453,7 @@ function outer(input) {
 
 - `Depth First Traversal (or DFS)` for a graph is similar to `Depth First Traversal` of a tree. It's a recursive algorithm for searching all the vertices of a graph or tree data structure. `Traversal` means visiting all the nodes of a graph. Unlike trees, `graphs` may contain cycles (a node may be visited twice). To avoid processing a node more than once, use a boolean visited array. A graph can have more than one DFS traversal.
 
-![Breadth First Search](./images/dfs.png)
+![Breadth First Search](../images/dfs.png)
 
 - [Learn more about Depth First Search from GeeksforGeeks](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
 - [See the example of DFS](./Binary%20Search%20Trees/)
@@ -472,7 +472,7 @@ function outer(input) {
 | Removal               | O(log n)        |
 | Searching             | O(n)            |
 
-![Min Heap & Max Heap - Visualization](./images/max-heap-and-min-heap-vis.png)
+![Min Heap & Max Heap - Visualization](../images/max-heap-and-min-heap-vis.png)
 
 - [Binary Heap visualization - VisualAlgo](https://visualgo.net/en/heap?slide=1)
 - [Learn more about Binary Heap from GeeksforGeeks](https://www.geeksforgeeks.org/binary-heap/)
@@ -492,7 +492,7 @@ function outer(input) {
 - The parent is `greater` than the children, but there are `no guarantees between sibling nodes`
 - A binary heap is as compact as possible. All the children of each node are as full as they can be and `left children are filled out first`
 
-![Max Heap](./images/max-heap.jpeg)
+![Max Heap](../images/max-heap.jpeg)
 
 - [See the example of Max Binary Heap](./Binary%20Heap/)
 
@@ -503,7 +503,7 @@ function outer(input) {
 - The parent is `less` than the children, but there are `no guarantees between sibling nodes`
 - A binary heap is as compact as possible. All the children of each node are as full as they can be and `left children are filled out first`
 
-![Min Heap](./images/min-heap.jpeg)
+![Min Heap](../images/min-heap.jpeg)
 
 - [See the example of Min Binary Heap](./Binary%20Heap/)
 
@@ -527,7 +527,7 @@ function outer(input) {
 | Deletion             | O(1)                            |
 | Accessing            | O(1)                            |
 
-![Hashing](./images/hashing.png)
+![Hashing](../images/hashing.png)
 
 - [Hash table - Wikipedia](https://en.wikipedia.org/wiki/Hash_table)
 - [Hashing Data Structure - Geeksforgeeks](https://www.geeksforgeeks.org/hashing-data-structure/)
@@ -559,7 +559,7 @@ function outer(input) {
       - The first hash function is **h1(k)** which takes the key and gives out a location on the hash table. But if the new location is not occupied or empty then we can easily place our key.
       - But in case the location is occupied (collision) we will use secondary hash-function **h2(k)** in combination with the first hash-function **h1(k)** to find the new location on the hash table.
 
-![Hash Collision](./images/hash-collision.png)
+![Hash Collision](../images/hash-collision.png)
 
 ## Graphs
 
@@ -569,7 +569,7 @@ function outer(input) {
 
 - A Graph is a `non-linear` data structure consisting of `vertices` and `edges`. It is a `collection of nodes` that have data and are `connected to other nodes`. The `vertices` are sometimes also referred to as `nodes` and the `edges` are `lines` or `arcs` that connect `any two nodes` in the graph. More formally a Graph is composed of a set of `vertices( V )` and a set of `edges( E )`.The graph is denoted by `G(E, V)`.
 
-![Graphs](./images/graphs.png)
+![Graphs](../images/graphs.png)
 
 **Big O of Graphs**
 
@@ -612,12 +612,12 @@ function outer(input) {
 - **Directed Graph**: A `directed graph` is a set of `vertices (nodes)` connected `by edges`, with each node having a direction associated with it. A graph in which an `edge (u,v)` doesn't necessarily mean that there is an edge (v, u) as well. The `edges` in such a graph are `represented by arrows` to show the `direction of the edge`.
 - **Undirected Graph**: In an `undirected graph` the `edges` are `bidirectional`, with no direction associated with them. Hence, the graph can be traversed in either direction. The absence of an arrow tells us that the graph is undirected.
 
-![Directed & Undirected Graphs](./images/directed-and-undirected-graphs.png)
+![Directed & Undirected Graphs](../images/directed-and-undirected-graphs.png)
 
 - **Weighted Graph**: A `weighted graph` is defined as a special type of graph in which the edges are assigned some weights which represent cost, distance, and many other relative measuring units.
 - **Unweighted Graph**: An unweighted graph is `a graph in which the edges do not have weights or costs associated with them`. Instead, they simply represent the presence of a connection between two vertices
 
-![Weighted & Unweighted Graphs](./images/weighted-unweighted-graphs.png)
+![Weighted & Unweighted Graphs](../images/weighted-unweighted-graphs.png)
 
 - [Learn more about Weighted Graph - GeeksforGeeks](https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-weighted-graph/)
 - [Learn more about Unweighted Graph - GeeksforGeeks](https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-unweighted-graph/)
@@ -628,13 +628,13 @@ function outer(input) {
 
 - An adjacency matrix is a 2D array of `V x V` vertices. Each row and column represent a vertex. If the value of any element `a[i][j]` is `1`, it represents that there is an `edge` connecting vertex i and vertex j.
 
-![Adjacency Matrix](./images/adjacency-matrix.png)
+![Adjacency Matrix](../images/adjacency-matrix.png)
 
 #### Adjacency List
 
 - An adjacency list represents a graph as an array of linked lists. The index of the array represents a vertex and each element in its linked list represents the other vertices that form an edge with the vertex.
 
-![Adjacency List](./images/adjacency-list.png)
+![Adjacency List](../images/adjacency-list.png)
 
 ### Graph Traversal
 
