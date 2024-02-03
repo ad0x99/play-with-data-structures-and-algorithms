@@ -2,10 +2,10 @@
 
 List of questions group by categories:
 
-Arrays (33 questions)
+## Arrays (33 questions)
 
-- [x] [Two Number Sum (Easy)](./twoNumberSum.js)
-- [ ] Validate Subsequence (Easy)
+- [x] [Two Number Sum (Easy)](./Arrays/twoNumberSum.js)
+- [x] [Validate Subsequence (Easy)](./Arrays/validateSubsequence.js)
 - [ ] Sorted Squared Array (Easy)
 - [ ] Tournament Winner (Easy)
 - [ ] Non-Constructible Change (Easy)
@@ -38,7 +38,7 @@ Arrays (33 questions)
 - [ ] Minimum Area Rectangle (Very Hard)
 - [ ] Line Through Points (Very Hard)
 
-Binary Search Trees (12 questions)
+## Binary Search Trees (12 questions)
 
 - [ ] Find Closest Value In BST (Easy)
 - [ ] BST Construction (Medium)
@@ -53,7 +53,7 @@ Binary Search Trees (12 questions)
 - [ ] Sum BSTs (Hard)
 - [ ] Right Smaller Than (Very Hard)
 
-Binary Trees (17 questions)
+## Binary Trees (17 questions)
 
 - [ ] Branch Sums (Easy)
 - [ ] Node Depths (Easy)
@@ -73,7 +73,7 @@ Binary Trees (17 questions)
 - [ ] All Kinds Of Node Depths (Very Hard)
 - [ ] Compare Leaf Traversal (Very Hard)
 
-Dynamic Programming (21 questions)
+## Dynamic Programming (21 questions)
 
 - [ ] Max Subset Sum No Adjacent (Medium)
 - [ ] Number of Ways To Make Change (Medium)
@@ -97,7 +97,7 @@ Dynamic Programming (21 questions)
 - [ ] Longest String Chain (Very Hard)
 - [ ] Square of Zeroes (Very Hard)
 
-Famous Algorithms (9 questions)
+## Famous Algorithms (9 questions)
 
 - [ ] Kadane's Algorithm (Medium)
 - [ ] Stable internships (Medium)
@@ -109,7 +109,7 @@ Famous Algorithms (9 questions)
 - [ ] Knuth-Morris-Pratt Algorithm (Very Hard)
 - [ ] A\* Algorithm (Very Hard)
 
-Graphs (15 questions)
+## Graphs (15 questions)
 
 - [ ] Depth-first Search (Easy)
 - [ ] Single Cycle Check (Medium)
@@ -127,7 +127,7 @@ Graphs (15 questions)
 - [ ] Two-Edge-Connected Graph (Very Hard)
 - [ ] Airport Connections (Very Hard)
 
-Greedy Algorithms (6 questions)
+## Greedy Algorithms (6 questions)
 
 - [ ] Minimum Waiting Time (Easy)
 - [ ] Class Photos (Easy)
@@ -136,7 +136,7 @@ Greedy Algorithms (6 questions)
 - [ ] Task Assignment (Medium)
 - [ ] Valid Starting City (Medium)
 
-Heaps (5 questions)
+## Heaps (5 questions)
 
 - [ ] Min Heap Construction (Medium)
 - [ ] Continuos Median (Hard)
@@ -144,7 +144,7 @@ Heaps (5 questions)
 - [ ] Laptop Rentals (Hard)
 - [ ] Merge Sorted Arrays (Very Hard)
 
-Linked Lists (15 questions)
+## Linked Lists (15 questions)
 
 - [ ] Remove Duplicates From Linked List (Easy)
 - [ ] Middle Node (Easy)
@@ -162,7 +162,7 @@ Linked Lists (15 questions)
 - [ ] Zip Linked List (Very Hard)
 - [ ] Node Swap (Very Hard)
 
-Recursion (15 questions)
+## Recursion (15 questions)
 
 - [ ] Nth Fibonacci (Easy)
 - [ ] Product Sum (Easy)
@@ -180,7 +180,7 @@ Recursion (15 questions)
 - [ ] Number Of Binary Tree Topologies (Very Hard)
 - [ ] Non-Attacking Queens (Very Hard)
 
-Searching Algorithms (9 questions)
+## Searching Algorithms (9 questions)
 
 - [ ] Binary Search (Easy)
 - [ ] Find Three Largest Numbers (Easy)
@@ -192,7 +192,7 @@ Searching Algorithms (9 questions)
 - [ ] Median Of Two Sorted Arrays (Very Hard)
 - [ ] Optimal Assembly Line (Very Hard)
 
-Sorting Algorithms (9 questions)
+## Sorting Algorithms (9 questions)
 
 - [ ] Bubble Sort (Easy)
 - [ ] Insertion Sort (Easy)
@@ -204,7 +204,7 @@ Sorting Algorithms (9 questions)
 - [ ] Merge Sort (Very Hard)
 - [ ] Count Inversions (Very Hard)
 
-Stacks (11 questions)
+## Stacks (11 questions)
 
 - [ ] Min Max Stack Construction (Medium)
 - [ ] Balanced Brackets (Medium)
@@ -218,7 +218,7 @@ Stacks (11 questions)
 - [ ] Largest Rectangle Under Skyline (Hard)
 - [ ] Largest Park (Very Hard)
 
-Strings (18 questions)
+## Strings (18 questions)
 
 - [ ] Palindrome Check (Easy)
 - [ ] Caesar Cipher Encryptor (Easy)
@@ -239,7 +239,7 @@ Strings (18 questions)
 - [ ] Smallest Substring Containing (Very Hard)
 - [ ] Longest Balanced Substring (Very Hard)
 
-Tries (5 questions)
+## Tries (5 questions)
 
 - [ ] Suffix Trie Construction (Medium)
 - [ ] Multi String Search (Hard)
