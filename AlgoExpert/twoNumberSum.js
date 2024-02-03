@@ -1,4 +1,6 @@
 /**
+ * QUESTION
+ *
  * Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum. If any two numbers in the input array sum up to the target sum, the function should return them in an array, in any order. If no two numbers sum up to the target sum, the function should return an empty array.
  * Note that the target sum has to be obtained by summing two different integers in the array; you can't add a single integer to itself in order to obtain the target sum.
  * You can assume that there will be at most one pair of numbers summing up to the target sum.
@@ -8,6 +10,10 @@
  * targetSum = 10
  * Sample Output:
  * [-1, 11] // The numbers could be in reverse order
+ */
+
+/**
+ * SOLUTION 1
  *
  * Time complexity: `O(n)` - The time complexity of this function is O(n), where n is the length of the input array. This is because the function iterates through the array once in a for loop.
  * Space complexity: `O(n)` - The space complexity of this function is O(n), where n is the length of the input array. This is because the function creates a temporary object to store the numbers from the array, and the size of this object will grow linearly with the size of the input array.
@@ -46,6 +52,8 @@ console.log(
 console.log(twoNumberSumWithHashmap([-7, -5, -3, -1, 0, 1, 3, 5, 7], -5)); // [0, -5]
 
 /**
+ * SOLUTION 2
+ * 
  * The time complexity of this algorithm is O(n log n), where n is the length of the input array. This is because the algorithm first sorts the array, which has a time complexity of O(n log n) in the worst case. Then, it uses two pointers to iterate through the sorted array, which takes O(n) time in the worst case. Therefore, the overall time complexity is dominated by the sorting step.
 
  * The space complexity of this algorithm is O(1) because it only uses a constant amount of extra space to store the left and right pointers. The input array is sorted in place, so no additional space is required.
@@ -88,6 +96,8 @@ console.log(
 console.log(twoNumberSumWithTwoPointers([-7, -5, -3, -1, 0, 1, 3, 5, 7], -5)); // [0, -5]
 
 /**
+ * SOLUTION 3
+ * 
  * The time complexity of this function is O(n^2) because it uses two nested loops. The outer loop iterates through the array once, and for each iteration, the inner loop iterates through the remaining elements of the array. This results in a total of n * (n-1) iterations, which simplifies to O(n^2) in big O notation.
 
  * The space complexity of this function is O(1) because it only uses a constant amount of additional space. The variables first, second, and sum are reused in each iteration of the loops, and the returned array also has a constant length of 2. Therefore, the space used by the function does not depend on the size of the input array.
