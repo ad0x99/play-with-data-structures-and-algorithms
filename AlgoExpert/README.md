@@ -6,7 +6,7 @@ List of questions group by categories:
 
 - [x] [Two Number Sum (Easy)](./Arrays/twoNumberSum.js)
 - [x] [Validate Subsequence (Easy)](./Arrays/validateSubsequence.js)
-- [ ] Sorted Squared Array (Easy)
+- [x] [Sorted Squared Array (Easy)](./Arrays/sortedSquaredArray.js)
 - [ ] Tournament Winner (Easy)
 - [ ] Non-Constructible Change (Easy)
 - [ ] Transpose Matrix (Easy)
