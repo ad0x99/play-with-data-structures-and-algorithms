@@ -8,7 +8,7 @@ List of questions group by categories:
 - [x] [Validate Subsequence (Easy)](./Arrays/validateSubsequence.js)
 - [x] [Sorted Squared Array (Easy)](./Arrays/sortedSquaredArray.js)
 - [x] [Tournament Winner (Easy)](./Arrays/tournamentWinner.js)
-- [ ] Non-Constructible Change (Easy)
+- [x] [Non-Constructible Change (Easy)](./Arrays/nonConstructibleChange.js)
 - [ ] Transpose Matrix (Easy)
 - [ ] Three Number Sum (Medium)
 - [ ] Smallest Difference (Medium)
