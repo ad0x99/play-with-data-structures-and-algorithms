@@ -9,7 +9,7 @@ List of questions group by categories:
 - [x] [Sorted Squared Array (Easy)](./Arrays/sortedSquaredArray.js)
 - [x] [Tournament Winner (Easy)](./Arrays/tournamentWinner.js)
 - [x] [Non-Constructible Change (Easy)](./Arrays/nonConstructibleChange.js)
-- [ ] Transpose Matrix (Easy)
+- [x] [Transpose Matrix (Easy)](./Arrays/transposeMatrix.js)
 - [ ] Three Number Sum (Medium)
 - [ ] Smallest Difference (Medium)
 - [ ] Move Element To End (Medium)
