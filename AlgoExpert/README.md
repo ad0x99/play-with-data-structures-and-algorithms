@@ -10,7 +10,7 @@ List of questions group by categories:
 - [x] [Tournament Winner (Easy)](./Arrays/tournamentWinner.js)
 - [x] [Non-Constructible Change (Easy)](./Arrays/nonConstructibleChange.js)
 - [x] [Transpose Matrix (Easy)](./Arrays/transposeMatrix.js)
-- [ ] Three Number Sum (Medium)
+- [x] [Three Number Sum (Medium)](./Arrays/threeNumberSum.js)
 - [ ] Smallest Difference (Medium)
 - [ ] Move Element To End (Medium)
 - [ ] Monotinic Array (Medium)
