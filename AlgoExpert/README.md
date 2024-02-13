@@ -12,7 +12,7 @@ List of questions group by categories:
 - [x] [Transpose Matrix (Easy)](./Arrays/transposeMatrix.js)
 - [x] [Three Number Sum (Medium)](./Arrays/threeNumberSum.js)
 - [x] [Smallest Difference (Medium)](./Arrays/smallestDifference.js)
-- [ ] Move Element To End (Medium)
+- [x] [Move Element To End (Medium)](./Arrays/moveElementToEnd.js)
 - [ ] Monotinic Array (Medium)
 - [ ] Spiral Traverse (Medium)
 - [ ] Longest Peak (Medium)
