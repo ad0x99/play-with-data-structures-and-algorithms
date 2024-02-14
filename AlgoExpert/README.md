@@ -13,7 +13,7 @@ List of questions group by categories:
 - [x] [Three Number Sum (Medium)](./Arrays/threeNumberSum.js)
 - [x] [Smallest Difference (Medium)](./Arrays/smallestDifference.js)
 - [x] [Move Element To End (Medium)](./Arrays/moveElementToEnd.js)
-- [ ] Monotinic Array (Medium)
+- [x] [Monotonic Array (Medium)](./Arrays/monotonicArray.js)
 - [ ] Spiral Traverse (Medium)
 - [ ] Longest Peak (Medium)
 - [ ] Array of Products (Medium)
