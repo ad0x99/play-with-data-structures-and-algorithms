@@ -14,7 +14,7 @@ List of questions group by categories:
 - [x] [Smallest Difference (Medium)](./Arrays/smallestDifference.js)
 - [x] [Move Element To End (Medium)](./Arrays/moveElementToEnd.js)
 - [x] [Monotonic Array (Medium)](./Arrays/monotonicArray.js)
-- [ ] Spiral Traverse (Medium)
+- [x] [Spiral Traverse (Medium)](./Arrays/spiralTraverse.js)
 - [ ] Longest Peak (Medium)
 - [ ] Array of Products (Medium)
 - [ ] First Duplicate Value (Medium)
