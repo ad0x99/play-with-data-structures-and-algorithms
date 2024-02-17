@@ -15,7 +15,7 @@ List of questions group by categories:
 - [x] [Move Element To End (Medium)](./Arrays/moveElementToEnd.js)
 - [x] [Monotonic Array (Medium)](./Arrays/monotonicArray.js)
 - [x] [Spiral Traverse (Medium)](./Arrays/spiralTraverse.js)
-- [ ] Longest Peak (Medium)
+- [x] [Longest Peak (Medium)](./Arrays/longestPeak.js)
 - [ ] Array of Products (Medium)
 - [ ] First Duplicate Value (Medium)
 - [ ] Merge Overlapping Intervals
