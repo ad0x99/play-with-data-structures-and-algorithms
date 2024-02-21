@@ -1,104 +1,76 @@
 // @ts-nocheck
 import { DoublyLinkedList } from './doubly-linked-list.js';
 
-const list = new DoublyLinkedList();
+// Initialize a new food list using Doubly Linked List
+const foodList = new DoublyLinkedList();
+console.log('Initial list: ', foodList);
 
-console.log('======Push======');
-list.push(15);
-list.push(99);
-list.push(45);
-list.push(20);
+// Push new items to the list
+foodList.push('burger');
+foodList.push('pizza');
+foodList.push('sandwich');
+foodList.push('steak');
+foodList.push('hotpot');
+console.log('New items added: ', foodList);
+console.log('New items added as array: ', foodList.print());
 
-console.log(list);
-list.print();
+// Remove the last item from the list
+const lastItem = foodList.pop();
+console.log('Last removed item: ', lastItem.value);
+console.log(`New list after removing ${lastItem.value} item: `, foodList);
+console.log(
+  `New list after removing ${lastItem.value} item as array: `,
+  foodList.print()
+);
 
-console.log(`head: ${list.head.value}`);
-console.log(`tail: ${list.tail.value}`);
-console.log(`head.next: ${list.head.next.value}`);
-console.log(`tail.previous: ${list.tail.previous.value}`);
-console.log('======Push======');
+// Remove the first item from the list
+const firstItem = foodList.shift();
+console.log('First removed item: ', firstItem.value);
+console.log(`New list after removing ${firstItem.value} item: `, foodList);
+console.log(
+  `New list after removing ${firstItem.value} item as array: `,
+  foodList.print()
+);
 
-console.log('======Pop======');
-list.pop();
+// Add a new item to the beginning of the list
+const newBeginningItem = foodList.unshift('burger');
+console.log('New added beginning item: ', newBeginningItem.head.value);
+console.log(
+  `New list after adding ${newBeginningItem.head.value} item: `,
+  foodList
+);
+console.log(
+  `New list after adding ${newBeginningItem.head.value} item as array: `,
+  foodList.print()
+);
 
-console.log(list);
-list.print();
+// Get specific item with index
+const getItem = foodList.get(2);
+console.log('Get item of index 2: ', getItem.value);
 
-console.log(`head: ${list.head.value}`);
-console.log(`tail: ${list.tail.value}`);
-console.log(`head.next: ${list.head.next.value}`);
-console.log(`tail.previous: ${list.tail.previous.value}`);
-console.log('======Pop======');
+// Set a new item value at specified index
+const updatedItem = foodList.set(2, 'franchisee');
+console.log('New updated item: ', updatedItem);
+console.log(`New list after updating to franchisee item: `, foodList);
+console.log(
+  `New list after updating to franchisee item as array: `,
+  foodList.print()
+);
 
-console.log('======Shift======');
-list.shift();
+// Insert a new item at specified index
+const newInsertedItem = foodList.insert(2, 'chicken');
+console.log('New inserted item at index of 2: ', updatedItem);
+console.log(`New list after inserting chicken item: `, foodList);
+console.log(
+  `New list after inserting chicken item as array: `,
+  foodList.print()
+);
 
-console.log(list);
-list.print();
-
-console.log(`head: ${list.head.value}`);
-console.log(`tail: ${list.tail.value}`);
-console.log(`head.next: ${list.head.next.value}`);
-console.log(`tail.previous: ${list.tail.previous.value}`);
-console.log('======Shift======');
-
-console.log('======Unshift======');
-list.unshift(24);
-
-console.log(list);
-list.print();
-
-console.log(`head: ${list.head.value}`);
-console.log(`tail: ${list.tail.value}`);
-console.log(`head.next: ${list.head.next.value}`);
-console.log(`tail.previous: ${list.tail.previous.value}`);
-console.log('======Unshift======');
-
-console.log('======Get======');
-const getFirstItem = list.get(0);
-const getLastItem = list.get(2);
-
-console.log(`getFirstItem: ${getFirstItem.value}`);
-console.log(`getLastItem: ${getLastItem.value}`);
-list.print();
-
-console.log(`head: ${list.head.value}`);
-console.log(`tail: ${list.tail.value}`);
-console.log(`head.next: ${list.head.next.value}`);
-console.log(`tail.previous: ${list.tail.previous.value}`);
-console.log('======Get======');
-
-console.log('======Set======');
-console.log(list.set(0, 10));
-console.log(list.set(4, 10));
-list.print();
-
-console.log(`head: ${list.head.value}`);
-console.log(`tail: ${list.tail.value}`);
-console.log(`head.next: ${list.head.next.value}`);
-console.log(`tail.previous: ${list.tail.previous.value}`);
-console.log('======Set======');
-
-console.log('======Insert======');
-console.log(list.insert(1, 87));
-console.log(list.insert(4, 32));
-list.print();
-console.log(list);
-
-console.log(`head: ${list.head.value}`);
-console.log(`tail: ${list.tail.value}`);
-console.log(`head.next: ${list.head.next.value}`);
-console.log(`tail.previous: ${list.tail.previous.value}`);
-console.log('======Insert======');
-
-console.log('======Remove======');
-console.log(list.remove(5));
-console.log(list.remove(1).value);
-list.print();
-console.log(list);
-
-console.log(`head: ${list.head.value}`);
-console.log(`tail: ${list.tail.value}`);
-console.log(`head.next: ${list.head.next.value}`);
-console.log(`tail.previous: ${list.tail.previous.value}`);
-console.log('======Remove======');
+// Remove a item at specified index
+const removedItem = foodList.remove(2);
+console.log('Removed item: ', removedItem.value);
+console.log(`New list after removing ${removedItem.value} item: `, foodList);
+console.log(
+  `New list after removing ${removedItem.value} item as array: `,
+  foodList.print()
+);
