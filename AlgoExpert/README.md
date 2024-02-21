@@ -18,7 +18,7 @@ List of questions group by categories:
 - [x] [Longest Peak (Medium)](./Arrays/longestPeak.js)
 - [x] [Array of Products (Medium)](./Arrays/arrayOfProducts.js)
 - [x] [First Duplicate Value (Medium)](./Arrays/firstDuplicateValue.js)
-- [ ] Merge Overlapping Intervals
+- [x] [Merge Overlapping Intervals](./Arrays/mergeOverlapping.js)
 - [ ] Best Seat (Medium)
 - [ ] Zero Sum Subarray (Medium)
 - [ ] Missing Numbers (Medium)
