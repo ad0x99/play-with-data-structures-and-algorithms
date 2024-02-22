@@ -19,7 +19,7 @@ List of questions group by categories:
 - [x] [Array of Products (Medium)](./Arrays/arrayOfProducts.js)
 - [x] [First Duplicate Value (Medium)](./Arrays/firstDuplicateValue.js)
 - [x] [Merge Overlapping Intervals](./Arrays/mergeOverlapping.js)
-- [ ] Best Seat (Medium)
+- [x] [Best Seat (Medium)](./Arrays/bestSeat.js)
 - [ ] Zero Sum Subarray (Medium)
 - [ ] Missing Numbers (Medium)
 - [ ] Majority Element (Medium)
