@@ -35,6 +35,9 @@ console.log(naiveBubbleSort([37, 45, 28, 8, 10]));
  * The `bubbleSort` function implements the bubble sort algorithm to sort an array in ascending order.
  * @param array - The input array that needs to be sorted using the bubble sort algorithm.
  * @returns The sorted array is being returned.
+ *
+ * Time complexity: O(n^2)
+ * Space complexity: O(1)
  */
 const bubbleSort = (array) => {
   /**
