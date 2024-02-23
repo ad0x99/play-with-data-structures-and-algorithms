@@ -33,6 +33,7 @@ export class PriorityQueue {
     let newNode = new PriorityNode(value, priority);
     this.values.push(newNode);
     this.#bubbleUp();
+    return this;
   }
 
   /**
