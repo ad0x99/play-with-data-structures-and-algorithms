@@ -1,0 +1,16 @@
+{
+  "name": "play-with-ds-and-algorithms",
+  "version": "1.0.0",
+  "description": "Data structures and algorithms playground",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "author": "ad0x99",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0",
+    "lodash": "^4.17.21"
+  }
+}
