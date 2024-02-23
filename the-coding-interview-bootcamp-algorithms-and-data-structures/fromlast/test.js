@@ -1,7 +1,5 @@
-const fromLast = require('./index');
-const L = require('./linkedlist');
-const List = L.LinkedList;
-const Node = L.Node;
+import fromLast from './fromLast.js';
+import { Node, LinkedList as List } from './linkedlist.js';
 
 test('fromLast is a function', () => {
   expect(typeof fromLast).toEqual('function');
