@@ -182,7 +182,7 @@ List of questions group by categories:
 
 ## Searching Algorithms (9 questions)
 
-- [ ] Binary Search (Easy)
+- [x] [Binary Search (Easy)](./searching/binarySearch.js)
 - [ ] Find Three Largest Numbers (Easy)
 - [ ] Search In Sorted Matrix (Medium)
 - [ ] Shifted Binary Search (Hard)
