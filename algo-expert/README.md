@@ -21,7 +21,7 @@ List of questions group by categories:
 - [x] [Merge Overlapping Intervals](./arrays/mergeOverlapping.js)
 - [x] [Best Seat (Medium)](./arrays/bestSeat.js)
 - [x] [Zero Sum Subarray (Medium)](./arrays/zeroSumSubarray.js)
-- [ ] Missing Numbers (Medium)
+- [x] [Missing Numbers (Medium)](./arrays/missingNumbers.js)
 - [ ] Majority Element (Medium)
 - [ ] Sweet And Savory (Medium)
 - [ ] Four Number Sum (Hard)
