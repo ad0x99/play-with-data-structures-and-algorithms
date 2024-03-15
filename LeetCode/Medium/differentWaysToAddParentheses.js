@@ -8,7 +8,7 @@ const diffWaysToCompute = (expression) => {
   for (let i = 0; i < expression.length; i++) {
     const current = expression[i];
 
-    if (isNaN(expression[i])) {
+    if (Number.isNaN(expression[i])) {
       let leftPart = diffWaysToCompute(expression.slice(0, i));
       let rightPart = diffWaysToCompute(expression.slice(i + 1));
 
