@@ -27,12 +27,12 @@
 
 | Name                            | Solution                                              | Difficulty |
 | ------------------------------- | ----------------------------------------------------- | ---------- |
-| 3 Sum                           | [JS Solution](./medium/3Sum.js)                       | Easy       |
-| Add Two Numbers                 | [JS Solution](./medium/addTwoNumbers.js)              | Easy       |
-| Design Linked List              | [JS Solution](./medium/designLinkedList.js)           | Easy       |
-| Generate Parentheses            | [JS Solution](./medium/generateParentheses.js)        | Easy       |
-| Kth Largest Element In An Array | [JS Solution](./medium/kthLargestElementInAnArray.js) | Easy       |
-| Minimum size subarray sum       | [JS Solution](./medium/minimumSizeSubarraySum.js)     | Easy       |
-| Product of array except self    | [JS Solution](./medium/productOfArrayExceptSelf.js)   | Easy       |
-| Score of parentheses            | [JS Solution](./medium/scoreOfParentheses.js)         | Easy       |
-| Two Sum 2 Input Array Is Sorted | [JS Solution](./medium/twoSum2InputArrayIsSorted.js)  | Easy       |
+| 3 Sum                           | [JS Solution](./medium/3Sum.js)                       | Medium     |
+| Add Two Numbers                 | [JS Solution](./medium/addTwoNumbers.js)              | Medium     |
+| Design Linked List              | [JS Solution](./medium/designLinkedList.js)           | Medium     |
+| Generate Parentheses            | [JS Solution](./medium/generateParentheses.js)        | Medium     |
+| Kth Largest Element In An Array | [JS Solution](./medium/kthLargestElementInAnArray.js) | Medium     |
+| Minimum size subarray sum       | [JS Solution](./medium/minimumSizeSubarraySum.js)     | Medium     |
+| Product of array except self    | [JS Solution](./medium/productOfArrayExceptSelf.js)   | Medium     |
+| Score of parentheses            | [JS Solution](./medium/scoreOfParentheses.js)         | Medium     |
+| Two Sum 2 Input Array Is Sorted | [JS Solution](./medium/twoSum2InputArrayIsSorted.js)  | Medium     |
