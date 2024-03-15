@@ -28,6 +28,7 @@
 | Name                            | Solution                                              | Difficulty |
 | ------------------------------- | ----------------------------------------------------- | ---------- |
 | 3 Sum                           | [JS Solution](./medium/3Sum.js)                       | Medium     |
+| 3 Sum Smaller                   | [JS Solution](./medium/3SumSmaller.js)                | Medium     |
 | Add Two Numbers                 | [JS Solution](./medium/addTwoNumbers.js)              | Medium     |
 | Design Linked List              | [JS Solution](./medium/designLinkedList.js)           | Medium     |
 | Generate Parentheses            | [JS Solution](./medium/generateParentheses.js)        | Medium     |
