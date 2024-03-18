@@ -7,7 +7,7 @@
  * 2. We iterate through the array with the right represents the current index (right pointer) and nums[right] is the current element.
  * 3. We increment the current sum by adding the current element to the window sum.
  * 4. As long as the current sum is greater than or equal to the target. This ensures we only consider subarrays with a sum exceeding the target.
- * 5. We compare the potential subarray length (r - l + 1 - because the array is start from zero, we have to minus 1) with the current length, then get the smaller length and update the current sum.
+ * 5. We compare the potential subarray length (r - l + 1 - because the array is start from zero, we have to plus 1) with the current length, then get the smaller length and update the current sum.
  * 6. After that, we remove the current left from the window sum and move the window one element to the right. This process shrinks the window from the left side until the sum no longer meets the condition.
  *
  * The time complexity of this function is O(n), where n is the number of elements in the input array nums. This is because we iterate through the array once with two pointers (left and right), and the while loop inside the for loop slides the window at most n times.
