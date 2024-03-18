@@ -37,3 +37,4 @@
 | Product of array except self    | [JS Solution](./medium/productOfArrayExceptSelf.js)   | Medium     |
 | Score of parentheses            | [JS Solution](./medium/scoreOfParentheses.js)         | Medium     |
 | Two Sum 2 Input Array Is Sorted | [JS Solution](./medium/twoSum2InputArrayIsSorted.js)  | Medium     |
+| Find all anagrams in a string   | [JS Solution](./medium/findAllAnagramsInAString.js)   | Medium     |
