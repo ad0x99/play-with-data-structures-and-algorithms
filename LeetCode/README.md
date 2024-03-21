@@ -34,9 +34,13 @@
 | Remove Duplicates From Sorted List  | [JS Solution](./easy/removeDuplicatesFromSortedList.js)  | Easy       | ❌     |
 | Reverse Bits                        | [JS Solution](./easy/reverseBits.js)                     | Easy       | ❌     |
 | Reverse Linked List                 | [JS Solution](./easy/reverseLinkedList.js)               | Easy       | ❌     |
-| Single Number                       | [JS Solution](./easy/singleNumber.js)                    | Easy       | ❌     |
+| Single Number                       | [JS Solution](./easy/singleNumber.js)                    | Easy       | ✅     |
 | Number Compliment                   | [JS Solution](./easy/numberCompliment.js)                | Easy       | ❌     |
 | Power Of Two                        | [JS Solution](./easy/powerOfTwo.js)                      | Easy       | ❌     |
+| Number of Recent Calls              | [JS Solution](./easy/numberOfRecentCalls.js)             | Easy       | ❌     |
+| Next Greater Element I              | [JS Solution](./easy/nextGreaterElementI.js)             | Easy       | ❌     |
+| Implement Queue Using Stacks        | [JS Solution](./easy/implementQueueUsingStacks.js)       | Easy       | ❌     |
+| Implement Stack Using Queues        | [JS Solution](./easy/implementStackUsingQueues.js)       | Easy       | ❌     |
 
 ## Medium Challenges
 
@@ -67,6 +71,8 @@
 | Integer Replacement                                  | [JS Solution](./medium/integerReplacement.js)                               | Medium     | ❌     |
 | Bitwise AND of Numbers Range                         | [JS Solution](./medium/bitwiseAndOfNumbersRange.js)                         | Medium     | ❌     |
 | Single Number II                                     | [JS Solution](./medium/singleNumberII.js)                                   | Medium     | ❌     |
+| Design Circular Queue                                | [JS Solution](./medium/designCircularQueue.js)                              | Medium     | ❌     |
+| Reveal Cards In Increasing Order                     | [JS Solution](./medium/revealCardInDecreasingOrder.js)                      | Medium     | ❌     |
 
 ## Hard Challenges
 
