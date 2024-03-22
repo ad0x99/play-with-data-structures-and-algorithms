@@ -33,7 +33,7 @@
 | Remove Duplicates From Sorted Array | [JS Solution](./easy/removeDuplicatesFromSortedArray.js) | Easy       | ❌     |
 | Remove Duplicates From Sorted List  | [JS Solution](./easy/removeDuplicatesFromSortedList.js)  | Easy       | ❌     |
 | Reverse Bits                        | [JS Solution](./easy/reverseBits.js)                     | Easy       | ❌     |
-| Reverse Linked List                 | [JS Solution](./easy/reverseLinkedList.js)               | Easy       | ❌     |
+| Reverse Linked List                 | [JS Solution](./easy/reverseLinkedList.js)               | Easy       | ✅     |
 | Single Number                       | [JS Solution](./easy/singleNumber.js)                    | Easy       | ✅     |
 | Number Compliment                   | [JS Solution](./easy/numberCompliment.js)                | Easy       | ❌     |
 | Power Of Two                        | [JS Solution](./easy/powerOfTwo.js)                      | Easy       | ❌     |
