@@ -72,7 +72,7 @@
 | Bitwise AND of Numbers Range                         | [JS Solution](./medium/bitwiseAndOfNumbersRange.js)                         | Medium     | ❌     |
 | Single Number II                                     | [JS Solution](./medium/singleNumberII.js)                                   | Medium     | ❌     |
 | Design Circular Queue                                | [JS Solution](./medium/designCircularQueue.js)                              | Medium     | ❌     |
-| Reveal Cards In Increasing Order                     | [JS Solution](./medium/revealCardInDecreasingOrder.js)                      | Medium     | ❌     |
+| Reveal Cards In Increasing Order                     | [JS Solution](./medium/revealCardInDecreasingOrder.js)                      | Medium     | ✅     |
 | Min Stack                                            | [JS Solution](./medium/minStack.js)                                         | Medium     | ✅     |
 
 ## Hard Challenges
