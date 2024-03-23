@@ -64,7 +64,7 @@
 | LRU Cache                                            | [JS Solution](./medium/LRUCache.js)                                         | Medium     | ❌     |
 | Max Consecutive Ones III                             | [JS Solution](./medium/maxConsecutiveOnesIII.js)                            | Medium     | ❌     |
 | Subarray Product Less Than K                         | [JS Solution](./medium/subarrayProductLessThanK.js)                         | Medium     | ❌     |
-| Sum of Square Numbers                                | [JS Solution](./medium/sumOfSquareNumbers.js)                               | Medium     | ❌     |
+| Sum of Square Numbers                                | [JS Solution](./medium/sumOfSquareNumbers.js)                               | Medium     | ✅     |
 | Valid Triangle Number                                | [JS Solution](./medium/validTriangleNumber.js)                              | Medium     | ✅     |
 | Subsets                                              | [JS Solution](./medium/subsets.js)                                          | Medium     | ❌     |
 | Subsets II                                           | [JS Solution](./medium/subsetsII.js)                                        | Medium     | ❌     |
