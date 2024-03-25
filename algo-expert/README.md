@@ -22,7 +22,7 @@ List of questions group by categories:
 - [x] [Best Seat (Medium)](./arrays/bestSeat.js)
 - [x] [Zero Sum Subarray (Medium)](./arrays/zeroSumSubarray.js)
 - [x] [Missing Numbers (Medium)](./arrays/missingNumbers.js)
-- [ ] Majority Element (Medium)
+- [x] Majority Element (Medium)
 - [ ] Sweet And Savory (Medium)
 - [ ] Four Number Sum (Hard)
 - [ ] Subarray Sort (Hard)
@@ -146,8 +146,8 @@ List of questions group by categories:
 
 ## Linked Lists (15 questions)
 
-- [ ] Remove Duplicates From Linked List (Easy)
-- [ ] Middle Node (Easy)
+- [x] Remove Duplicates From Linked List (Easy)
+- [x] Middle Node (Easy)
 - [ ] Linked List Construction (Medium)
 - [ ] Remove Kth Node From End (Medium)
 - [ ] Sum of Linked Lists (Medium)
