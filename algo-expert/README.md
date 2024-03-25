@@ -158,7 +158,7 @@ List of questions group by categories:
 - [ ] Shift Linked List (Hard)
 - [ ] LRU Cache (Very Hard)
 - [ ] Rearrange Linked List (Very Hard)
-- [ ] Linked List Palindrome (Very Hard)
+- [x] Linked List Palindrome (Very Hard)
 - [ ] Zip Linked List (Very Hard)
 - [ ] Node Swap (Very Hard)
 
