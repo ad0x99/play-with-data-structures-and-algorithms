@@ -29,7 +29,7 @@
 | Merge Two Sorted Lists              | [JS Solution](./easy/mergeTwoSortedLists.js)             | Easy       | ✅     |
 | Middle of The Linked List           | [JS Solution](./easy/middleOfTheLinkedList.js)           | Easy       | ✅     |
 | Number of One Bits                  | [JS Solution](./easy/numberOfOneBits.js)                 | Easy       | ❌     |
-| Palindrome Linked List              | [JS Solution](./easy/palindromeLinkedList.js)            | Easy       | ❌     |
+| Palindrome Linked List              | [JS Solution](./easy/palindromeLinkedList.js)            | Easy       | ✅     |
 | Remove Duplicates From Sorted Array | [JS Solution](./easy/removeDuplicatesFromSortedArray.js) | Easy       | ❌     |
 | Remove Duplicates From Sorted List  | [JS Solution](./easy/removeDuplicatesFromSortedList.js)  | Easy       | ✅     |
 | Reverse Bits                        | [JS Solution](./easy/reverseBits.js)                     | Easy       | ❌     |
