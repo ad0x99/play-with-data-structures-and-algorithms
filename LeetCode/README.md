@@ -27,7 +27,7 @@
 | Valid Parentheses                   | [JS Solution](./easy/validParentheses.js)                | Easy       | ✅     |
 | Linked List Cycle                   | [JS Solution](./easy/linkedListCycle.js)                 | Easy       | ❌     |
 | Merge Two Sorted Lists              | [JS Solution](./easy/mergeTwoSortedLists.js)             | Easy       | ✅     |
-| Middle of The Linked List           | [JS Solution](./easy/middleOfTheLinkedList.js)           | Easy       | ❌     |
+| Middle of The Linked List           | [JS Solution](./easy/middleOfTheLinkedList.js)           | Easy       | ✅     |
 | Number of One Bits                  | [JS Solution](./easy/numberOfOneBits.js)                 | Easy       | ❌     |
 | Palindrome Linked List              | [JS Solution](./easy/palindromeLinkedList.js)            | Easy       | ❌     |
 | Remove Duplicates From Sorted Array | [JS Solution](./easy/removeDuplicatesFromSortedArray.js) | Easy       | ❌     |
