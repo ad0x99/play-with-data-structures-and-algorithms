@@ -25,7 +25,7 @@
 | Sum of Unique Elements              | [JS Solution](./easy/sumOfUniqueElements.js)             | Easy       | ✅     |
 | Two Sum                             | [JS Solution](./easy/twoSum.js)                          | Easy       | ✅     |
 | Valid Parentheses                   | [JS Solution](./easy/validParentheses.js)                | Easy       | ✅     |
-| Linked List Cycle                   | [JS Solution](./easy/linkedListCycle.js)                 | Easy       | ❌     |
+| Linked List Cycle                   | [JS Solution](./easy/linkedListCycle.js)                 | Easy       | ✅     |
 | Merge Two Sorted Lists              | [JS Solution](./easy/mergeTwoSortedLists.js)             | Easy       | ✅     |
 | Middle of The Linked List           | [JS Solution](./easy/middleOfTheLinkedList.js)           | Easy       | ✅     |
 | Number of One Bits                  | [JS Solution](./easy/numberOfOneBits.js)                 | Easy       | ❌     |
