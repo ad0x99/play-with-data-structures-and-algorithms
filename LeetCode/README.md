@@ -58,7 +58,7 @@
 | Two Sum 2 Input Array Is Sorted                      | [JS Solution](./medium/twoSum2InputArrayIsSorted.js)                        | Medium     | ✅     |
 | Find all anagrams in a string                        | [JS Solution](./medium/findAllAnagramsInAString.js)                         | Medium     | ✅     |
 | Design Browser History                               | [JS Solution](./medium/designBrowserHistory.js)                             | Medium     | ✅     |
-| Linked List Cycle Two                                | [JS Solution](./medium/linkedListCycleTwo.js)                               | Medium     | ❌     |
+| Linked List Cycle Two                                | [JS Solution](./medium/linkedListCycleTwo.js)                               | Medium     | ✅     |
 | Longest Substring With At Most K Distinct Characters | [JS Solution](./medium/longestSubstringWithAtMostKDistinctCharacters.js.js) | Medium     | ❌     |
 | Longest Substring Without Repeating Characters       | [JS Solution](./medium/longestSubstringWithoutRepeatingCharacters.js)       | Medium     | ❌     |
 | LRU Cache                                            | [JS Solution](./medium/LRUCache.js)                                         | Medium     | ❌     |
