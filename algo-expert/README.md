@@ -148,7 +148,7 @@ List of questions group by categories:
 
 - [x] Remove Duplicates From Linked List (Easy)
 - [x] Middle Node (Easy)
-- [ ] Linked List Construction (Medium)
+- [x] Linked List Construction (Medium)
 - [ ] Remove Kth Node From End (Medium)
 - [ ] Sum of Linked Lists (Medium)
 - [ ] Merging Linked Lists (Medium)
