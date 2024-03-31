@@ -1,248 +1,283 @@
 # 200 Coding Interview Questions
 
+- Supported language: JavaScript
+- Status:
+  - ✅: Done
+  - ❌: Working in progress
+
 List of questions group by categories:
 
 ## Arrays (33 questions)
 
-- [x] [Two Number Sum (Easy)](./arrays/twoNumberSum.js)
-- [x] [Validate Subsequence (Easy)](./arrays/validateSubsequence.js)
-- [x] [Sorted Squared Array (Easy)](./arrays/sortedSquaredArray.js)
-- [x] [Tournament Winner (Easy)](./arrays/tournamentWinner.js)
-- [x] [Non-Constructible Change (Easy)](./arrays/nonConstructibleChange.js)
-- [x] [Transpose Matrix (Easy)](./arrays/transposeMatrix.js)
-- [x] [Three Number Sum (Medium)](./arrays/threeNumberSum.js)
-- [x] [Smallest Difference (Medium)](./arrays/smallestDifference.js)
-- [x] [Move Element To End (Medium)](./arrays/moveElementToEnd.js)
-- [x] [Monotonic Array (Medium)](./arrays/monotonicArray.js)
-- [x] [Spiral Traverse (Medium)](./arrays/spiralTraverse.js)
-- [x] [Longest Peak (Medium)](./arrays/longestPeak.js)
-- [x] [Array of Products (Medium)](./arrays/arrayOfProducts.js)
-- [x] [First Duplicate Value (Medium)](./arrays/firstDuplicateValue.js)
-- [x] [Merge Overlapping Intervals](./arrays/mergeOverlapping.js)
-- [x] [Best Seat (Medium)](./arrays/bestSeat.js)
-- [x] [Zero Sum Subarray (Medium)](./arrays/zeroSumSubarray.js)
-- [x] [Missing Numbers (Medium)](./arrays/missingNumbers.js)
-- [x] Majority Element (Medium)
-- [ ] Sweet And Savory (Medium)
-- [ ] Four Number Sum (Hard)
-- [ ] Subarray Sort (Hard)
-- [ ] Largest Range (Hard)
-- [ ] Min Rewards (Hard)
-- [ ] Zigzag Traverse (Hard)
-- [ ] Longest Subarray With Sum (Hard)
-- [ ] Knight Connection (Hard)
-- [ ] Count Squares (Hard)
-- [ ] Apartment Hunting (Very Hard)
-- [ ] Calendar Matching (Very Hard)
-- [ ] Waterfall Streams (Very Hard)
-- [ ] Minimum Area Rectangle (Very Hard)
-- [ ] Line Through Points (Very Hard)
+| Name                        | Solution                                          | Difficulty | Status |
+| --------------------------- | ------------------------------------------------- | ---------- | ------ |
+| Two Number Sum              | [JS Solution](./arrays/twoNumberSum.js)           | Easy       | ✅     |
+| Validate Subsequence        | [JS Solution](./arrays/validateSubsequence.js)    | Easy       | ✅     |
+| Sorted Squared Array        | [JS Solution](./arrays/sortedSquaredArray.js)     | Easy       | ✅     |
+| Tournament Winner           | [JS Solution](./arrays/tournamentWinner.js)       | Easy       | ✅     |
+| Non-Constructible Change    | [JS Solution](./arrays/nonConstructibleChange.js) | Easy       | ✅     |
+| Transpose Matrix            | [JS Solution](./arrays/transposeMatrix.js)        | Easy       | ✅     |
+| Three Number Sum            | [JS Solution](./arrays/threeNumberSum.js)         | Medium     | ✅     |
+| Smallest Difference         | [JS Solution](./arrays/smallestDifference.js)     | Medium     | ✅     |
+| Move Element To End         | [JS Solution](./arrays/moveElementToEnd.js)       | Medium     | ✅     |
+| Monotonic Array             | [JS Solution](./arrays/monotonicArray.js)         | Medium     | ✅     |
+| Spiral Traverse             | [JS Solution](./arrays/spiralTraverse.js)         | Medium     | ✅     |
+| Longest Peak                | [JS Solution](./arrays/longestPeak.js)            | Medium     | ✅     |
+| Array of Products           | [JS Solution](./arrays/arrayOfProducts.js)        | Medium     | ✅     |
+| First Duplicate Value       | [JS Solution](./arrays/firstDuplicateValue.js)    | Medium     | ✅     |
+| Merge Overlapping Intervals | [JS Solution](./arrays/mergeOverlapping.js)       | Medium     | ✅     |
+| Best Seat                   | [JS Solution](./arrays/bestSeat.js)               | Medium     | ✅     |
+| Zero Sum Subarray           | [JS Solution](./arrays/zeroSumSubarray.js)        | Medium     | ✅     |
+| Missing Numbers             | [JS Solution](./arrays/missingNumbers.js)         | Medium     | ✅     |
+| Majority Element            | [JS Solution](./arrays/majorityElement.js)        | Medium     | ✅     |
+| Sweet And Savory            | [JS Solution]()                                   | Medium     | ❌     |
+| Four Number Sum             | [JS Solution]()                                   | Hard       | ❌     |
+| Subarray Sort               | [JS Solution]()                                   | Hard       | ❌     |
+| Largest Range               | [JS Solution]()                                   | Hard       | ❌     |
+| Min Rewards                 | [JS Solution]()                                   | Hard       | ❌     |
+| Zigzag Traverse             | [JS Solution]()                                   | Hard       | ❌     |
+| Longest Subarray With Sum   | [JS Solution]()                                   | Hard       | ❌     |
+| Knight Connection           | [JS Solution]()                                   | Hard       | ❌     |
+| Count Squares               | [JS Solution]()                                   | Hard       | ❌     |
+| Apartment Hunting           | [JS Solution]()                                   | Very Hard  | ❌     |
+| Calendar Matching           | [JS Solution]()                                   | Very Hard  | ❌     |
+| Waterfall Streams           | [JS Solution]()                                   | Very Hard  | ❌     |
+| Minimum Area Rectangle      | [JS Solution]()                                   | Very Hard  | ❌     |
+| Line Through Points         | [JS Solution]()                                   | Very Hard  | ❌     |
 
 ## Binary Search Trees (12 questions)
 
-- [ ] Find Closest Value In BST (Easy)
-- [ ] BST Construction (Medium)
-- [ ] Validate BST (Medium)
-- [ ] BST Traversal (Medium)
-- [ ] Min Height BST (Medium)
-- [ ] Find Kth Largest Value In BST (Medium)
-- [ ] Reconstruct BST (Medium)
-- [ ] Same BSTs (Hard)
-- [ ] Validate Three Nodes (Hard)
-- [ ] Repair BST (Hard)
-- [ ] Sum BSTs (Hard)
-- [ ] Right Smaller Than (Very Hard)
+| Name                          | Solution        | Difficulty | Status |
+| ----------------------------- | --------------- | ---------- | ------ |
+| Find Closest Value In BST     | [JS Solution]() | Easy       | ❌     |
+| BST Construction              | [JS Solution]() | Medium     | ❌     |
+| Validate BST                  | [JS Solution]() | Medium     | ❌     |
+| BST Traversal                 | [JS Solution]() | Medium     | ❌     |
+| Min Height BST                | [JS Solution]() | Medium     | ❌     |
+| Find Kth Largest Value In BST | [JS Solution]() | Medium     | ❌     |
+| Reconstruct BST               | [JS Solution]() | Medium     | ❌     |
+| Same BSTs                     | [JS Solution]() | Hard       | ❌     |
+| Validate Three Nodes          | [JS Solution]() | Hard       | ❌     |
+| Repair BST                    | [JS Solution]() | Hard       | ❌     |
+| Sum BSTs                      | [JS Solution]() | Hard       | ❌     |
+| Right Smaller Than            | [JS Solution]() | Very Hard  | ❌     |
 
 ## Binary Trees (17 questions)
 
-- [ ] Branch Sums (Easy)
-- [ ] Node Depths (Easy)
-- [ ] Evaluate Express Tree (Easy)
-- [ ] Invert Binary Tree (Medium)
-- [ ] Binary Tree Diameter (Medium)
-- [ ] Find Successor (Medium)
-- [ ] Height Balanced Binary Tree (Medium)
-- [ ] Merge Binary Trees (Medium)
-- [ ] Symmetrical Tree (Medium)
-- [ ] Split Binary Tree (Medium)
-- [ ] Max Path Sum In Binary Trees (Hard)
-- [ ] Find Nodes Distance K (Hard)
-- [ ] Iterative In-order Traversal (Very Hard)
-- [ ] Flatten Binary Tree (Very Hard)
-- [ ] Right Sibling Tree (Very Hard)
-- [ ] All Kinds Of Node Depths (Very Hard)
-- [ ] Compare Leaf Traversal (Very Hard)
+| Name                         | Solution        | Difficulty | Status |
+| ---------------------------- | --------------- | ---------- | ------ |
+| Branch Sums                  | [JS Solution]() | Easy       | ❌     |
+| Node Depths                  | [JS Solution]() | Easy       | ❌     |
+| Evaluate Express Tree        | [JS Solution]() | Easy       | ❌     |
+| Invert Binary Tree           | [JS Solution]() | Medium     | ❌     |
+| Binary Tree Diameter         | [JS Solution]() | Medium     | ❌     |
+| Find Successor               | [JS Solution]() | Medium     | ❌     |
+| Height Balanced Binary Tree  | [JS Solution]() | Medium     | ❌     |
+| Merge Binary Trees           | [JS Solution]() | Medium     | ❌     |
+| Symmetrical Tree             | [JS Solution]() | Medium     | ❌     |
+| Split Binary Tree            | [JS Solution]() | Medium     | ❌     |
+| Max Path Sum In Binary Trees | [JS Solution]() | Hard       | ❌     |
+| Find Nodes Distance K        | [JS Solution]() | Hard       | ❌     |
+| Iterative In-order Traversal | [JS Solution]() | Very Hard  | ❌     |
+| Flatten Binary Tree          | [JS Solution]() | Very Hard  | ❌     |
+| Right Sibling Tree           | [JS Solution]() | Very Hard  | ❌     |
+| All Kinds Of Node Depths     | [JS Solution]() | Very Hard  | ❌     |
+| Compare Leaf Traversal       | [JS Solution]() | Very Hard  | ❌     |
 
 ## Dynamic Programming (21 questions)
 
-- [ ] Max Subset Sum No Adjacent (Medium)
-- [ ] Number of Ways To Make Change (Medium)
-- [ ] Min Number Of Coins For Change (Medium)
-- [ ] Levenshtein Distance (Medium)
-- [ ] Number Of Ways To Traverse Graph (Medium)
-- [ ] Max Sum Increasing Subsequence (Hard)
-- [ ] Longest Common Subsequence (Hard)
-- [ ] Min Number Of Jumps (Hard)
-- [ ] Water Area (Hard)
-- [ ] Knapsack Problem (Hard)
-- [ ] Disk Stacking (Hard)
-- [ ] Numbers In Pi (Hard)
-- [ ] Maximum Sum Submatrix (Hard)
-- [ ] Maximize Expression (Hard)
-- [ ] Dice Throws (Hard)
-- [ ] Juice Bottling (Hard)
-- [ ] Max Profit With K Transactions (Very Hard)
-- [ ] Palindrome Partitioning Min Cuts (Very Hard)
-- [ ] Longest Increasing Subsequence (Very Hard)
-- [ ] Longest String Chain (Very Hard)
-- [ ] Square of Zeroes (Very Hard)
+| Name                             | Solution        | Difficulty | Status |
+| -------------------------------- | --------------- | ---------- | ------ |
+| Max Subset Sum No Adjacent       | [JS Solution]() | Medium     | ❌     |
+| Number of Ways To Make Change    | [JS Solution]() | Medium     | ❌     |
+| Min Number Of Coins For Change   | [JS Solution]() | Medium     | ❌     |
+| Levenshtein Distance             | [JS Solution]() | Medium     | ❌     |
+| Number Of Ways To Traverse Graph | [JS Solution]() | Medium     | ❌     |
+| Max Sum Increasing Subsequence   | [JS Solution]() | Hard       | ❌     |
+| Longest Common Subsequence       | [JS Solution]() | Hard       | ❌     |
+| Min Number Of Jumps              | [JS Solution]() | Hard       | ❌     |
+| Water Area                       | [JS Solution]() | Hard       | ❌     |
+| Knapsack Problem                 | [JS Solution]() | Hard       | ❌     |
+| Disk Stacking                    | [JS Solution]() | Hard       | ❌     |
+| Numbers In Pi                    | [JS Solution]() | Hard       | ❌     |
+| Maximum Sum Submatrix            | [JS Solution]() | Hard       | ❌     |
+| Maximize Expression              | [JS Solution]() | Hard       | ❌     |
+| Dice Throws                      | [JS Solution]() | Hard       | ❌     |
+| Juice Bottling                   | [JS Solution]() | Hard       | ❌     |
+| Max Profit With K Transactions   | [JS Solution]() | Very Hard  | ❌     |
+| Palindrome Partitioning Min Cuts | [JS Solution]() | Very Hard  | ❌     |
+| Longest Increasing Subsequence   | [JS Solution]() | Very Hard  | ❌     |
+| Longest String Chain             | [JS Solution]() | Very Hard  | ❌     |
+| Square of Zeroes                 | [JS Solution]() | Very Hard  | ❌     |
 
 ## Famous Algorithms (9 questions)
 
-- [ ] Kadane's Algorithm (Medium)
-- [ ] Stable internships (Medium)
-- [ ] Union Find (Medium)
-- [ ] Dijkstra's Algorithm (Hard)
-- [ ] Topological Sort (Hard)
-- [ ] Kruskal's Algorithm (Hard)
-- [ ] Prim's Algorithm (Hard)
-- [ ] Knuth-Morris-Pratt Algorithm (Very Hard)
-- [ ] A\* Algorithm (Very Hard)
+| Name                         | Solution        | Difficulty | Status |
+| ---------------------------- | --------------- | ---------- | ------ |
+| Kadane's Algorithm           | [JS Solution]() | Medium     | ❌     |
+| Stable internships           | [JS Solution]() | Medium     | ❌     |
+| Union Find                   | [JS Solution]() | Medium     | ❌     |
+| Dijkstra's Algorithm         | [JS Solution]() | Hard       | ❌     |
+| Topological Sort             | [JS Solution]() | Hard       | ❌     |
+| Kruskal's Algorithm          | [JS Solution]() | Hard       | ❌     |
+| Prim's Algorithm             | [JS Solution]() | Hard       | ❌     |
+| Knuth-Morris-Pratt Algorithm | [JS Solution]() | Very Hard  | ❌     |
+| A\* Algorithm                | [JS Solution]() | Very Hard  | ❌     |
 
 ## Graphs (15 questions)
 
-- [ ] Depth-first Search (Easy)
-- [ ] Single Cycle Check (Medium)
-- [ ] Breadth-first Search (Medium)
-- [ ] River Sizes (Medium)
-- [ ] Youngest Common Ancestor (Medium)
-- [ ] Remove Islands (Medium)
-- [ ] Cycle In Graph (Medium)
-- [ ] Minimum Passes Of Matrix (Medium)
-- [ ] Two-Colorable (Medium)
-- [ ] Boggle Board (Hard)
-- [ ] Largest Island (Hard)
-- [ ] Rectangle Mania (Very Hard)
-- [ ] Detect Arbitrage (Very Hard)
-- [ ] Two-Edge-Connected Graph (Very Hard)
-- [ ] Airport Connections (Very Hard)
+| Name                     | Solution        | Difficulty | Status |
+| ------------------------ | --------------- | ---------- | ------ |
+| Depth-first Search       | [JS Solution]() | Easy       | ❌     |
+| Single Cycle Check       | [JS Solution]() | Medium     | ❌     |
+| Breadth-first Search     | [JS Solution]() | Medium     | ❌     |
+| River Sizes              | [JS Solution]() | Medium     | ❌     |
+| Youngest Common Ancestor | [JS Solution]() | Medium     | ❌     |
+| Remove Islands           | [JS Solution]() | Medium     | ❌     |
+| Cycle In Graph           | [JS Solution]() | Medium     | ❌     |
+| Minimum Passes Of Matrix | [JS Solution]() | Medium     | ❌     |
+| Two-Colorable            | [JS Solution]() | Medium     | ❌     |
+| Boggle Board             | [JS Solution]() | Hard       | ❌     |
+| Largest Island           | [JS Solution]() | Hard       | ❌     |
+| Rectangle Mania          | [JS Solution]() | Very Hard  | ❌     |
+| Detect Arbitrage         | [JS Solution]() | Very Hard  | ❌     |
+| Two-Edge-Connected Graph | [JS Solution]() | Very Hard  | ❌     |
+| Airport Connections      | [JS Solution]() | Very Hard  | ❌     |
 
 ## Greedy Algorithms (6 questions)
 
-- [ ] Minimum Waiting Time (Easy)
-- [ ] Class Photos (Easy)
-- [ ] Tandem Bicycle (Easy)
-- [ ] Optimal Freelancing (Easy)
-- [ ] Task Assignment (Medium)
-- [ ] Valid Starting City (Medium)
+| Name                 | Solution        | Difficulty | Status |
+| -------------------- | --------------- | ---------- | ------ |
+| Minimum Waiting Time | [JS Solution]() | Easy       | ❌     |
+| Class Photos         | [JS Solution]() | Easy       | ❌     |
+| Tandem Bicycle       | [JS Solution]() | Easy       | ❌     |
+| Optimal Freelancing  | [JS Solution]() | Easy       | ❌     |
+| Task Assignment      | [JS Solution]() | Medium     | ❌     |
+| Valid Starting City  | [JS Solution]() | Medium     | ❌     |
 
 ## Heaps (5 questions)
 
-- [ ] Min Heap Construction (Medium)
-- [ ] Continuos Median (Hard)
-- [ ] Sort K-Sorted Array (Hard)
-- [ ] Laptop Rentals (Hard)
-- [ ] Merge Sorted Arrays (Very Hard)
+| Name                  | Solution        | Difficulty | Status |
+| --------------------- | --------------- | ---------- | ------ |
+| Min Heap Construction | [JS Solution]() | Medium     | ❌     |
+| Continuos Median      | [JS Solution]() | Hard       | ❌     |
+| Sort K-Sorted Array   | [JS Solution]() | Hard       | ❌     |
+| Laptop Rentals        | [JS Solution]() | Hard       | ❌     |
+| Merge Sorted Arrays   | [JS Solution]() | Very Hard  | ❌     |
 
 ## Linked Lists (15 questions)
 
-- [x] Remove Duplicates From Linked List (Easy)
-- [x] Middle Node (Easy)
-- [x] Linked List Construction (Medium)
-- [ ] Remove Kth Node From End (Medium)
-- [ ] Sum of Linked Lists (Medium)
-- [ ] Merging Linked Lists (Medium)
-- [ ] Find Loop (Hard)
-- [ ] Reverse Linked List (Hard)
-- [ ] Merge Linked Lists (Hard)
-- [ ] Shift Linked List (Hard)
-- [ ] LRU Cache (Very Hard)
-- [ ] Rearrange Linked List (Very Hard)
-- [x] Linked List Palindrome (Very Hard)
-- [ ] Zip Linked List (Very Hard)
-- [ ] Node Swap (Very Hard)
+| Name                               | Solution                                                      | Difficulty | Status |
+| ---------------------------------- | ------------------------------------------------------------- | ---------- | ------ |
+| Remove Duplicates From Linked List | [JS Solution](./linkedList/removeDuplicatesFromLinkedList.js) | Easy       | ✅     |
+| Middle Node                        | [JS Solution](./linkedList/middleNode.js)                     | Easy       | ✅     |
+| Linked List Construction           | [JS Solution](./linkedList/linkedListConstruction.js)         | Medium     | ✅     |
+| Remove Kth Node From End           | [JS Solution]()                                               | Medium     | ❌     |
+| Sum of Linked Lists                | [JS Solution]()                                               | Medium     | ❌     |
+| Merging Linked Lists               | [JS Solution]()                                               | Medium     | ❌     |
+| Find Loop                          | [JS Solution]()                                               | Hard       | ❌     |
+| Reverse Linked List                | [JS Solution]()                                               | Hard       | ❌     |
+| Merge Linked Lists                 | [JS Solution]()                                               | Hard       | ❌     |
+| Shift Linked List                  | [JS Solution]()                                               | Hard       | ❌     |
+| LRU Cache                          | [JS Solution](./linkedList/LRUCache.js)                       | Very Hard  | ✅     |
+| Rearrange Linked List              | [JS Solution]()                                               | Very Hard  | ❌     |
+| Linked List Palindrome             | [JS Solution](./linkedList/linkedListPalindrome.js)           | Very Hard  | ✅     |
+| Zip Linked List                    | [JS Solution]()                                               | Very Hard  | ❌     |
+| Node Swap                          | [JS Solution]()                                               | Very Hard  | ❌     |
 
 ## Recursion (15 questions)
 
-- [ ] Nth Fibonacci (Easy)
-- [ ] Product Sum (Easy)
-- [ ] Permutations (Medium)
-- [ ] Powerset (Medium)
-- [ ] Phone Number Mnemonics (Medium)
-- [ ] Staircase Traversal (Medium)
-- [ ] Backjack Probability (Medium)
-- [ ] Reveal Minesweeper (Medium)
-- [ ] Lowest Common Manager (Hard)
-- [ ] Interweaving Strings (Hard)
-- [ ] Solve Sudoku (Hard)
-- [ ] Generate Div Tags (Hard)
-- [ ] Ambiguous Measurement (Hard)
-- [ ] Number Of Binary Tree Topologies (Very Hard)
-- [ ] Non-Attacking Queens (Very Hard)
+| Name                             | Solution        | Difficulty | Status |
+| -------------------------------- | --------------- | ---------- | ------ |
+| Nth Fibonacci                    | [JS Solution]() | Easy       | ❌     |
+| Product Sum                      | [JS Solution]() | Easy       | ❌     |
+| Permutations                     | [JS Solution]() | Medium     | ❌     |
+| Powerset                         | [JS Solution]() | Medium     | ❌     |
+| Phone Number Mnemonics           | [JS Solution]() | Medium     | ❌     |
+| Staircase Traversal              | [JS Solution]() | Medium     | ❌     |
+| Backjack Probability             | [JS Solution]() | Medium     | ❌     |
+| Reveal Minesweeper               | [JS Solution]() | Medium     | ❌     |
+| Lowest Common Manager            | [JS Solution]() | Hard       | ❌     |
+| Interweaving Strings             | [JS Solution]() | Hard       | ❌     |
+| Solve Sudoku                     | [JS Solution]() | Hard       | ❌     |
+| Generate Div Tags                | [JS Solution]() | Hard       | ❌     |
+| Ambiguous Measurement            | [JS Solution]() | Hard       | ❌     |
+| Number Of Binary Tree Topologies | [JS Solution]() | Very Hard  | ❌     |
+| Non-Attacking Queens             | [JS Solution]() | Very Hard  | ❌     |
 
 ## Searching Algorithms (9 questions)
 
-- [x] [Binary Search (Easy)](./searching/binarySearch.js)
-- [ ] Find Three Largest Numbers (Easy)
-- [ ] Search In Sorted Matrix (Medium)
-- [ ] Shifted Binary Search (Hard)
-- [ ] Search For Range (Hard)
-- [ ] Quickselect (Hard)
-- [ ] Index Equals Value (Hard)
-- [ ] Median Of Two Sorted Arrays (Very Hard)
-- [ ] Optimal Assembly Line (Very Hard)
+| Name                        | Solution                                   | Difficulty | Status |
+| --------------------------- | ------------------------------------------ | ---------- | ------ |
+| Binary Search               | [JS Solution](./searching/binarySearch.js) | Easy       | ✅     |
+| Find Three Largest Numbers  | [JS Solution]()                            | Easy       | ❌     |
+| Search In Sorted Matrix     | [JS Solution]()                            | Medium     | ❌     |
+| Shifted Binary Search       | [JS Solution]()                            | Hard       | ❌     |
+| Search For Range            | [JS Solution]()                            | Hard       | ❌     |
+| Quickselect                 | [JS Solution]()                            | Hard       | ❌     |
+| Index Equals Value          | [JS Solution]()                            | Hard       | ❌     |
+| Median Of Two Sorted Arrays | [JS Solution]()                            | Very Hard  | ❌     |
+| Optimal Assembly Line       | [JS Solution]()                            | Very Hard  | ❌     |
 
 ## Sorting Algorithms (9 questions)
 
-- [ ] Bubble Sort (Easy)
-- [ ] Insertion Sort (Easy)
-- [ ] Selection Sort (Easy)
-- [ ] Three Number Sort (Medium)
-- [ ] Quick Sort (Hard)
-- [ ] Heap Sort (Hard)
-- [ ] Radix Sort (Hard)
-- [ ] Merge Sort (Very Hard)
-- [ ] Count Inversions (Very Hard)
+| Name              | Solution        | Difficulty | Status |
+| ----------------- | --------------- | ---------- | ------ |
+| Bubble Sort       | [JS Solution]() | Easy       | ❌     |
+| Insertion Sort    | [JS Solution]() | Easy       | ❌     |
+| Selection Sort    | [JS Solution]() | Easy       | ❌     |
+| Three Number Sort | [JS Solution]() | Medium     | ❌     |
+| Quick Sort        | [JS Solution]() | Hard       | ❌     |
+| Heap Sort         | [JS Solution]() | Hard       | ❌     |
+| Radix Sort        | [JS Solution]() | Hard       | ❌     |
+| Merge Sort        | [JS Solution]() | Very Hard  | ❌     |
+| Count Inversions  | [JS Solution]() | Very Hard  | ❌     |
 
 ## Stacks (11 questions)
 
-- [ ] Min Max Stack Construction (Medium)
-- [ ] Balanced Brackets (Medium)
-- [ ] Sunset Views (Medium)
-- [ ] Best Digits (Medium)
-- [ ] Sort Stack (Medium)
-- [ ] Next Greater Element (Medium)
-- [ ] Reverse Polish Notation (Medium)
-- [ ] Colliding Asteroids (Medium)
-- [ ] Shorten Path (Hard)
-- [ ] Largest Rectangle Under Skyline (Hard)
-- [ ] Largest Park (Very Hard)
+| Name                            | Solution        | Difficulty | Status |
+| ------------------------------- | --------------- | ---------- | ------ |
+| Min Max Stack Construction      | [JS Solution]() | Medium     | ❌     |
+| Balanced Brackets               | [JS Solution]() | Medium     | ❌     |
+| Sunset Views                    | [JS Solution]() | Medium     | ❌     |
+| Best Digits                     | [JS Solution]() | Medium     | ❌     |
+| Sort Stack                      | [JS Solution]() | Medium     | ❌     |
+| Next Greater Element            | [JS Solution]() | Medium     | ❌     |
+| Reverse Polish Notation         | [JS Solution]() | Medium     | ❌     |
+| Colliding Asteroids             | [JS Solution]() | Medium     | ❌     |
+| Shorten Path                    | [JS Solution]() | Hard       | ❌     |
+| Largest Rectangle Under Skyline | [JS Solution]() | Hard       | ❌     |
+| Largest Park                    | [JS Solution]() | Very Hard  | ❌     |
 
 ## Strings (18 questions)
 
-- [ ] Palindrome Check (Easy)
-- [ ] Caesar Cipher Encryptor (Easy)
-- [ ] Run-Length Encoding (Easy)
-- [ ] Common Characters (Easy)
-- [ ] Generate Document (Easy)
-- [ ] First Non-Repeating Character (Easy)
-- [ ] Semordnilap (Easy)
-- [ ] Longest Palindromic Substring (Medium)
-- [ ] Group Anagrams (Medium)
-- [ ] Valid IP Addresses (Medium)
-- [ ] Reverse Words In String (Medium)
-- [ ] Minimum Characters For Words (Medium)
-- [ ] One Edit (Medium)
-- [ ] Longest Substring Without Duplication (Hard)
-- [ ] Underscorerify Substring (Hard)
-- [ ] Pattern Matcher (Hard)
-- [ ] Smallest Substring Containing (Very Hard)
-- [ ] Longest Balanced Substring (Very Hard)
+| Name                                  | Solution        | Difficulty | Status |
+| ------------------------------------- | --------------- | ---------- | ------ |
+| Palindrome Check                      | [JS Solution]() | Easy       | ❌     |
+| Caesar Cipher Encryptor               | [JS Solution]() | Easy       | ❌     |
+| Run-Length Encoding                   | [JS Solution]() | Easy       | ❌     |
+| Common Characters                     | [JS Solution]() | Easy       | ❌     |
+| Generate Document                     | [JS Solution]() | Easy       | ❌     |
+| First Non-Repeating Character         | [JS Solution]() | Easy       | ❌     |
+| Semordnilap                           | [JS Solution]() | Easy       | ❌     |
+| Longest Palindromic Substring         | [JS Solution]() | Medium     | ❌     |
+| Group Anagrams                        | [JS Solution]() | Medium     | ❌     |
+| Valid IP Addresses                    | [JS Solution]() | Medium     | ❌     |
+| Reverse Words In String               | [JS Solution]() | Medium     | ❌     |
+| Minimum Characters For Words          | [JS Solution]() | Medium     | ❌     |
+| One Edit                              | [JS Solution]() | Medium     | ❌     |
+| Longest Substring Without Duplication | [JS Solution]() | Hard       | ❌     |
+| Underscorerify Substring              | [JS Solution]() | Hard       | ❌     |
+| Pattern Matcher                       | [JS Solution]() | Hard       | ❌     |
+| Smallest Substring Containing         | [JS Solution]() | Very Hard  | ❌     |
+| Longest Balanced Substring            | [JS Solution]() | Very Hard  | ❌     |
 
 ## Tries (5 questions)
 
-- [ ] Suffix Trie Construction (Medium)
-- [ ] Multi String Search (Hard)
-- [ ] Longest Most Frequent Prefix (Hard)
-- [ ] Shortest Unique Prefixes (Hard)
-- [ ] Strings Made Up Of Strings (Very Hard)
+| Name                         | Solution        | Difficulty | Status |
+| ---------------------------- | --------------- | ---------- | ------ |
+| Suffix Trie Construction     | [JS Solution]() | Medium     | ❌     |
+| Multi String Search          | [JS Solution]() | Hard       | ❌     |
+| Longest Most Frequent Prefix | [JS Solution]() | Hard       | ❌     |
+| Shortest Unique Prefixes     | [JS Solution]() | Hard       | ❌     |
+| Strings Made Up Of Strings   | [JS Solution]() | Very Hard  | ❌     |
