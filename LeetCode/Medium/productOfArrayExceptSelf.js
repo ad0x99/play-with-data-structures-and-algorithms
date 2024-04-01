@@ -14,29 +14,34 @@
  * Space complexity: O(n) because we use three additional arrays of length n to store the products of the left, products of the right, and the final products.
  *
  */
-const productExceptSelf1 =  (nums) => {
-   // We initialize an array with the same length as the input array
-   // and fill default value in it, in this case it'd be 1
-   let products = Array(nums.length).fill(1);
-   let leftProducts = Array(nums.length).fill(1);
-   let rightProducts = Array(nums.length).fill(1)
-   // Calculate products of the left
-   leftCurrentProducts = 1;
-   for (let i = 0; i < nums.length; i++) {
-   leftProducts[i] = leftCurrentProducts;
-   leftCurrentProducts *= nums[i];
-   // Calculate products of the right
-   rightCurrentProducts = 1;
-   for (let i = nums.length - 1; i >= 0; i--) {
-   rightProducts[i] = rightCurrentProducts;
-   rightCurrentProducts *= nums[i];
-   // Calculate final products by multiplying both left and right
-   for (let i = 0; i < nums.length; i++) {
-     products[i] = leftProducts[i] * rightProducts[i];
-   }
-   return products;
-};
+const productExceptSelf1 = (nums) => {
+  // We initialize an array with the same length as the input array
+  // and fill default value in it, in this case it'd be 1
+  let products = Array(nums.length).fill(1);
+  let leftProducts = Array(nums.length).fill(1);
+  let rightProducts = Array(nums.length).fill(1);
 
+  // Calculate products of the left
+  leftCurrentProducts = 1;
+  for (let i = 0; i < nums.length; i++) {
+    leftProducts[i] = leftCurrentProducts;
+    leftCurrentProducts *= nums[i];
+  }
+
+  // Calculate products of the right
+  rightCurrentProducts = 1;
+  for (let i = nums.length - 1; i >= 0; i--) {
+    rightProducts[i] = rightCurrentProducts;
+    rightCurrentProducts *= nums[i];
+  }
+
+  // Calculate final products by multiplying both left and right
+  for (let i = 0; i < nums.length; i++) {
+    products[i] = leftProducts[i] * rightProducts[i];
+  }
+
+  return products;
+};
 
 /**
  * The idea is as the same with above solution. But instead of using leftProducts and rightProducts to store the products, we don't need to wait until the rightProducts are done for calculation, instead, when we were in the calculation of the right, we can update the final products at the same time. That means we can reduce the final calculate between the left and the right products.
