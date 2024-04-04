@@ -78,7 +78,7 @@
 | Design Circular Queue                                   | [JS Solution](./medium/designCircularQueue.js)                              | Medium     | ❌     |
 | Reveal Cards In Increasing Order                        | [JS Solution](./medium/revealCardInDecreasingOrder.js)                      | Medium     | ✅     |
 | Min Stack                                               | [JS Solution](./medium/minStack.js)                                         | Medium     | ✅     |
-| Find First and Last Position of Element in Sorted Array | [JS Solution](./medium/findFirstAndLastPositionOfElementInSortedArray.js)   | Medium     | ❌     |
+| Find First and Last Position of Element in Sorted Array | [JS Solution](./medium/findFirstAndLastPositionOfElementInSortedArray.js)   | Medium     | ✅     |
 | Find Minimum in Rotated Sorted Array                    | [JS Solution](./medium/findMinimumInRotatedSortedArray.js)                  | Medium     | ❌     |
 | Search a 2D Matrix                                      | [JS Solution](./medium/searchA2DMatrix.js)                                  | Medium     | ❌     |
 | Search in Rotated Sorted Array                          | [JS Solution](./medium/searchInRotatedSortedArray.js)                       | Medium     | ❌     |
