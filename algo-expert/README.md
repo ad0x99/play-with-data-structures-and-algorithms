@@ -207,17 +207,17 @@ List of questions group by categories:
 
 ## Searching Algorithms (9 questions)
 
-| Name                        | Solution                                   | Difficulty | Status |
-| --------------------------- | ------------------------------------------ | ---------- | ------ |
-| Binary Search               | [JS Solution](./searching/binarySearch.js) | Easy       | ✅     |
-| Find Three Largest Numbers  | [JS Solution]()                            | Easy       | ❌     |
-| Search In Sorted Matrix     | [JS Solution]()                            | Medium     | ❌     |
-| Shifted Binary Search       | [JS Solution]()                            | Hard       | ❌     |
-| Search For Range            | [JS Solution]()                            | Hard       | ❌     |
-| Quickselect                 | [JS Solution]()                            | Hard       | ❌     |
-| Index Equals Value          | [JS Solution]()                            | Hard       | ❌     |
-| Median Of Two Sorted Arrays | [JS Solution]()                            | Very Hard  | ❌     |
-| Optimal Assembly Line       | [JS Solution]()                            | Very Hard  | ❌     |
+| Name                        | Solution                                           | Difficulty | Status |
+| --------------------------- | -------------------------------------------------- | ---------- | ------ |
+| Binary Search               | [JS Solution](./searching/binarySearch.js)         | Easy       | ✅     |
+| Find Three Largest Numbers  | [JS Solution]()                                    | Easy       | ❌     |
+| Search In Sorted Matrix     | [JS Solution](./searching/searchInSortedMatrix.js) | Medium     | ✅     |
+| Shifted Binary Search       | [JS Solution]()                                    | Hard       | ❌     |
+| Search For Range            | [JS Solution]()                                    | Hard       | ❌     |
+| Quickselect                 | [JS Solution]()                                    | Hard       | ❌     |
+| Index Equals Value          | [JS Solution]()                                    | Hard       | ❌     |
+| Median Of Two Sorted Arrays | [JS Solution]()                                    | Very Hard  | ❌     |
+| Optimal Assembly Line       | [JS Solution]()                                    | Very Hard  | ❌     |
 
 ## Sorting Algorithms (9 questions)
 
