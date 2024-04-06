@@ -43,7 +43,7 @@
 | Implement Stack Using Queues         | [JS Solution](./easy/implementStackUsingQueues.js)        | Easy       | ❌     |
 | Binary Search                        | [JS Solution](./easy/binarySearch.js)                     | Easy       | ✅     |
 | First Bad Version                    | [JS Solution](./easy/firstBadVersion.js)                  | Easy       | ✅     |
-| Valid Perfect Square                 | [JS Solution](./easy/validPerfectSquare.js)               | Easy       | ❌     |
+| Valid Perfect Square                 | [JS Solution](./easy/validPerfectSquare.js)               | Easy       | ✅     |
 | Longest Subsequence With Limited Sum | [JS Solution](./easy/longestSubsequenceWithLimitedSum.js) | Easy       | ❌     |
 
 ## Medium Challenges
