@@ -36,7 +36,7 @@ List of questions group by categories:
 | Largest Range               | [JS Solution]()                                   | Hard       | ❌     |
 | Min Rewards                 | [JS Solution]()                                   | Hard       | ❌     |
 | Zigzag Traverse             | [JS Solution]()                                   | Hard       | ❌     |
-| Longest Subarray With Sum   | [JS Solution]()                                   | Hard       | ❌     |
+| Longest Subarray With Sum   | [JS Solution](./arrays/longestSubarrayWithSum.js) | Hard       | ✅     |
 | Knight Connection           | [JS Solution]()                                   | Hard       | ❌     |
 | Count Squares               | [JS Solution]()                                   | Hard       | ❌     |
 | Apartment Hunting           | [JS Solution]()                                   | Very Hard  | ❌     |
