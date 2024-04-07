@@ -81,7 +81,7 @@
 | Find First and Last Position of Element in Sorted Array | [JS Solution](./medium/findFirstAndLastPositionOfElementInSortedArray.js)   | Medium     | ✅     |
 | Find Minimum in Rotated Sorted Array                    | [JS Solution](./medium/findMinimumInRotatedSortedArray.js)                  | Medium     | ✅     |
 | Search a 2D Matrix                                      | [JS Solution](./medium/searchA2DMatrix.js)                                  | Medium     | ✅     |
-| Search in Rotated Sorted Array                          | [JS Solution](./medium/searchInRotatedSortedArray.js)                       | Medium     | ❌     |
+| Search in Rotated Sorted Array                          | [JS Solution](./medium/searchInRotatedSortedArray.js)                       | Medium     | ✅     |
 | Find Peak Element                                       | [JS Solution](./medium/findPeakElement.js)                                  | Medium     | ❌     |
 
 ## Hard Challenges
