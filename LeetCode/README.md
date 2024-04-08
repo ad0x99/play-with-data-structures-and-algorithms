@@ -44,7 +44,7 @@
 | Binary Search                        | [JS Solution](./easy/binarySearch.js)                     | Easy       | ✅     |
 | First Bad Version                    | [JS Solution](./easy/firstBadVersion.js)                  | Easy       | ✅     |
 | Valid Perfect Square                 | [JS Solution](./easy/validPerfectSquare.js)               | Easy       | ✅     |
-| Longest Subsequence With Limited Sum | [JS Solution](./easy/longestSubsequenceWithLimitedSum.js) | Easy       | ❌     |
+| Longest Subsequence With Limited Sum | [JS Solution](./easy/longestSubsequenceWithLimitedSum.js) | Easy       | ✅     |
 
 ## Medium Challenges
 
