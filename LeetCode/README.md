@@ -45,6 +45,10 @@
 | First Bad Version                    | [JS Solution](./easy/firstBadVersion.js)                  | Easy       | ✅     |
 | Valid Perfect Square                 | [JS Solution](./easy/validPerfectSquare.js)               | Easy       | ✅     |
 | Longest Subsequence With Limited Sum | [JS Solution](./easy/longestSubsequenceWithLimitedSum.js) | Easy       | ✅     |
+| Arranging Coins                      | [JS Solution](./easy/arrangingCoins.js)                   | Easy       | ❌     |
+| Climbing Stairs                      | [JS Solution](./easy/climbingStairs.js)                   | Easy       | ❌     |
+| Min Cost Climbing Stairs             | [JS Solution](./easy/minCostClimbingStairs.js)            | Easy       | ❌     |
+| Fibonacci Number                     | [JS Solution](./easy/fibonacciNumber.js)                  | Easy       | ❌     |
 
 ## Medium Challenges
 
@@ -83,9 +87,31 @@
 | Search a 2D Matrix                                      | [JS Solution](./medium/searchA2DMatrix.js)                                  | Medium     | ✅     |
 | Search in Rotated Sorted Array                          | [JS Solution](./medium/searchInRotatedSortedArray.js)                       | Medium     | ✅     |
 | Find Peak Element                                       | [JS Solution](./medium/findPeakElement.js)                                  | Medium     | ✅     |
+| Heaters                                                 | [JS Solution](./medium/heaters.js)                                          | Medium     | ❌     |
+| Frequency Of The Most Frequent Element                  | [JS Solution](./medium/frequenceOfTheMostFrequentElement.js)                | Medium     | ❌     |
+| Minimum Number of Days To Make M Bouquets               | [JS Solution](./medium/minimumNumberOfDaysToMakeMBouquets.js)               | Medium     | ❌     |
+| Capacity To Ship Packages Within D Days                 | [JS Solution](./medium/capacityToShipPackagesWithinDDays.js)                | Medium     | ❌     |
+| Longest Increasing Subsequence                          | [JS Solution](./medium/longestIncreasingSubsequence.js)                     | Medium     | ❌     |
+| Online Election                                         | [JS Solution](./medium/onlineElection.js)                                   | Medium     | ❌     |
+| Random Pick With Weight                                 | [JS Solution](./medium/randomPickWithWeight.js)                             | Medium     | ❌     |
+| Minimum Garden Perimeter To Collect Enough Apples       | [JS Solution](./medium/minimumGardenPerimeterToCollectEnoughApples.js)      | Medium     | ❌     |
+| Combinations                                            | [JS Solution](./medium/combinations.js)                                     | Medium     | ❌     |
+| Combination Sum                                         | [JS Solution](./medium/combinationSum.js)                                   | Medium     | ❌     |
+| Combination Sum II                                      | [JS Solution](./medium/combinationSumII.js)                                 | Medium     | ❌     |
+| Word Search                                             | [JS Solution](./medium/wordSearch.js)                                       | Medium     | ❌     |
+| Pow(x, n)                                               | [JS Solution](./medium/powXN.js)                                            | Medium     | ❌     |
+| Matchsticks To Square                                   | [JS Solution](./medium/matchsticksToSquare.js)                              | Medium     | ❌     |
+| Permutations                                            | [JS Solution](./medium/permutations.js)                                     | Medium     | ❌     |
+| Count Number of Ways To Place Houses                    | [JS Solution](./medium/countNumberOfWaysToPlaceHouses.js)                   | Medium     | ❌     |
+| Letter Combinations of a Phone Number                   | [JS Solution](./medium/letterCombinationsOfAPhoneNumber.js)                 | Medium     | ❌     |
 
 ## Hard Challenges
 
-| Name                     | Solution                                        | Difficulty | Status |
-| ------------------------ | ----------------------------------------------- | ---------- | ------ |
-| Minimum Window Substring | [JS Solution](./hard/minimumWindowSubstring.js) | Hard       | ❌     |
+| Name                                                    | Solution                                                                 | Difficulty | Status |
+| ------------------------------------------------------- | ------------------------------------------------------------------------ | ---------- | ------ |
+| Minimum Window Substring                                | [JS Solution](./hard/minimumWindowSubstring.js)                          | Hard       | ❌     |
+| Russian Doll Envelopes                                  | [JS Solution](./hard/russianDollEnvelopes.js)                            | Hard       | ❌     |
+| Split Array Largest Sum                                 | [JS Solution](./hard/splitArrayLargestSum.js)                            | Hard       | ❌     |
+| Find The Longest Valid Obstacle Course At Each Position | [JS Solution](./hard/findTheLongestValidObstacleCourseAtEachPosition.js) | Hard       | ❌     |
+| 24 Game                                                 | [JS Solution](./hard/24Game.js)                                          | Hard       | ❌     |
+| Remove Invalid Parentheses                              | [JS Solution](./hard/removeInvalidParentheses.js)                        | Hard       | ❌     |
