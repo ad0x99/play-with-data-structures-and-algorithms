@@ -45,7 +45,7 @@
 | First Bad Version                    | [JS Solution](./easy/firstBadVersion.js)                  | Easy       | ✅     |
 | Valid Perfect Square                 | [JS Solution](./easy/validPerfectSquare.js)               | Easy       | ✅     |
 | Longest Subsequence With Limited Sum | [JS Solution](./easy/longestSubsequenceWithLimitedSum.js) | Easy       | ✅     |
-| Arranging Coins                      | [JS Solution](./easy/arrangingCoins.js)                   | Easy       | ❌     |
+| Arranging Coins                      | [JS Solution](./easy/arrangingCoins.js)                   | Easy       | ✅     |
 | Climbing Stairs                      | [JS Solution](./easy/climbingStairs.js)                   | Easy       | ❌     |
 | Min Cost Climbing Stairs             | [JS Solution](./easy/minCostClimbingStairs.js)            | Easy       | ❌     |
 | Fibonacci Number                     | [JS Solution](./easy/fibonacciNumber.js)                  | Easy       | ❌     |
