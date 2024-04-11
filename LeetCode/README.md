@@ -88,7 +88,7 @@
 | Search in Rotated Sorted Array                          | [JS Solution](./medium/searchInRotatedSortedArray.js)                       | Medium     | ✅     |
 | Find Peak Element                                       | [JS Solution](./medium/findPeakElement.js)                                  | Medium     | ✅     |
 | Heaters                                                 | [JS Solution](./medium/heaters.js)                                          | Medium     | ✅     |
-| Frequency Of The Most Frequent Element                  | [JS Solution](./medium/frequenceOfTheMostFrequentElement.js)                | Medium     | ❌     |
+| Frequency Of The Most Frequent Element                  | [JS Solution](./medium/frequencyOfTheMostFrequentElement.js)                | Medium     | ✅     |
 | Minimum Number of Days To Make M Bouquets               | [JS Solution](./medium/minimumNumberOfDaysToMakeMBouquets.js)               | Medium     | ❌     |
 | Capacity To Ship Packages Within D Days                 | [JS Solution](./medium/capacityToShipPackagesWithinDDays.js)                | Medium     | ❌     |
 | Longest Increasing Subsequence                          | [JS Solution](./medium/longestIncreasingSubsequence.js)                     | Medium     | ❌     |
