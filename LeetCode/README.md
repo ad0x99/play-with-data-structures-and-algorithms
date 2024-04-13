@@ -110,7 +110,7 @@
 | Name                                                    | Solution                                                                 | Difficulty | Status |
 | ------------------------------------------------------- | ------------------------------------------------------------------------ | ---------- | ------ |
 | Minimum Window Substring                                | [JS Solution](./hard/minimumWindowSubstring.js)                          | Hard       | ❌     |
-| Russian Doll Envelopes                                  | [JS Solution](./hard/russianDollEnvelopes.js)                            | Hard       | ❌     |
+| Russian Doll Envelopes                                  | [JS Solution](./hard/russianDollEnvelopes.js)                            | Hard       | ✅     |
 | Split Array Largest Sum                                 | [JS Solution](./hard/splitArrayLargestSum.js)                            | Hard       | ❌     |
 | Find The Longest Valid Obstacle Course At Each Position | [JS Solution](./hard/findTheLongestValidObstacleCourseAtEachPosition.js) | Hard       | ❌     |
 | 24 Game                                                 | [JS Solution](./hard/24Game.js)                                          | Hard       | ❌     |
