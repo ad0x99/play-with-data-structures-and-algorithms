@@ -105,7 +105,7 @@
 | Count Number of Ways To Place Houses                    | [JS Solution](./medium/countNumberOfWaysToPlaceHouses.js)                   | Medium     | ❌     |
 | Letter Combinations of a Phone Number                   | [JS Solution](./medium/letterCombinationsOfAPhoneNumber.js)                 | Medium     | ❌     |
 | Pancake Sorting                                         | [JS Solution](./medium/pancakeSorting.js)                                   | Medium     | ✅     |
-| Sort An Array                                           | [JS Solution](./medium/sortAnArray.js)                                      | Medium     | ❌     |
+| Sort An Array                                           | [JS Solution](./medium/sortAnArray.js)                                      | Medium     | ✅     |
 | Sort Colors                                             | [JS Solution](./medium/sortColors.js)                                       | Medium     | ❌     |
 | Largest Number                                          | [JS Solution](./medium/largestNumber.js)                                    | Medium     | ❌     |
 | Sort Characters By Frequency                            | [JS Solution](./medium/sortCharactersByFrequency.js)                        | Medium     | ❌     |
