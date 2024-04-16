@@ -292,6 +292,14 @@ function outer(input) {
 - [Sorting Algorithms Animations](https://www.toptal.com/developers/sorting-algorithms)
 - [Visualgo - Sorting Algorithms](https://visualgo.net/en/sorting)
 
+### Sorting Stability
+
+- In sorting algorithms, stability refers to whether the algorithm preserves the original order of elements with equal keys (sorting criteria) during the sorting process.
+
+- Stable Sorting Algorithm: A sorting algorithm is considered stable if, for any two elements a and b in the original array, where a appears before b and they both have the same key value (the value used for sorting), then a will also appear before b in the sorted output array. In simpler terms, a stable sorting algorithm maintains the relative order of elements with the same sorting value.
+
+- Unstable Sorting Algorithm: An unstable sorting algorithm might not preserve the original order of elements with equal keys. The order of such elements in the sorted output might be different from their order in the original array.
+
 ## Data Structure Introduction
 
 - A data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently.
