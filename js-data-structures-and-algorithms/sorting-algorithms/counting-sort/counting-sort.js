@@ -93,3 +93,37 @@ const countingSort = (nums) => {
 };
 
 console.log(countingSort([1, 2, 3, 0, 6, 0, 1, 1, 3])); // [ 0, 0, 1, 1, 1, 2, 3, 3, 6 ]
+
+/**
+ * The above implementation is not a stable counting sort algorithm. In order to make it stable, at the element replacement step, instead of iterating through all elements from the beginning of the array, we will iterate through all elements from the end of the array
+ */
+const countingSortStable = (nums) => {
+  // Step 1: Find the largest element in nums array and create a count array to store the occurrences of the distinct element.
+  let largest = Math.max(...nums);
+  let counter = new Array(largest + 1).fill(0);
+
+  for (let num of nums) {
+    counter[num] += 1;
+  }
+
+  // Step 2: Calculating cumulative sums (it's the same as the prefix sum)
+  for (let i = 1; i < largest + 1; i++) {
+    counter[i] += counter[i - 1];
+  }
+
+  // Step 3: Placing elements at the correct position
+  let n = nums.length;
+  let ans = new Array(n).fill(0);
+
+  // Reverse the iteration from end to start
+  for (let i = n - 1; i >= 0; i--) {
+    const currentVal = nums[i];
+
+    counter[currentVal]--;
+    ans[counter[currentVal]] = currentVal;
+  }
+
+  return ans;
+};
+
+console.log(countingSortStable([1, 2, 3, 0, 6, 0, 1, 1, 3])); // [ 0, 0, 1, 1, 1, 2, 3, 3, 6 ]
