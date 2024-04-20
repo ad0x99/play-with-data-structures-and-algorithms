@@ -285,7 +285,7 @@ function outer(input) {
 | [Selection Sort](https://www.geeksforgeeks.org/selection-sort/) | O(n^2)                                                                   | O(n^2)       | O(n^2)     | O(1)             | [See example of selection sort](./Sorting%20Algorithms/Selection%20Sort/) |
 | [Merge Sort](https://www.geeksforgeeks.org/merge-sort/)         | O(n log n)                                                               | O(n log n)   | O(n log n) | O(n)             | [See example of merge sort](./Sorting%20Algorithms/Merge%20Sort/)         |
 | [Quick Sort](https://www.geeksforgeeks.org/quick-sort/)         | O(n log n)                                                               | O(n log n)   | O(n^2)     | O(log n)         | [See example of quick sort](./Sorting%20Algorithms/Quick%20Sort/)         |
-| [Radix Sort](https://www.geeksforgeeks.org/radix-sort/)         | O(nk) (n - length of the array, k - number of digits (average))          | O(nk)        | O(nk)      | O(n + k)         | [See example of radix sort](./Sorting%20Algorithms/Radix%20Sort/)         |
+| [Radix Sort](https://www.geeksforgeeks.org/radix-sort/)         | O(n \* k) (n - length of the array, k - number of digits (average))      | O(n \* k)    | O(n \* k)  | O(n)             | [See example of radix sort](./Sorting%20Algorithms/Radix%20Sort/)         |
 | [Counting Sort](https://www.geeksforgeeks.org/counting-sort/)   | O(n + k) (n - length of the array, k - the maximum element of the array) | O(n + k)     | O(n + k)   | O(n + k)         | [See example of radix sort](./Sorting%20Algorithms/Radix%20Sort/)         |
 
 - [Read more about sorting algorithms](https://www.geeksforgeeks.org/sorting-algorithms/)
