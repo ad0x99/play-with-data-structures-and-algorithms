@@ -116,7 +116,7 @@
 | Merge Intervals                                         | [JS Solution](./medium/mergeIntervals.js)                                   | Medium     | ❌     |
 | Convert Sorted List to Binary Search Tree               | [JS Solution](./medium/convertSortedListToBinarySearchTree.js)              | Medium     | ❌     |
 | Top K Frequent Elements                                 | [JS Solution](./medium/topKFrequentElements.js)                             | Medium     | ❌     |
-| Inversion count in Array using Merge Sort               | [JS Solution](./medium/inversionCountInArrayUsingMergeSort.js)              | Medium     | ❌     |
+| Inversion count in Array using Merge Sort               | [JS Solution](./medium/inversionCountInArrayUsingMergeSort.js)              | Medium     | ✅     |
 | Sort Characters By Frequency                            | [JS Solution](./medium/sortCharactersByFrequency.js)                        | Medium     | ❌     |
 | Max Number of K-Sum Pairs                               | [JS Solution](./medium/maxNumberOfKSumPairs.js)                             | Medium     | ❌     |
 | Group Anagrams                                          | [JS Solution](./medium/groupAnagrams.js)                                    | Medium     | ❌     |
