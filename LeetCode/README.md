@@ -49,6 +49,9 @@
 | Climbing Stairs                      | [JS Solution](./easy/climbingStairs.js)                   | Easy       | ❌     |
 | Min Cost Climbing Stairs             | [JS Solution](./easy/minCostClimbingStairs.js)            | Easy       | ❌     |
 | Fibonacci Number                     | [JS Solution](./easy/fibonacciNumber.js)                  | Easy       | ❌     |
+| Diameter of Binary Tree              | [JS Solution](./easy/diameterOfBinaryTree.js)             | Easy       | ❌     |
+| Design HashMap                       | [JS Solution](./easy/designHashmap.js)                    | Easy       | ❌     |
+| Design HashSet                       | [JS Solution](./easy/designHashset.js)                    | Easy       | ❌     |
 
 ## Medium Challenges
 
@@ -108,9 +111,18 @@
 | Sort An Array                                           | [JS Solution](./medium/sortAnArray.js)                                      | Medium     | ✅     |
 | Sort Colors                                             | [JS Solution](./medium/sortColors.js)                                       | Medium     | ✅     |
 | Largest Number                                          | [JS Solution](./medium/largestNumber.js)                                    | Medium     | ❌     |
-| Sort Characters By Frequency                            | [JS Solution](./medium/sortCharactersByFrequency.js)                        | Medium     | ❌     |
+| Sort Characters By Frequency                            | [JS Solution](./medium/sortCharactersByFrequency.js)                        | Medium     | ✅     |
 | Sort List                                               | [JS Solution](./medium/sortList.js)                                         | Medium     | ❌     |
 | Merge Intervals                                         | [JS Solution](./medium/mergeIntervals.js)                                   | Medium     | ❌     |
+| Convert Sorted List to Binary Search Tree               | [JS Solution](./medium/convertSortedListToBinarySearchTree.js)              | Medium     | ❌     |
+| Top K Frequent Elements                                 | [JS Solution](./medium/topKFrequentElements.js)                             | Medium     | ❌     |
+| Inversion count in Array using Merge Sort               | [JS Solution](./medium/inversionCountInArrayUsingMergeSort.js)              | Medium     | ❌     |
+| Sort Characters By Frequency                            | [JS Solution](./medium/sortCharactersByFrequency.js)                        | Medium     | ❌     |
+| Max Number of K-Sum Pairs                               | [JS Solution](./medium/maxNumberOfKSumPairs.js)                             | Medium     | ❌     |
+| Group Anagrams                                          | [JS Solution](./medium/groupAnagrams.js)                                    | Medium     | ❌     |
+| Maximum Size Subarray Sum Equals K                      | [JS Solution](./medium/maximumSizeSubarraySumEqualsK.js)                    | Medium     | ❌     |
+| Subarray Sum Equals K                                   | [JS Solution](./medium/subarraySumEqualsK.js)                               | Medium     | ❌     |
+| Continuous Subarray Sum                                 | [JS Solution](./medium/continuousSubarraySum.js)                            | Medium     | ❌     |
 
 ## Hard Challenges
 
@@ -122,3 +134,4 @@
 | Find The Longest Valid Obstacle Course At Each Position | [JS Solution](./hard/findTheLongestValidObstacleCourseAtEachPosition.js) | Hard       | ❌     |
 | 24 Game                                                 | [JS Solution](./hard/24Game.js)                                          | Hard       | ❌     |
 | Remove Invalid Parentheses                              | [JS Solution](./hard/removeInvalidParentheses.js)                        | Hard       | ❌     |
+| Merge K Sorted Lists                                    | [JS Solution](./hard/mergeKSortedLists.js)                               | Hard       | ❌     |
