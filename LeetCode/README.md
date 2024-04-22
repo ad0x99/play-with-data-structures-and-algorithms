@@ -50,7 +50,7 @@
 | Min Cost Climbing Stairs             | [JS Solution](./easy/minCostClimbingStairs.js)            | Easy       | ❌     |
 | Fibonacci Number                     | [JS Solution](./easy/fibonacciNumber.js)                  | Easy       | ❌     |
 | Diameter of Binary Tree              | [JS Solution](./easy/diameterOfBinaryTree.js)             | Easy       | ✅     |
-| Design HashMap                       | [JS Solution](./easy/designHashmap.js)                    | Easy       | ❌     |
+| Design HashMap                       | [JS Solution](./easy/designHashmap.js)                    | Easy       | ✅     |
 | Design HashSet                       | [JS Solution](./easy/designHashset.js)                    | Easy       | ❌     |
 
 ## Medium Challenges
