@@ -119,7 +119,7 @@
 | Inversion count in Array using Merge Sort               | [JS Solution](./medium/inversionCountInArrayUsingMergeSort.js)              | Medium     | ✅     |
 | Sort Characters By Frequency                            | [JS Solution](./medium/sortCharactersByFrequency.js)                        | Medium     | ❌     |
 | Max Number of K-Sum Pairs                               | [JS Solution](./medium/maxNumberOfKSumPairs.js)                             | Medium     | ✅     |
-| Group Anagrams                                          | [JS Solution](./medium/groupAnagrams.js)                                    | Medium     | ❌     |
+| Group Anagrams                                          | [JS Solution](./medium/groupAnagrams.js)                                    | Medium     | ✅     |
 | Maximum Size Subarray Sum Equals K                      | [JS Solution](./medium/maximumSizeSubarraySumEqualsK.js)                    | Medium     | ❌     |
 | Subarray Sum Equals K                                   | [JS Solution](./medium/subarraySumEqualsK.js)                               | Medium     | ❌     |
 | Continuous Subarray Sum                                 | [JS Solution](./medium/continuousSubarraySum.js)                            | Medium     | ❌     |
