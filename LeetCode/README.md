@@ -40,7 +40,7 @@
 | Number of Recent Calls               | [JS Solution](./easy/numberOfRecentCalls.js)              | Easy       | ✅     |
 | Next Greater Element I               | [JS Solution](./easy/nextGreaterElementI.js)              | Easy       | ❌     |
 | Implement Queue Using Stacks         | [JS Solution](./easy/implementQueueUsingStacks.js)        | Easy       | ❌     |
-| Implement Stack Using Queues         | [JS Solution](./easy/implementStackUsingQueues.js)        | Easy       | ❌     |
+| Implement Stack Using Queues         | [JS Solution](./easy/implementStackUsingQueues.js)        | Easy       | ✅     |
 | Binary Search                        | [JS Solution](./easy/binarySearch.js)                     | Easy       | ✅     |
 | First Bad Version                    | [JS Solution](./easy/firstBadVersion.js)                  | Easy       | ✅     |
 | Valid Perfect Square                 | [JS Solution](./easy/validPerfectSquare.js)               | Easy       | ✅     |
@@ -52,6 +52,8 @@
 | Diameter of Binary Tree              | [JS Solution](./easy/diameterOfBinaryTree.js)             | Easy       | ✅     |
 | Design HashMap                       | [JS Solution](./easy/designHashmap.js)                    | Easy       | ✅     |
 | Design HashSet                       | [JS Solution](./easy/designHashset.js)                    | Easy       | ❌     |
+| Binary Tree Postorder Traversal      | [JS Solution](./easy/binaryTreePostorderTraversal.js)     | Easy       | ❌     |
+| Symmetric Tree                       | [JS Solution](./easy/symmetricTree.js)                    | Easy       | ❌     |
 
 ## Medium Challenges
 
@@ -123,6 +125,11 @@
 | Maximum Size Subarray Sum Equals K                      | [JS Solution](./medium/maximumSizeSubarraySumEqualsK.js)                    | Medium     | ✅     |
 | Subarray Sum Equals K                                   | [JS Solution](./medium/subarraySumEqualsK.js)                               | Medium     | ❌     |
 | Continuous Subarray Sum                                 | [JS Solution](./medium/continuousSubarraySum.js)                            | Medium     | ❌     |
+| Binary Tree Level Order Traversal                       | [JS Solution](./medium/binaryTreeLevelOrderTraversal.js)                    | Medium     | ❌     |
+| Binary Tree Right Side View                             | [JS Solution](./medium/binaryTreeRightSideView.js)                          | Medium     | ❌     |
+| Count Univalue Subtrees                                 | [JS Solution](./medium/countUnivalueSubtrees.js)                            | Medium     | ❌     |
+| Binary Tree Zigzag Level Order Traversal                | [JS Solution](./medium/binaryTreeZigzagLevelOrderTraversal.js)              | Medium     | ❌     |
+| Time Needed To Inform All Employees                     | [JS Solution](./medium/timeNeededToInformAllEmployees.js)                   | Medium     | ❌     |
 
 ## Hard Challenges
 
