@@ -38,7 +38,8 @@
 | Number Compliment                    | [JS Solution](./easy/numberCompliment.js)                 | Easy       | ❌     |
 | Power Of Two                         | [JS Solution](./easy/powerOfTwo.js)                       | Easy       | ❌     |
 | Number of Recent Calls               | [JS Solution](./easy/numberOfRecentCalls.js)              | Easy       | ✅     |
-| Next Greater Element I               | [JS Solution](./easy/nextGreaterElementI.js)              | Easy       | ❌     |
+| Next Greater Element I               | [JS Solution](./easy/nextGreaterElementI.js)              | Easy       | ✅     |
+| Next Greater Element II              | [JS Solution](./easy/nextGreaterElementII.js)             | Easy       | ❌     |
 | Implement Queue Using Stacks         | [JS Solution](./easy/implementQueueUsingStacks.js)        | Easy       | ✅     |
 | Implement Stack Using Queues         | [JS Solution](./easy/implementStackUsingQueues.js)        | Easy       | ✅     |
 | Binary Search                        | [JS Solution](./easy/binarySearch.js)                     | Easy       | ✅     |
