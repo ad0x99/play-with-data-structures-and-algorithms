@@ -39,7 +39,6 @@
 | Power Of Two                                                 | [JS Solution](./easy/powerOfTwo.js)                                      | Easy       | ❌     |
 | Number of Recent Calls                                       | [JS Solution](./easy/numberOfRecentCalls.js)                             | Easy       | ✅     |
 | Next Greater Element I                                       | [JS Solution](./easy/nextGreaterElementI.js)                             | Easy       | ✅     |
-| Next Greater Element II                                      | [JS Solution](./easy/nextGreaterElementII.js)                            | Easy       | ❌     |
 | Implement Queue Using Stacks                                 | [JS Solution](./easy/implementQueueUsingStacks.js)                       | Easy       | ✅     |
 | Implement Stack Using Queues                                 | [JS Solution](./easy/implementStackUsingQueues.js)                       | Easy       | ✅     |
 | Binary Search                                                | [JS Solution](./easy/binarySearch.js)                                    | Easy       | ✅     |
@@ -92,6 +91,7 @@
 | Integer Replacement                                     | [JS Solution](./medium/integerReplacement.js)                               | Medium     | ❌     |
 | Bitwise AND of Numbers Range                            | [JS Solution](./medium/bitwiseAndOfNumbersRange.js)                         | Medium     | ❌     |
 | Single Number II                                        | [JS Solution](./medium/singleNumberII.js)                                   | Medium     | ❌     |
+| Next Greater Element II                                 | [JS Solution](./easy/nextGreaterElementII.js)                               | Medium     | ✅     |
 | Design Circular Queue                                   | [JS Solution](./medium/designCircularQueue.js)                              | Medium     | ✅     |
 | Reveal Cards In Increasing Order                        | [JS Solution](./medium/revealCardInDecreasingOrder.js)                      | Medium     | ✅     |
 | Min Stack                                               | [JS Solution](./medium/minStack.js)                                         | Medium     | ✅     |
