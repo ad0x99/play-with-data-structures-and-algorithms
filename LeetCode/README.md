@@ -90,7 +90,7 @@
 | Subsets II                                              | [JS Solution](./medium/subsetsII.js)                                        | Medium     | ❌     |
 | Integer Replacement                                     | [JS Solution](./medium/integerReplacement.js)                               | Medium     | ❌     |
 | Bitwise AND of Numbers Range                            | [JS Solution](./medium/bitwiseAndOfNumbersRange.js)                         | Medium     | ❌     |
-| Single Number II                                        | [JS Solution](./medium/singleNumberII.js)                                   | Medium     | ❌     |
+| Single Number II                                        | [JS Solution](./medium/singleNumberII.js)                                   | Medium     | ✅     |
 | Next Greater Element II                                 | [JS Solution](./easy/nextGreaterElementII.js)                               | Medium     | ✅     |
 | Design Circular Queue                                   | [JS Solution](./medium/designCircularQueue.js)                              | Medium     | ✅     |
 | Reveal Cards In Increasing Order                        | [JS Solution](./medium/revealCardInDecreasingOrder.js)                      | Medium     | ✅     |
