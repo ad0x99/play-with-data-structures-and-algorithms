@@ -36,7 +36,7 @@
 | Reverse Linked List                                          | [JS Solution](./easy/reverseLinkedList.js)                               | Easy       | ✅     |
 | Single Number                                                | [JS Solution](./easy/singleNumber.js)                                    | Easy       | ✅     |
 | Number Complement                                            | [JS Solution](./easy/numberCompliment.js)                                | Easy       | ✅     |
-| Power Of Two                                                 | [JS Solution](./easy/powerOfTwo.js)                                      | Easy       | ❌     |
+| Power Of Two                                                 | [JS Solution](./easy/powerOfTwo.js)                                      | Easy       | ✅     |
 | Number of Recent Calls                                       | [JS Solution](./easy/numberOfRecentCalls.js)                             | Easy       | ✅     |
 | Next Greater Element I                                       | [JS Solution](./easy/nextGreaterElementI.js)                             | Easy       | ✅     |
 | Implement Queue Using Stacks                                 | [JS Solution](./easy/implementQueueUsingStacks.js)                       | Easy       | ✅     |
