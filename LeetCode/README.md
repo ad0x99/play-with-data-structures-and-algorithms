@@ -88,7 +88,7 @@
 | Valid Triangle Number                                                       | [JS Solution](./medium/validTriangleNumber.js)                                                                       | Medium     | ✅     |
 | Subsets                                                                     | [JS Solution](./medium/subsets.js)                                                                                   | Medium     | ✅     |
 | Subsets II                                                                  | [JS Solution](./medium/subsetsII.js)                                                                                 | Medium     | ✅     |
-| Integer Replacement                                                         | [JS Solution](./medium/integerReplacement.js)                                                                        | Medium     | ❌     |
+| Integer Replacement                                                         | [JS Solution](./medium/integerReplacement.js)                                                                        | Medium     | ✅     |
 | Bitwise AND of Numbers Range                                                | [JS Solution](./medium/bitwiseAndOfNumbersRange.js) , [Rust Solution](./medium/rust/bitwise_AND_of_numbers_range.rs) | Medium     | ✅     |
 | Single Number II                                                            | [JS Solution](./medium/singleNumberII.js)                                                                            | Medium     | ✅     |
 | Next Greater Element II                                                     | [JS Solution](./easy/nextGreaterElementII.js)                                                                        | Medium     | ✅     |
