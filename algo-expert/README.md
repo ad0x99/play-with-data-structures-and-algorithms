@@ -187,23 +187,23 @@ List of questions group by categories:
 
 ## Recursion (15 questions)
 
-| Name                             | Solution        | Difficulty | Status |
-| -------------------------------- | --------------- | ---------- | ------ |
-| Nth Fibonacci                    | [JS Solution]() | Easy       | ❌     |
-| Product Sum                      | [JS Solution]() | Easy       | ❌     |
-| Permutations                     | [JS Solution]() | Medium     | ❌     |
-| Powerset                         | [JS Solution]() | Medium     | ❌     |
-| Phone Number Mnemonics           | [JS Solution]() | Medium     | ❌     |
-| Staircase Traversal              | [JS Solution]() | Medium     | ❌     |
-| Backjack Probability             | [JS Solution]() | Medium     | ❌     |
-| Reveal Minesweeper               | [JS Solution]() | Medium     | ❌     |
-| Lowest Common Manager            | [JS Solution]() | Hard       | ❌     |
-| Interweaving Strings             | [JS Solution]() | Hard       | ❌     |
-| Solve Sudoku                     | [JS Solution]() | Hard       | ❌     |
-| Generate Div Tags                | [JS Solution]() | Hard       | ❌     |
-| Ambiguous Measurement            | [JS Solution]() | Hard       | ❌     |
-| Number Of Binary Tree Topologies | [JS Solution]() | Very Hard  | ❌     |
-| Non-Attacking Queens             | [JS Solution]() | Very Hard  | ❌     |
+| Name                             | Solution                                         | Difficulty | Status |
+| -------------------------------- | ------------------------------------------------ | ---------- | ------ |
+| Nth Fibonacci                    | [JS Solution]()                                  | Easy       | ❌     |
+| Product Sum                      | [JS Solution]()                                  | Easy       | ❌     |
+| Permutations                     | [JS Solution]()                                  | Medium     | ❌     |
+| Powerset                         | [JS Solution]()                                  | Medium     | ❌     |
+| Phone Number Mnemonics           | [JS Solution]()                                  | Medium     | ❌     |
+| Staircase Traversal              | [JS Solution](./recursion/staircaseTraversal.js) | Medium     | ✅     |
+| Backjack Probability             | [JS Solution]()                                  | Medium     | ❌     |
+| Reveal Minesweeper               | [JS Solution]()                                  | Medium     | ❌     |
+| Lowest Common Manager            | [JS Solution]()                                  | Hard       | ❌     |
+| Interweaving Strings             | [JS Solution]()                                  | Hard       | ❌     |
+| Solve Sudoku                     | [JS Solution]()                                  | Hard       | ❌     |
+| Generate Div Tags                | [JS Solution]()                                  | Hard       | ❌     |
+| Ambiguous Measurement            | [JS Solution]()                                  | Hard       | ❌     |
+| Number Of Binary Tree Topologies | [JS Solution]()                                  | Very Hard  | ❌     |
+| Non-Attacking Queens             | [JS Solution]()                                  | Very Hard  | ❌     |
 
 ## Searching Algorithms (9 questions)
 
