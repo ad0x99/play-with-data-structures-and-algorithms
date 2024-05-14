@@ -7,60 +7,60 @@
 
 ## Easy Challenges
 
-| Name                                                         | Solution                                                                 | Difficulty | Status |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------ | ---------- | ------ |
-| Build Array From Permutation                                 | [JS Solution](./easy/buildArrayFromPermutation.js)                       | Easy       | ✅     |
-| Concatenation of Array                                       | [JS Solution](./easy/concatenationOfArray.js)                            | Easy       | ✅     |
-| Guess Number Higher or Lower                                 | [JS Solution](./easy/guessNumberHigherOrLower.js)                        | Easy       | ✅     |
-| Maximum Number of Balloons                                   | [JS Solution](./easy/maximumNumberOfBalloons.js)                         | Easy       | ✅     |
-| Merge Sorted Array                                           | [JS Solution](./easy/mergeSortedArray.js)                                | Easy       | ✅     |
-| Pascal's Triangle                                            | [JS Solution](./easy/pascalsTriangle.js)                                 | Easy       | ✅     |
-| Plus One                                                     | [JS Solution](./easy/plusOne.js)                                         | Easy       | ✅     |
-| Range Sum Query                                              | [JS Solution](./easy/rangeSumQuery.js)                                   | Easy       | ✅     |
-| Remove Outermost Parentheses                                 | [JS Solution](./easy/removeOutermostParentheses.js)                      | Easy       | ✅     |
-| Remove Element                                               | [JS Solution](./easy/removeElement.js)                                   | Easy       | ✅     |
-| Reverse String                                               | [JS Solution](./easy/reverseString.js)                                   | Easy       | ✅     |
-| Running Sum of 1D Array                                      | [JS Solution](./easy/runningSumOf1dArray.js)                             | Easy       | ✅     |
-| sqrt                                                         | [JS Solution](./easy/sqrt.js)                                            | Easy       | ✅     |
-| Sum of Unique Elements                                       | [JS Solution](./easy/sumOfUniqueElements.js)                             | Easy       | ✅     |
-| Two Sum                                                      | [JS Solution](./easy/twoSum.js)                                          | Easy       | ✅     |
-| Valid Parentheses                                            | [JS Solution](./easy/validParentheses.js)                                | Easy       | ✅     |
-| Linked List Cycle                                            | [JS Solution](./easy/linkedListCycle.js)                                 | Easy       | ✅     |
-| Merge Two Sorted Lists                                       | [JS Solution](./easy/mergeTwoSortedLists.js)                             | Easy       | ✅     |
-| Middle of The Linked List                                    | [JS Solution](./easy/middleOfTheLinkedList.js)                           | Easy       | ✅     |
-| Number of One Bits                                           | [JS Solution](./easy/numberOfOneBits.js)                                 | Easy       | ✅     |
-| Palindrome Linked List                                       | [JS Solution](./easy/palindromeLinkedList.js)                            | Easy       | ✅     |
-| Remove Duplicates From Sorted Array                          | [JS Solution](./easy/removeDuplicatesFromSortedArray.js)                 | Easy       | ❌     |
-| Remove Duplicates From Sorted List                           | [JS Solution](./easy/removeDuplicatesFromSortedList.js)                  | Easy       | ✅     |
-| Reverse Bits                                                 | [JS Solution](./easy/reverseBits.js)                                     | Easy       | ✅     |
-| Reverse Linked List                                          | [JS Solution](./easy/reverseLinkedList.js)                               | Easy       | ✅     |
-| Single Number                                                | [JS Solution](./easy/singleNumber.js)                                    | Easy       | ✅     |
-| Number Complement                                            | [JS Solution](./easy/numberCompliment.js)                                | Easy       | ✅     |
-| Power Of Two                                                 | [JS Solution](./easy/powerOfTwo.js)                                      | Easy       | ✅     |
-| Number of Recent Calls                                       | [JS Solution](./easy/numberOfRecentCalls.js)                             | Easy       | ✅     |
-| Next Greater Element I                                       | [JS Solution](./easy/nextGreaterElementI.js)                             | Easy       | ✅     |
-| Implement Queue Using Stacks                                 | [JS Solution](./easy/implementQueueUsingStacks.js)                       | Easy       | ✅     |
-| Implement Stack Using Queues                                 | [JS Solution](./easy/implementStackUsingQueues.js)                       | Easy       | ✅     |
-| Binary Search                                                | [JS Solution](./easy/binarySearch.js)                                    | Easy       | ✅     |
-| First Bad Version                                            | [JS Solution](./easy/firstBadVersion.js)                                 | Easy       | ✅     |
-| Valid Perfect Square                                         | [JS Solution](./easy/validPerfectSquare.js)                              | Easy       | ✅     |
-| Longest Subsequence With Limited Sum                         | [JS Solution](./easy/longestSubsequenceWithLimitedSum.js)                | Easy       | ✅     |
-| Arranging Coins                                              | [JS Solution](./easy/arrangingCoins.js)                                  | Easy       | ✅     |
-| Climbing Stairs                                              | [JS Solution](./easy/climbingStairs.js)                                  | Easy       | ✅     |
-| Min Cost Climbing Stairs                                     | [JS Solution](./easy/minCostClimbingStairs.js)                           | Easy       | ❌     |
-| Fibonacci Number                                             | [JS Solution](./easy/fibonacciNumber.js)                                 | Easy       | ✅     |
-| Diameter of Binary Tree                                      | [JS Solution](./easy/diameterOfBinaryTree.js)                            | Easy       | ✅     |
-| Design HashMap                                               | [JS Solution](./easy/designHashmap.js)                                   | Easy       | ✅     |
-| Design HashSet                                               | [JS Solution](./easy/designHashset.js)                                   | Easy       | ❌     |
-| Binary Tree Postorder Traversal                              | [JS Solution](./easy/binaryTreePostorderTraversal.js)                    | Easy       | ❌     |
-| Symmetric Tree                                               | [JS Solution](./easy/symmetricTree.js)                                   | Easy       | ❌     |
-| Find The Index of The First Occurrence In a String           | [JS Solution](./easy/findTheIndexOfTheFirstOccurrenceInAString.js)       | Easy       | ❌     |
-| String Matching in an Array                                  | [JS Solution](./easy/stringMatchingInAnArray.js)                         | Easy       | ❌     |
-| Check If a Word Occurs As a Prefix of Any Word in a Sentence | [JS Solution](./easy/checkIfAWordOccursAsAPrefixOfAnyWordInASentence.js) | Easy       | ❌     |
-| Path Sum                                                     | [JS Solution](./easy/pathSum.js)                                         | Easy       | ❌     |
-| Range Sum of BST                                             | [JS Solution](./easy/rangeSumOfBST.js)                                   | Easy       | ❌     |
-| Binary Tree Inorder Traversal                                | [JS Solution](./easy/binaryTreeInorderTraversal.js)                      | Easy       | ❌     |
-| Two Sum IV - Input is BST                                    | [JS Solution](./easy/twoSumIVInputIsABST.js)                             | Easy       | ❌     |
+| Name                                                         | Solution                                                                                  | Difficulty | Status |
+| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------- | ---------- | ------ |
+| Build Array From Permutation                                 | [JS Solution](./easy/buildArrayFromPermutation.js)                                        | Easy       | ✅     |
+| Concatenation of Array                                       | [JS Solution](./easy/concatenationOfArray.js)                                             | Easy       | ✅     |
+| Guess Number Higher or Lower                                 | [JS Solution](./easy/guessNumberHigherOrLower.js)                                         | Easy       | ✅     |
+| Maximum Number of Balloons                                   | [JS Solution](./easy/maximumNumberOfBalloons.js)                                          | Easy       | ✅     |
+| Merge Sorted Array                                           | [JS Solution](./easy/mergeSortedArray.js)                                                 | Easy       | ✅     |
+| Pascal's Triangle                                            | [JS Solution](./easy/pascalsTriangle.js)                                                  | Easy       | ✅     |
+| Plus One                                                     | [JS Solution](./easy/plusOne.js)                                                          | Easy       | ✅     |
+| Range Sum Query                                              | [JS Solution](./easy/rangeSumQuery.js)                                                    | Easy       | ✅     |
+| Remove Outermost Parentheses                                 | [JS Solution](./easy/removeOutermostParentheses.js)                                       | Easy       | ✅     |
+| Remove Element                                               | [JS Solution](./easy/removeElement.js)                                                    | Easy       | ✅     |
+| Reverse String                                               | [JS Solution](./easy/reverseString.js)                                                    | Easy       | ✅     |
+| Running Sum of 1D Array                                      | [JS Solution](./easy/runningSumOf1dArray.js)                                              | Easy       | ✅     |
+| sqrt                                                         | [JS Solution](./easy/sqrt.js)                                                             | Easy       | ✅     |
+| Sum of Unique Elements                                       | [JS Solution](./easy/sumOfUniqueElements.js)                                              | Easy       | ✅     |
+| Two Sum                                                      | [JS Solution](./easy/twoSum.js)                                                           | Easy       | ✅     |
+| Valid Parentheses                                            | [JS Solution](./easy/validParentheses.js)                                                 | Easy       | ✅     |
+| Linked List Cycle                                            | [JS Solution](./easy/linkedListCycle.js)                                                  | Easy       | ✅     |
+| Merge Two Sorted Lists                                       | [JS Solution](./easy/mergeTwoSortedLists.js)                                              | Easy       | ✅     |
+| Middle of The Linked List                                    | [JS Solution](./easy/middleOfTheLinkedList.js)                                            | Easy       | ✅     |
+| Number of One Bits                                           | [JS Solution](./easy/numberOfOneBits.js)                                                  | Easy       | ✅     |
+| Palindrome Linked List                                       | [JS Solution](./easy/palindromeLinkedList.js)                                             | Easy       | ✅     |
+| Remove Duplicates From Sorted Array                          | [JS Solution](./easy/removeDuplicatesFromSortedArray.js)                                  | Easy       | ❌     |
+| Remove Duplicates From Sorted List                           | [JS Solution](./easy/removeDuplicatesFromSortedList.js)                                   | Easy       | ✅     |
+| Reverse Bits                                                 | [JS Solution](./easy/reverseBits.js)                                                      | Easy       | ✅     |
+| Reverse Linked List                                          | [JS Solution](./easy/reverseLinkedList.js)                                                | Easy       | ✅     |
+| Single Number                                                | [JS Solution](./easy/singleNumber.js)                                                     | Easy       | ✅     |
+| Number Complement                                            | [JS Solution](./easy/numberCompliment.js)                                                 | Easy       | ✅     |
+| Power Of Two                                                 | [JS Solution](./easy/powerOfTwo.js)                                                       | Easy       | ✅     |
+| Number of Recent Calls                                       | [JS Solution](./easy/numberOfRecentCalls.js)                                              | Easy       | ✅     |
+| Next Greater Element I                                       | [JS Solution](./easy/nextGreaterElementI.js)                                              | Easy       | ✅     |
+| Implement Queue Using Stacks                                 | [JS Solution](./easy/implementQueueUsingStacks.js)                                        | Easy       | ✅     |
+| Implement Stack Using Queues                                 | [JS Solution](./easy/implementStackUsingQueues.js)                                        | Easy       | ✅     |
+| Binary Search                                                | [JS Solution](./easy/binarySearch.js)                                                     | Easy       | ✅     |
+| First Bad Version                                            | [JS Solution](./easy/firstBadVersion.js)                                                  | Easy       | ✅     |
+| Valid Perfect Square                                         | [JS Solution](./easy/validPerfectSquare.js)                                               | Easy       | ✅     |
+| Longest Subsequence With Limited Sum                         | [JS Solution](./easy/longestSubsequenceWithLimitedSum.js)                                 | Easy       | ✅     |
+| Arranging Coins                                              | [JS Solution](./easy/arrangingCoins.js)                                                   | Easy       | ✅     |
+| Climbing Stairs                                              | [JS Solution](./easy/climbingStairs.js) - [Rust Solution](./easy/rust/climbing_stairs.rs) | Easy       | ✅     |
+| Min Cost Climbing Stairs                                     | [JS Solution](./easy/minCostClimbingStairs.js)                                            | Easy       | ❌     |
+| Fibonacci Number                                             | [JS Solution](./easy/fibonacciNumber.js)                                                  | Easy       | ✅     |
+| Diameter of Binary Tree                                      | [JS Solution](./easy/diameterOfBinaryTree.js)                                             | Easy       | ✅     |
+| Design HashMap                                               | [JS Solution](./easy/designHashmap.js)                                                    | Easy       | ✅     |
+| Design HashSet                                               | [JS Solution](./easy/designHashset.js)                                                    | Easy       | ❌     |
+| Binary Tree Postorder Traversal                              | [JS Solution](./easy/binaryTreePostorderTraversal.js)                                     | Easy       | ❌     |
+| Symmetric Tree                                               | [JS Solution](./easy/symmetricTree.js)                                                    | Easy       | ❌     |
+| Find The Index of The First Occurrence In a String           | [JS Solution](./easy/findTheIndexOfTheFirstOccurrenceInAString.js)                        | Easy       | ❌     |
+| String Matching in an Array                                  | [JS Solution](./easy/stringMatchingInAnArray.js)                                          | Easy       | ❌     |
+| Check If a Word Occurs As a Prefix of Any Word in a Sentence | [JS Solution](./easy/checkIfAWordOccursAsAPrefixOfAnyWordInASentence.js)                  | Easy       | ❌     |
+| Path Sum                                                     | [JS Solution](./easy/pathSum.js)                                                          | Easy       | ❌     |
+| Range Sum of BST                                             | [JS Solution](./easy/rangeSumOfBST.js)                                                    | Easy       | ❌     |
+| Binary Tree Inorder Traversal                                | [JS Solution](./easy/binaryTreeInorderTraversal.js)                                       | Easy       | ❌     |
+| Two Sum IV - Input is BST                                    | [JS Solution](./easy/twoSumIVInputIsABST.js)                                              | Easy       | ❌     |
 
 ## Medium Challenges
 
@@ -89,7 +89,7 @@
 | Subsets                                                                     | [JS Solution](./medium/subsets.js)                                                                                   | Medium     | ✅     |
 | Subsets II                                                                  | [JS Solution](./medium/subsetsII.js)                                                                                 | Medium     | ✅     |
 | Integer Replacement                                                         | [JS Solution](./medium/integerReplacement.js)                                                                        | Medium     | ✅     |
-| Bitwise AND of Numbers Range                                                | [JS Solution](./medium/bitwiseAndOfNumbersRange.js) , [Rust Solution](./medium/rust/bitwise_AND_of_numbers_range.rs) | Medium     | ✅     |
+| Bitwise AND of Numbers Range                                                | [JS Solution](./medium/bitwiseAndOfNumbersRange.js) - [Rust Solution](./medium/rust/bitwise_AND_of_numbers_range.rs) | Medium     | ✅     |
 | Single Number II                                                            | [JS Solution](./medium/singleNumberII.js)                                                                            | Medium     | ✅     |
 | Next Greater Element II                                                     | [JS Solution](./easy/nextGreaterElementII.js)                                                                        | Medium     | ✅     |
 | Design Circular Queue                                                       | [JS Solution](./medium/designCircularQueue.js)                                                                       | Medium     | ✅     |
