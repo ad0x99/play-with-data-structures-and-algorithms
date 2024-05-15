@@ -111,7 +111,7 @@
 | Combinations                                                                | [JS Solution](./medium/combinations.js) - [Rust Solution](./medium/rust/combinations.rs)                             | Medium     | ✅     |
 | Combination Sum                                                             | [JS Solution](./medium/combinationSum.js)                                                                            | Medium     | ❌     |
 | Combination Sum II                                                          | [JS Solution](./medium/combinationSumII.js)                                                                          | Medium     | ❌     |
-| Word Search                                                                 | [JS Solution](./medium/wordSearch.js)                                                                                | Medium     | ❌     |
+| Word Search                                                                 | [JS Solution](./medium/wordSearch.js)                                                                                | Medium     | ✅     |
 | Pow(x, n)                                                                   | [JS Solution](./medium/powXN.js)                                                                                     | Medium     | ❌     |
 | Matchsticks To Square                                                       | [JS Solution](./medium/matchsticksToSquare.js)                                                                       | Medium     | ❌     |
 | Permutations                                                                | [JS Solution](./medium/permutations.js)                                                                              | Medium     | ❌     |
