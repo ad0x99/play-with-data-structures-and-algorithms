@@ -108,7 +108,7 @@
 | Online Election                                                             | [JS Solution](./medium/onlineElection.js)                                                                            | Medium     | ❌     |
 | Random Pick With Weight                                                     | [JS Solution](./medium/randomPickWithWeight.js)                                                                      | Medium     | ❌     |
 | Minimum Garden Perimeter To Collect Enough Apples                           | [JS Solution](./medium/minimumGardenPerimeterToCollectEnoughApples.js)                                               | Medium     | ❌     |
-| Combinations                                                                | [JS Solution](./medium/combinations.js)                                                                              | Medium     | ❌     |
+| Combinations                                                                | [JS Solution](./medium/combinations.js) - [Rust Solution](./medium/rust/combinations.rs)                             | Medium     | ✅     |
 | Combination Sum                                                             | [JS Solution](./medium/combinationSum.js)                                                                            | Medium     | ❌     |
 | Combination Sum II                                                          | [JS Solution](./medium/combinationSumII.js)                                                                          | Medium     | ❌     |
 | Word Search                                                                 | [JS Solution](./medium/wordSearch.js)                                                                                | Medium     | ❌     |
