@@ -112,7 +112,7 @@
 | Combination Sum                                                             | [JS Solution](./medium/combinationSum.js)                                                                            | Medium     | ❌     |
 | Combination Sum II                                                          | [JS Solution](./medium/combinationSumII.js)                                                                          | Medium     | ❌     |
 | Word Search                                                                 | [JS Solution](./medium/wordSearch.js)                                                                                | Medium     | ✅     |
-| Pow(x, n)                                                                   | [JS Solution](./medium/powXN.js)                                                                                     | Medium     | ❌     |
+| Pow(x, n)                                                                   | [JS Solution](./medium/powXN.js) - [Rust Solution](./medium/rust/pow_x_n.rs)                                         | Medium     | ✅     |
 | Matchsticks To Square                                                       | [JS Solution](./medium/matchsticksToSquare.js)                                                                       | Medium     | ❌     |
 | Permutations                                                                | [JS Solution](./medium/permutations.js)                                                                              | Medium     | ❌     |
 | Count Number of Ways To Place Houses                                        | [JS Solution](./medium/countNumberOfWaysToPlaceHouses.js)                                                            | Medium     | ❌     |
