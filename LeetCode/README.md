@@ -169,6 +169,13 @@
 | K Closest Points to Origin                                                  | [JS Solution](./medium/kClosestPointsToOrigin.js)                                                                    | Medium     | ❌     |
 | Kth Smallest Element in a Sorted Matrix                                     | [JS Solution](./medium/kthSmallestElementAnASortedMatrix.js)                                                         | Medium     | ❌     |
 | Furthest Building You Can Reach                                             | [JS Solution](./medium/furthestBuildingYouCanReach.js)                                                               | Medium     | ❌     |
+| Decode Ways                                                                 | [JS Solution](./medium/decodeWays.js)                                                                                | Medium     | ❌     |
+| Unique Paths                                                                | [JS Solution](./medium/uniquePaths.js)                                                                               | Medium     | ❌     |
+| Unique Paths II                                                             | [JS Solution](./medium/uniquePathsII.js)                                                                             | Medium     | ❌     |
+| Coin Change                                                                 | [JS Solution](./medium/coinChange.js)                                                                                | Medium     | ❌     |
+| Word Break                                                                  | [JS Solution](./medium/wordBreak.js)                                                                                 | Medium     | ❌     |
+| House Robber                                                                | [JS Solution](./medium/houseRobber.js)                                                                               | Medium     | ❌     |
+| House Robber II                                                             | [JS Solution](./medium/houseRobberII.js)                                                                             | Medium     | ❌     |
 
 ## Hard Challenges
 
@@ -183,3 +190,4 @@
 | Merge K Sorted Lists                                    | [JS Solution](./hard/mergeKSortedLists.js)                               | Hard       | ❌     |
 | Stream of Characters                                    | [JS Solution](./hard/streamOfCharacters.js)                              | Hard       | ❌     |
 | Find Median from Data Stream                            | [JS Solution](./hard/findMedianFromDataStream.js)                        | Hard       | ❌     |
+| Word Break II                                           | [JS Solution](./hard/wordBreakII.js)                                     | Hard       | ❌     |
