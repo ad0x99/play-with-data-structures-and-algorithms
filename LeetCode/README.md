@@ -61,6 +61,7 @@
 | Range Sum of BST                                             | [JS Solution](./easy/rangeSumOfBST.js)                                                                    | Easy       | ❌     |
 | Binary Tree Inorder Traversal                                | [JS Solution](./easy/binaryTreeInorderTraversal.js)                                                       | Easy       | ❌     |
 | Two Sum IV - Input is BST                                    | [JS Solution](./easy/twoSumIVInputIsABST.js)                                                              | Easy       | ❌     |
+| Special Array I                                              | [JS Solution](./easy/specialArrayI.js) - [Rust Solution](./easy/rust/special_array_I.rs)                  | Easy       | ✅     |
 
 ## Medium Challenges
 
