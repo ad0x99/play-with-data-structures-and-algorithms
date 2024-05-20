@@ -67,6 +67,38 @@ const buildSubset = (index, nums, subset, result) => {
 };
 
 /**
+ * Same approach as the previous solution but cleaner implementation
+ */
+const subsetsWithDup = (nums) => {
+  nums.sort((a, b) => a - b);
+  let result = [];
+  let subset = [];
+
+  const buildSubset = (i) => {
+    if (i === nums.length) {
+      result.push([...subset]);
+      return;
+    }
+
+    // Pick the current number and push into subset
+    subset.push(nums[i]);
+    buildSubset(i + 1, nums, subset, result);
+    subset.pop();
+
+    // Skip duplicates if the current element is the same as the next one
+    while (i + 1 < nums.length && nums[i] === nums[i + 1]) {
+      i += 1;
+    }
+
+    // Don't pick the current number
+    buildSubset(i + 1, nums, subset, result);
+  };
+
+  buildSubset(0);
+  return result;
+};
+
+/**
  * Bit Manipulation Approach:
  *
  * Mathematically, A list has n elements will have 2^n subsets.
@@ -90,7 +122,7 @@ const buildSubset = (index, nums, subset, result) => {
  * Space complexity: O(2^n * n) - because we are storing all possible subsets in the result array, each subset potentially containing up to n elements.
  *
  */
-const subsetsWithDup1 = (nums) => {
+const subsetsWithDup = (nums) => {
   nums.sort((a, b) => a - b);
 
   let n = nums.length;

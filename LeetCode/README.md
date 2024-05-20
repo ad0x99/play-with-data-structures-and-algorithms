@@ -88,7 +88,7 @@
 | Sum of Square Numbers                                                       | [JS Solution](./medium/sumOfSquareNumbers.js)                                                                        | Medium     | ✅     |
 | Valid Triangle Number                                                       | [JS Solution](./medium/validTriangleNumber.js)                                                                       | Medium     | ✅     |
 | Subsets                                                                     | [JS Solution](./medium/subsets.js)                                                                                   | Medium     | ✅     |
-| Subsets II                                                                  | [JS Solution](./medium/subsetsII.js)                                                                                 | Medium     | ✅     |
+| Subsets II                                                                  | [JS Solution](./medium/subsetsII.js) - [Rust Solution](./medium/rust/subset_ii.rs)                                   | Medium     | ✅     |
 | Integer Replacement                                                         | [JS Solution](./medium/integerReplacement.js)                                                                        | Medium     | ✅     |
 | Bitwise AND of Numbers Range                                                | [JS Solution](./medium/bitwiseAndOfNumbersRange.js) - [Rust Solution](./medium/rust/bitwise_AND_of_numbers_range.rs) | Medium     | ✅     |
 | Single Number II                                                            | [JS Solution](./medium/singleNumberII.js)                                                                            | Medium     | ✅     |
