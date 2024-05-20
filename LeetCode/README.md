@@ -115,7 +115,7 @@
 | Word Search                                                                 | [JS Solution](./medium/wordSearch.js)                                                                                | Medium     | ✅     |
 | Pow(x, n)                                                                   | [JS Solution](./medium/powXN.js) - [Rust Solution](./medium/rust/pow_x_n.rs)                                         | Medium     | ✅     |
 | Matchsticks To Square                                                       | [JS Solution](./medium/matchsticksToSquare.js) - [Rust Solution](./medium/rust/match_sticks_to_square.rs)            | Medium     | ✅     |
-| Permutations                                                                | [JS Solution](./medium/permutations.js)                                                                              | Medium     | ❌     |
+| Permutations                                                                | [JS Solution](./medium/permutations.js) - [Rust Solution](./medium/rust/permutations.rs)                             | Medium     | ✅     |
 | Count Number of Ways To Place Houses                                        | [JS Solution](./medium/countNumberOfWaysToPlaceHouses.js)                                                            | Medium     | ❌     |
 | Letter Combinations of a Phone Number                                       | [JS Solution](./medium/letterCombinationsOfAPhoneNumber.js)                                                          | Medium     | ✅     |
 | Pancake Sorting                                                             | [JS Solution](./medium/pancakeSorting.js)                                                                            | Medium     | ✅     |
