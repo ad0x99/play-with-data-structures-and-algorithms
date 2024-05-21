@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 /**
  * https://leetcode.com/problems/different-ways-to-add-parentheses/description/
  *
@@ -47,51 +49,54 @@
  *                       Results for "2*3-4*5" including all combinations
  *
  *
- *
- *
  * Time complexity: O(2^n) where n is the number of operators in the expression. This is because for each operator in the expression, we are recursively splitting the expression into two parts and calculating all possible combinations of results which will take in an exponential time complexity.
  *
  * Space complexity: O(2^n) because we are storing all possible combinations of results in the memoization table. This can potentially grow exponentially with the number of operators in the expression.
  *
  */
-const diffWaysToCompute = (expression) => {
-  const compute = () => {
-    // If the entire expression is a valid number (not containing any operators), we return expression
-    if (Number.isInteger(Number(expression))) {
-      return [Number(expression)];
-    }
+impl Solution {
+    pub fn diff_ways_to_compute(expression: String) -> Vec<i32> {
+        fn compute(expression: &str, memo: &mut HashMap<String, Vec<i32>>) -> Vec<i32> {
+            // If the entire expression is a valid number (not containing any operators), return it as a vector
+            if let Ok(num) = expression.parse::<i32>() {
+                return vec![num];
+            }
 
-    const result = [];
+            // If the result is already memoized, return it
+            if let Some(cached) = memo.get(expression) {
+                return cached.clone();
+            }
 
-    if (memo[expression]) {
-      return memo[expression];
-    }
+            let mut result = Vec::new();
 
-    for (let i = 0; i < expression.length; i++) {
-      const operator = expression[i];
+            // Iterate over the expression to find operators
+            for (i, ch) in expression.chars().enumerate() {
+                if ch == '+' || ch == '-' || ch == '*' {
+                    // Split the expression into left and right parts
+                    let left_results = compute(&expression[..i], memo);
+                    let right_results = compute(&expression[i + 1..], memo);
 
-      if (Number.isNaN(Number(operator))) {
-        const leftResults = diffWaysToCompute(expression.slice(0, i));
-        const rightResults = diffWaysToCompute(expression.slice(i + 1));
+                    // Compute results for the current operator
+                    for &left in &left_results {
+                        for &right in &right_results {
+                            let res = match ch {
+                                '+' => left + right,
+                                '-' => left - right,
+                                '*' => left * right,
+                                _ => unreachable!(),
+                            };
+                            result.push(res);
+                        }
+                    }
+                }
+            }
 
-        for (let left of leftResults) {
-          for (let right of rightResults) {
-            result.push(
-              operator === '+'
-                ? left + right
-                : operator === '-'
-                ? left - right
-                : left * right
-            );
-          }
+            // Memoize the result
+            memo.insert(expression.to_string(), result.clone());
+            result
         }
-      }
+
+        let mut memo = HashMap::new();
+        compute(&expression, &mut memo)
     }
-
-    memo[expression] = result;
-    return result;
-  };
-
-  let memo = {};
-  return compute();
-};
+}
