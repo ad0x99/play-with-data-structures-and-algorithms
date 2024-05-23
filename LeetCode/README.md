@@ -177,6 +177,12 @@
 | Word Break                                                                  | [JS Solution](./medium/wordBreak.js)                                                                                               | Medium     | ❌     |
 | House Robber                                                                | [JS Solution](./medium/houseRobber.js)                                                                                             | Medium     | ❌     |
 | House Robber II                                                             | [JS Solution](./medium/houseRobberII.js)                                                                                           | Medium     | ❌     |
+| Longest Common Subsequence                                                  | [JS Solution](./medium/longestCommonSubsequence.js)                                                                                | Medium     | ❌     |
+| Edit Distance                                                               | [JS Solution](./medium/editDistance.js)                                                                                            | Medium     | ❌     |
+| Campus Bikes II                                                             | [JS Solution](./medium/campusBilkesII.js)                                                                                          | Medium     | ❌     |
+| Partition Equal Subset Sum                                                  | [JS Solution](./medium/partitionEqualSubsetSum.js)                                                                                 | Medium     | ❌     |
+| Longest String Chain                                                        | [JS Solution](./medium/longestStringChain.js)                                                                                      | Medium     | ❌     |
+| O - 1 Knapsack Problem                                                      | [JS Solution](./medium/0-1KnapsackProblem.js)                                                                                      | Medium     | ❌     |
 
 ## Hard Challenges
 
@@ -192,3 +198,8 @@
 | Stream of Characters                                    | [JS Solution](./hard/streamOfCharacters.js)                              | Hard       | ❌     |
 | Find Median from Data Stream                            | [JS Solution](./hard/findMedianFromDataStream.js)                        | Hard       | ❌     |
 | Word Break II                                           | [JS Solution](./hard/wordBreakII.js)                                     | Hard       | ❌     |
+| Count Special Integers                                  | [JS Solution](./hard/countSpecialIntegers.js)                            | Hard       | ❌     |
+| Shortest Common Subsequence                             | [JS Solution](./hard/shortestCommonSubsequence.js)                       | Hard       | ❌     |
+| Maximize Score After N Operations                       | [JS Solution](./hard/maximizeScoreAfterNOperations.js)                   | Hard       | ❌     |
+| Count Stepping Numbers In Range                         | [JS Solution](./hard/countSteppingNumbersInRange.js)                     | Hard       | ❌     |
+| Minimum Sum Partition                                   | [JS Solution](./hard/minimumSumPartition.js)                             | Hard       | ❌     |
