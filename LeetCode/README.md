@@ -186,20 +186,20 @@
 
 ## Hard Challenges
 
-| Name                                                    | Solution                                                                 | Difficulty | Status |
-| ------------------------------------------------------- | ------------------------------------------------------------------------ | ---------- | ------ |
-| Minimum Window Substring                                | [JS Solution](./hard/minimumWindowSubstring.js)                          | Hard       | ❌     |
-| Russian Doll Envelopes                                  | [JS Solution](./hard/russianDollEnvelopes.js)                            | Hard       | ✅     |
-| Split Array Largest Sum                                 | [JS Solution](./hard/splitArrayLargestSum.js)                            | Hard       | ❌     |
-| Find The Longest Valid Obstacle Course At Each Position | [JS Solution](./hard/findTheLongestValidObstacleCourseAtEachPosition.js) | Hard       | ❌     |
-| 24 Game                                                 | [JS Solution](./hard/24Game.js)                                          | Hard       | ❌     |
-| Remove Invalid Parentheses                              | [JS Solution](./hard/removeInvalidParentheses.js)                        | Hard       | ❌     |
-| Merge K Sorted Lists                                    | [JS Solution](./hard/mergeKSortedLists.js)                               | Hard       | ❌     |
-| Stream of Characters                                    | [JS Solution](./hard/streamOfCharacters.js)                              | Hard       | ❌     |
-| Find Median from Data Stream                            | [JS Solution](./hard/findMedianFromDataStream.js)                        | Hard       | ❌     |
-| Word Break II                                           | [JS Solution](./hard/wordBreakII.js)                                     | Hard       | ❌     |
-| Count Special Integers                                  | [JS Solution](./hard/countSpecialIntegers.js)                            | Hard       | ❌     |
-| Shortest Common Subsequence                             | [JS Solution](./hard/shortestCommonSubsequence.js)                       | Hard       | ❌     |
-| Maximize Score After N Operations                       | [JS Solution](./hard/maximizeScoreAfterNOperations.js)                   | Hard       | ❌     |
-| Count Stepping Numbers In Range                         | [JS Solution](./hard/countSteppingNumbersInRange.js)                     | Hard       | ❌     |
-| Minimum Sum Partition                                   | [JS Solution](./hard/minimumSumPartition.js)                             | Hard       | ❌     |
+| Name                                                    | Solution                                                                                                       | Difficulty | Status |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ---------- | ------ |
+| Minimum Window Substring                                | [JS Solution](./hard/minimumWindowSubstring.js)                                                                | Hard       | ❌     |
+| Russian Doll Envelopes                                  | [JS Solution](./hard/russianDollEnvelopes.js)                                                                  | Hard       | ✅     |
+| Split Array Largest Sum                                 | [JS Solution](./hard/splitArrayLargestSum.js)                                                                  | Hard       | ❌     |
+| Find The Longest Valid Obstacle Course At Each Position | [JS Solution](./hard/findTheLongestValidObstacleCourseAtEachPosition.js)                                       | Hard       | ❌     |
+| 24 Game                                                 | [JS Solution](./hard/24Game.js)                                                                                | Hard       | ❌     |
+| Remove Invalid Parentheses                              | [JS Solution](./hard/removeInvalidParentheses.js) - [Rust Solution](./hard/rust/remove_invalid_parentheses.rs) | Hard       | ✅     |
+| Merge K Sorted Lists                                    | [JS Solution](./hard/mergeKSortedLists.js)                                                                     | Hard       | ❌     |
+| Stream of Characters                                    | [JS Solution](./hard/streamOfCharacters.js)                                                                    | Hard       | ❌     |
+| Find Median from Data Stream                            | [JS Solution](./hard/findMedianFromDataStream.js)                                                              | Hard       | ❌     |
+| Word Break II                                           | [JS Solution](./hard/wordBreakII.js)                                                                           | Hard       | ❌     |
+| Count Special Integers                                  | [JS Solution](./hard/countSpecialIntegers.js)                                                                  | Hard       | ❌     |
+| Shortest Common Subsequence                             | [JS Solution](./hard/shortestCommonSubsequence.js)                                                             | Hard       | ❌     |
+| Maximize Score After N Operations                       | [JS Solution](./hard/maximizeScoreAfterNOperations.js)                                                         | Hard       | ❌     |
+| Count Stepping Numbers In Range                         | [JS Solution](./hard/countSteppingNumbersInRange.js)                                                           | Hard       | ❌     |
+| Minimum Sum Partition                                   | [JS Solution](./hard/minimumSumPartition.js)                                                                   | Hard       | ❌     |
