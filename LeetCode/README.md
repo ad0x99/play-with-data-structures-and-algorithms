@@ -48,7 +48,7 @@
 | Arranging Coins                                              | [JS Solution](./easy/arrangingCoins.js)                                                                   | Easy       | ✅     |
 | Climbing Stairs                                              | [JS Solution](./easy/climbingStairs.js) - [Rust Solution](./easy/rust/climbing_stairs.rs)                 | Easy       | ✅     |
 | Min Cost Climbing Stairs                                     | [JS Solution](./easy/minCostClimbingStairs.js) - [Rust Solution](./easy/rust/min_cost_climbing_stairs.rs) | Easy       | ✅     |
-| Fibonacci Number                                             | [JS Solution](./easy/fibonacciNumber.js)                                                                  | Easy       | ✅     |
+| Fibonacci Number                                             | [JS Solution](./easy/fibonacciNumber.js) - [Rust Solution](./easy/rust/fibonacci_number.rs)               | Easy       | ✅     |
 | Diameter of Binary Tree                                      | [JS Solution](./easy/diameterOfBinaryTree.js)                                                             | Easy       | ✅     |
 | Design HashMap                                               | [JS Solution](./easy/designHashmap.js)                                                                    | Easy       | ✅     |
 | Design HashSet                                               | [JS Solution](./easy/designHashset.js)                                                                    | Easy       | ❌     |

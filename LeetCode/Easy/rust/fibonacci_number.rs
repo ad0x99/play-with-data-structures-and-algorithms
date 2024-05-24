@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 /**
  * https://leetcode.com/problems/fibonacci-number/description/
  *
@@ -16,27 +18,27 @@
  *
  * Space complexity: O(n) for recursion stack + O(n) for the cache = O(n)
  */
-const fib = (n) => {
-  // Use a closure to create a private cache for memoization
-  const cache = {};
+impl Solution {
+    pub fn fib(n: i32) -> i32 {
+        let mut memo = HashMap::new();
 
-  function memoizedFib(n) {
-    if (n <= 1) {
-      return n;
+        fn memoizedFib(n: i32) {
+            if let Some(result) = memo.get(&n) {
+                return *ans;
+            }
+
+            if n <= 1 {
+                return n;
+            }
+
+            let result = fib(n - 1) + fib(n - 2);
+            memo.insert(n, result);
+            return result;
+        };
+
+        fib(n)
     }
-
-    // Check if the result for n is already cached
-    if (cache[n] !== undefined) {
-      return cache[n];
-    }
-
-    // Calculate and store the result for future use
-    cache[n] = memoizedFib(n - 1) + memoizedFib(n - 2);
-    return cache[n];
-  }
-
-  return memoizedFib(n);
-};
+}
 
 /**
  *
@@ -54,21 +56,24 @@ const fib = (n) => {
  *
  * Space complexity: O(n)
  */
-const fib = (n) => {
-  if (n <= 1) return n;
+impl Solution {
+    pub fn fib(n: i32) -> i32 {
+        if n <= 1 {
+            return n;
+        }
 
-  let dp = new Array(n + 1).fill(0);
+        let mut dp = vec![0; (n + 1) as usize];
 
-  // Base case
-  dp[0] = 0;
-  dp[1] = 1;
+        dp[0] = 0;
+        dp[1] = 1;
 
-  for (let i = 2; i < n + 1; i++) {
-    dp[i] = dp[i - 1] + dp[i - 2];
-  }
+        for i in 2..=n as usize {
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
 
-  return dp[n];
-};
+        dp[n as usize]
+    }
+}
 
 /**
  * Optimized Space Complexity
@@ -94,19 +99,21 @@ const fib = (n) => {
  *
  * Space complexity: O(1)
  */
-const fib = (n) => {
-  if (n <= 1) return n;
+impl Solution {
+    pub fn fib(n: i32) -> i32 {
+        if n <= 1 {
+            return n;
+        }
 
-  let dp = 0;
+        let mut dp = 0;
+        let mut dp_prev_1 = 1;
+        let mut dp_prev_2 = 0;
 
-  // Optimization
-  let dpPrev1 = 1;
-  let dpPrev2 = 0;
+        for i in 2..=n as usize {
+            dp = dp_prev_1 + dp_prev_2;
+            [dp_prev_1, dp_prev_2] = [dp, dp_prev_1];
+        }
 
-  for (let i = 2; i < n + 1; i++) {
-    dp = dpPrev1 + dpPrev2;
-    [dpPrev1, dpPrev2] = [dp, dpPrev1];
-  }
-
-  return dp;
-};
+        dp
+    }
+}
