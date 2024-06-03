@@ -1,6 +1,6 @@
 # List of Leetcode solutions
 
-- Supported language: JavaScript
+- Supported language: JavaScript & Rust
 - Status:
   - ✅: Done
   - ❌: Working in progress
@@ -175,7 +175,7 @@
 | Unique Paths II                                                             | [JS Solution](./medium/uniquePathsII.js)                                                                                           | Medium     | ❌     |
 | Coin Change                                                                 | [JS Solution](./medium/coinChange.js) - [Rust Solution](./medium/rust/coin_change.rs)                                              | Medium     | ✅     |
 | Word Break                                                                  | [JS Solution](./medium/wordBreak.js) - [Rust Solution](./medium/rust/word_break.rs)                                                | Medium     | ✅     |
-| House Robber                                                                | [JS Solution](./medium/houseRobber.js)                                                                                             | Medium     | ❌     |
+| House Robber                                                                | [JS Solution](./medium/houseRobber.js) - [Rust Solution](./medium/rust/house_robber.rs)                                            | Medium     | ✅     |
 | House Robber II                                                             | [JS Solution](./medium/houseRobberII.js)                                                                                           | Medium     | ❌     |
 | Longest Common Subsequence                                                  | [JS Solution](./medium/longestCommonSubsequence.js)                                                                                | Medium     | ❌     |
 | Edit Distance                                                               | [JS Solution](./medium/editDistance.js)                                                                                            | Medium     | ❌     |
