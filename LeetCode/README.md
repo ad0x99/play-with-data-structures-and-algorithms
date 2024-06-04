@@ -197,7 +197,7 @@
 | Merge K Sorted Lists                                    | [JS Solution](./hard/mergeKSortedLists.js)                                                                     | Hard       | ❌     |
 | Stream of Characters                                    | [JS Solution](./hard/streamOfCharacters.js)                                                                    | Hard       | ❌     |
 | Find Median from Data Stream                            | [JS Solution](./hard/findMedianFromDataStream.js)                                                              | Hard       | ❌     |
-| Word Break II                                           | [JS Solution](./hard/wordBreakII.js)                                                                           | Hard       | ❌     |
+| Word Break II                                           | [JS Solution](./hard/wordBreakII.js) - [Rust Solution](./hard/rust/word_break_ii.rs)                           | Hard       | ✅     |
 | Count Special Integers                                  | [JS Solution](./hard/countSpecialIntegers.js)                                                                  | Hard       | ❌     |
 | Shortest Common Subsequence                             | [JS Solution](./hard/shortestCommonSubsequence.js)                                                             | Hard       | ❌     |
 | Maximize Score After N Operations                       | [JS Solution](./hard/maximizeScoreAfterNOperations.js)                                                         | Hard       | ❌     |
