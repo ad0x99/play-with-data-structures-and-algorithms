@@ -183,6 +183,8 @@
 | Partition Equal Subset Sum                                                  | [JS Solution](./medium/partitionEqualSubsetSum.js)                                                                                 | Medium     | ❌     |
 | Longest String Chain                                                        | [JS Solution](./medium/longestStringChain.js)                                                                                      | Medium     | ❌     |
 | O - 1 Knapsack Problem                                                      | [JS Solution](./medium/0-1KnapsackProblem.js)                                                                                      | Medium     | ❌     |
+| Range Sum Query - Mutable                                                   | [JS Solution](./medium/rangeSumQueryMutable.js)                                                                                    | Medium     | ❌     |
+| Range Addition                                                              | [JS Solution](./medium/rangeAddition.js)                                                                                           | Medium     | ❌     |
 
 ## Hard Challenges
 
@@ -203,3 +205,7 @@
 | Maximize Score After N Operations                       | [JS Solution](./hard/maximizeScoreAfterNOperations.js)                                                         | Hard       | ❌     |
 | Count Stepping Numbers In Range                         | [JS Solution](./hard/countSteppingNumbersInRange.js)                                                           | Hard       | ❌     |
 | Minimum Sum Partition                                   | [JS Solution](./hard/minimumSumPartition.js)                                                                   | Hard       | ❌     |
+| Range Rum Query 2D - Mutable                            | [JS Solution](./hard/rangeSumQuery2DMutable.js)                                                                | Hard       | ❌     |
+| Create Sorted Array Through Instructions                | [JS Solution](./hard/createSortedArraythroughInstructions.js)                                                  | Hard       | ❌     |
+| Longest Increasing Subsequence II                       | [JS Solution](./hard/longestIncreasingSubsequenceII.js)                                                        | Hard       | ❌     |
+| Count of Smaller Numbers After Self                     | [JS Solution](./hard/countofSmallerNumbersAfterSelf.js)                                                        | Hard       | ❌     |
