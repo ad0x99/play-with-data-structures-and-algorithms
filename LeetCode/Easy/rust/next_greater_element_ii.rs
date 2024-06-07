@@ -22,21 +22,23 @@
  * Space complexity: O(n), where n is the number of elements in the result array
  *
  */
-const nextGreaterElements = (nums) => {
-  let n = nums.length;
-  let result = new Array(n).fill(-1);
+impl Solution {
+    pub fn next_greater_elements(nums: Vec<i32>) -> Vec<i32> {
+        let n = nums.len();
+        let mut result = vec![-1; n];
 
-  for (let i = 0; i < n; i++) {
-    for (let j = i + 1; j < i + n; j++) {
-      if (nums[j % n] > nums[i]) {
-        result[i] = nums[j % n];
-        break;
-      }
+        for i in 0..n {
+            for j in i + 1..i + n {
+                if nums[j % n] > nums[i] {
+                    result[i] = nums[j % n];
+                    break;
+                }
+            }
+        }
+
+        result
     }
-  }
-
-  return result;
-};
+}
 
 /**
  * Monotonic Stack Approach: The idea is using a stack to keep track the next potential greater element to compare in each iteration.
@@ -53,7 +55,7 @@ const nextGreaterElements = (nums) => {
  *
  * 4. In the outer loop, we iterate twice the length (2 * n) of the original nums array. This allows the algorithm to consider each element and its potential next greater element within a combined circular array.
  *
- * 5. Inside the loop, we calculate the "circular index" (`currentIndex`). The modulo operation (`%`) ensures we wrap around to the beginning of the nums array if the index (`i`) reaches its length (`n`). This creates the circular behavior needed for considering elements beyond the original array size.
+ * 5. Inside the loop, we calculate the "current index". The modulo operation (`%`) ensures we wrap around to the beginning of the nums array if the index (`i`) reaches its length (`n`). This creates the circular behavior needed for considering elements beyond the original array size.
  *
  * 6. As long as there are indices in the stack, and the top element of the stack is less than the current element.
  * - 6.1: We remove the top element from the stack.
@@ -68,27 +70,26 @@ const nextGreaterElements = (nums) => {
  *
  * Space complexity: O(n) - where n is the length of result
  */
-const nextGreaterElements = (nums) => {
-  const n = nums.length;
-  let result = new Array(n).fill(-1);
-  let stack = [];
+impl Solution {
+    pub fn next_greater_elements(nums: Vec<i32>) -> Vec<i32> {
+        let n = nums.len();
+        let mut result: Vec<i32> = vec![-1; n];
+        let mut stack: Vec<usize> = Vec::new();
 
-  for (let i = 0; i < 2 * n; i++) {
-    let currentIndex = i % n;
+        for i in 0..2 * n {
+            let current_index = i % n;
 
-    while (
-      stack.length > 0 &&
-      nums[stack[stack.length - 1]] < nums[currentIndex]
-    ) {
-      let topElement = stack.pop();
-      result[topElement] = nums[currentIndex];
+            while !stack.is_empty() && nums[stack[stack.len() - 1]] < nums[current_index] {
+                let top_element = stack.pop().unwrap();
+                result[top_element] = nums[current_index]
+            }
+
+            stack.push(current_index);
+        }
+
+        result
     }
-
-    stack.push(currentIndex);
-  }
-
-  return result;
-};
+}
 
 /**
  * Monotonic Stack Approach: The same approach as above solution, but instead of iterating from the beginning to the end of the array, we iterate reversely. And with the stack, we will store the actual value of the current element instead of its index.
@@ -112,28 +113,30 @@ const nextGreaterElements = (nums) => {
  *
  * Space complexity: O(n) - where n is the length of result
  */
-const nextGreaterElements = (nums) => {
-  const n = nums.length;
-  let result = new Array(n).fill(-1);
-  let stack = [];
+impl Solution {
+    pub fn next_greater_elements(nums: Vec<i32>) -> Vec<i32> {
+        let n = nums.len();
+        let mut result: Vec<i32> = vec![-1; n];
+        let mut stack: Vec<i32> = Vec::new();
 
-  for (let i = 2 * n; i > -1; i--) {
-    let currentIndex = i % n;
-    let currentElement = nums[currentIndex];
+        for i in (0..2 * n).rev() {
+            let current_index = i % n;
+            let current_element = nums[current_index];
 
-    while (stack.length > 0) {
-      let topElement = stack[stack.length - 1];
+            while !stack.is_empty() {
+                let top_element = *stack.last().unwrap() as i32;
 
-      if (topElement <= currentElement) {
-        stack.pop();
-      } else {
-        result[currentIndex] = topElement;
-        break;
-      }
+                if (top_element <= current_element) {
+                    stack.pop();
+                } else {
+                    result[current_index] = top_element;
+                    break;
+                }
+            }
+
+            stack.push(current_element);
+        }
+
+        result
     }
-
-    stack.push(currentElement);
-  }
-
-  return result;
-};
+}
