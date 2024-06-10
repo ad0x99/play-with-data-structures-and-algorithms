@@ -210,3 +210,4 @@
 | Longest Increasing Subsequence II                       | [JS Solution](./hard/longestIncreasingSubsequenceII.js)                                                        | Hard       | ❌     |
 | Count of Smaller Numbers After Self                     | [JS Solution](./hard/countofSmallerNumbersAfterSelf.js)                                                        | Hard       | ❌     |
 | Maximum Score of a Good Subarray                        | [JS Solution](./hard/maximumScoreOfAGoodSubarray.js)                                                           | Hard       | ✅     |
+| Sliding Window Maximum                                  | [JS Solution](./hard/slidingWindowMaximum.js) - [Rust Solution](./hard/rust/sliding_window_maximum.rs)         | Hard       | ✅     |
