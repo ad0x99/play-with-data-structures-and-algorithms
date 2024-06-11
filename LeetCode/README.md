@@ -185,6 +185,7 @@
 | O - 1 Knapsack Problem                                                      | [JS Solution](./medium/0-1KnapsackProblem.js)                                                                                      | Medium     | ❌     |
 | Range Sum Query - Mutable                                                   | [JS Solution](./medium/rangeSumQueryMutable.js)                                                                                    | Medium     | ❌     |
 | Range Addition                                                              | [JS Solution](./medium/rangeAddition.js)                                                                                           | Medium     | ❌     |
+| Evaluate Reverse Polish Notation                                            | [JS Solution](./medium/evaluateReversePolishNotation.js) - [Rust Solution](./medium/rust/evaluate_reverse_polish_notation.rs)      | Medium     | ✅     |
 
 ## Hard Challenges
 
