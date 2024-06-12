@@ -186,6 +186,7 @@
 | Range Sum Query - Mutable                                                   | [JS Solution](./medium/rangeSumQueryMutable.js)                                                                                    | Medium     | ❌     |
 | Range Addition                                                              | [JS Solution](./medium/rangeAddition.js)                                                                                           | Medium     | ❌     |
 | Evaluate Reverse Polish Notation                                            | [JS Solution](./medium/evaluateReversePolishNotation.js) - [Rust Solution](./medium/rust/evaluate_reverse_polish_notation.rs)      | Medium     | ✅     |
+| Online Stock Span                                                           | [JS Solution](./medium/onlineStockSpan.js) - [Rust Solution](./medium/rust/online_stack_span.rs)                                   | Medium     | ✅     |
 
 ## Hard Challenges
 
