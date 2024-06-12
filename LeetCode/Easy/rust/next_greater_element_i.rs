@@ -25,28 +25,29 @@
  * Space complexity: O(n), where n is the length of nums1.
  *
  */
-const nextGreaterElement = (nums1, nums2) => {
-  let ans = [];
-  let max = -1;
+impl Solution {
+    pub fn next_greater_element(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
+        let mut ans = Vec::new();
+        let mut max = -1;
 
-  for (let i = 0; i < nums1.length; i++) {
-    for (let j = 0; j < nums2.length; j++) {
-      if (nums1[i] === nums2[j]) {
-        while (j < nums2.length) {
-          if (nums2[j] > nums1[i]) {
-            max = nums2[j];
-            break;
-          }
-          j++;
+        for i in 0..nums1.len() {
+            for j in 0..nums2.len() {
+                if nums1[i] == nums2[j] {
+                    while j < nums2.len() {
+                        if nums2[j] > nums1[i] {
+                            max = nums2[j];
+                            break;
+                        }
+                    }
+                }
+            }
+
+            ans.push(max)
         }
-      }
+
+        ans
     }
-
-    ans.push(max);
-  }
-
-  return ans;
-};
+}
 
 /**
  * Stack & Map Approach:
@@ -86,25 +87,28 @@ const nextGreaterElement = (nums1, nums2) => {
  *
  * Space complexity: O(m), where m is the length of the map.
  */
-const nextGreaterElement = (nums1, nums2) => {
-  const map = {};
-  const stack = [];
+use std::collections::HashMap;
+impl Solution {
+    pub fn next_greater_element(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
+        let mut stack: Vec<i32> = Vec::new();
+        let mut map: HashMap<i32, i32> = HashMap::new();
 
-  // Build a map of element -> next greater element in nums2
-  for (let i = nums2.length - 1; i >= 0; i--) {
-    while (stack.length > 0 && stack[stack.length - 1] <= nums2[i]) {
-      stack.pop(); // Remove smaller elements from the stack
+        // Build a map of element -> next greater element in nums2
+        for i in (0..nums2.len()).rev() {
+            while !stack.is_empty() && stack.get(stack.len() - 1) <= nums2.get(i) {
+                stack.pop(); // Remove smaller elements from the stack
+            }
+
+            map.insert(nums2[i], stack.last().copied().unwrap_or(-1));
+            stack.push(nums2[i]); // Push current element onto the stack
+        }
+
+        // Find next greater elements for nums1 elements based on the map
+        let mut ans: Vec<i32> = Vec::with_capacity(nums1.len());
+        for num in nums1 {
+            ans.push(map.get(&num).copied().unwrap_or(-1));
+        }
+
+        ans
     }
-
-    map[nums2[i]] = stack.length > 0 ? stack[stack.length - 1] : -1;
-    stack.push(nums2[i]); // Push current element onto the stack
-  }
-
-  // Find next greater elements for nums1 elements based on the map
-  const ans = [];
-  for (const num of nums1) {
-    ans.push(map[num] || -1);
-  }
-
-  return ans;
-};
+}
