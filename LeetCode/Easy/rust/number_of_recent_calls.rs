@@ -15,20 +15,28 @@
  *
  * Space complexity: O(n) because we are storing all the elements in the queue.
  */
-var RecentCounter = function () {
-  this.queue = [];
-};
+struct RecentCounter {
+    queue: Vec<i32>,
+}
 
 /**
- * @param {number} t
- * @return {number}
+ * `&self` means the method takes an immutable reference.
+ * If you need a mutable reference, change it to `&mut self` instead.
  */
-RecentCounter.prototype.ping = function (t) {
-  this.queue.push(t);
+impl RecentCounter {
+    fn new() -> Self {
+        Self { queue: Vec::new() }
+    }
 
-  while (this.queue && this.queue[0] < t - 3000) {
-    this.queue.shift(t);
-  }
+    // Function to record a ping at a specific time
+    fn ping(&mut self, t: i32) -> i32 {
+        self.queue.push(t);
 
-  return this.queue.length;
-};
+        // Remove elements older than 3000 from the front of the queue
+        while !self.queue.is_empty() && *self.queue.get(0).unwrap() < t - 3000 {
+            self.queue.remove(0);
+        }
+
+        self.queue.len() as i32
+    }
+}
