@@ -188,6 +188,7 @@
 | Evaluate Reverse Polish Notation                                            | [JS Solution](./medium/evaluateReversePolishNotation.js) - [Rust Solution](./medium/rust/evaluate_reverse_polish_notation.rs)      | Medium     | ✅     |
 | Online Stock Span                                                           | [JS Solution](./medium/onlineStockSpan.js) - [Rust Solution](./medium/rust/online_stack_span.rs)                                   | Medium     | ✅     |
 | Basic Calculator II                                                         | [JS Solution](./medium/basicCalculatorII.js)                                                                                       | Medium     | ✅     |
+| Remove K Digits                                                             | [JS Solution](./medium/removeKDigits.js) - [Rust Solution](./medium/rust/remove_k_digits.rs)                                       | Medium     | ✅     |
 
 ## Hard Challenges
 
