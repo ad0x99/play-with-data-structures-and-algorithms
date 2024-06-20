@@ -197,7 +197,7 @@
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ---------- | ------ |
 | Minimum Window Substring                                | [JS Solution](./hard/minimumWindowSubstring.js)                                                                | Hard       | ❌     |
 | Russian Doll Envelopes                                  | [JS Solution](./hard/russianDollEnvelopes.js)                                                                  | Hard       | ✅     |
-| Split Array Largest Sum                                 | [JS Solution](./hard/splitArrayLargestSum.js)                                                                  | Hard       | ❌     |
+| Split Array Largest Sum                                 | [JS Solution](./hard/splitArrayLargestSum.js) - [Rust Solution](./hard/rust/split_array_largest_sum.rs)        | Hard       | ✅     |
 | Find The Longest Valid Obstacle Course At Each Position | [JS Solution](./hard/findTheLongestValidObstacleCourseAtEachPosition.js)                                       | Hard       | ❌     |
 | 24 Game                                                 | [JS Solution](./hard/24Game.js)                                                                                | Hard       | ❌     |
 | Remove Invalid Parentheses                              | [JS Solution](./hard/removeInvalidParentheses.js) - [Rust Solution](./hard/rust/remove_invalid_parentheses.rs) | Hard       | ✅     |
