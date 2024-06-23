@@ -19,22 +19,26 @@
  *
  * Space complexity: O(1)
  */
-const mergeTwoLists = (list1, list2) => {
-  let currentHead = new ListNode(0);
-  let dummyHead = currentHead.head;
+impl Solution {
+    pub fn merge_two_lists(
+        mut list1: Option<Box<ListNode>>,
+        mut list2: Option<Box<ListNode>>,
+    ) -> Option<Box<ListNode>> {
+        let mut dummy_head = Box::new(ListNode::new(0));
+        let mut current = &mut *dummy_head;
 
-  while (list1 && list2) {
-    if (list1.val <= list2.val) {
-      currentHead.next = list1;
-      currentHead = currentHead.next;
-      list1 = list1.next;
-    } else {
-      currentHead.next = list2;
-      currentHead = currentHead.next;
-      list2 = list2.next;
+        while let (Some(node1), Some(node2)) = (&list1, &list2) {
+            if node1.val <= node2.val {
+                current.next = list1.take();
+                list1 = current.next.as_mut()?.next.take();
+            } else {
+                current.next = list2.take();
+                list2 = current.next.as_mut()?.next.take();
+            }
+            current = current.next.as_mut()?;
+        }
+
+        current.next = list1.or(list2);
+        dummy_head.next
     }
-  }
-
-  currentHead.next = list1 || list2;
-  return dummyHead.next;
-};
+}
