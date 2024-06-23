@@ -13,7 +13,7 @@
 | Concatenation of Array                                       | [JS Solution](./easy/concatenationOfArray.js)                                                             | Easy       | ✅     |
 | Guess Number Higher or Lower                                 | [JS Solution](./easy/guessNumberHigherOrLower.js)                                                         | Easy       | ✅     |
 | Maximum Number of Balloons                                   | [JS Solution](./easy/maximumNumberOfBalloons.js)                                                          | Easy       | ✅     |
-| Merge Sorted Array                                           | [JS Solution](./easy/mergeSortedArray.js)                                                                 | Easy       | ✅     |
+| Merge Sorted Array                                           | [JS Solution](./easy/mergeSortedArray.js) - [Rust Solution](./easy/rust/merge_sorted_array.rs)            | Easy       | ✅     |
 | Pascal's Triangle                                            | [JS Solution](./easy/pascalsTriangle.js)                                                                  | Easy       | ✅     |
 | Plus One                                                     | [JS Solution](./easy/plusOne.js)                                                                          | Easy       | ✅     |
 | Range Sum Query                                              | [JS Solution](./easy/rangeSumQuery.js)                                                                    | Easy       | ✅     |
