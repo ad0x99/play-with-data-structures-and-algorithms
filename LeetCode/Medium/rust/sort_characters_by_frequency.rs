@@ -26,23 +26,26 @@
  * - Splitting the input string into an array of characters.
  *
  */
-const frequencySort = (s) => {
-  let frequencies = new Map();
+use std::collections::HashMap;
+impl Solution {
+    pub fn frequency_sort(s: String) -> String {
+        let mut frequencies: HashMap<char, u32> = HashMap::new();
 
-  for (const char of s) {
-    frequencies.set(char, (frequencies.get(char) || 0) + 1);
-  }
+        for c in s.chars() {
+            *frequencies.entry(c).or_insert(0) += 1;
+        }
 
-  s = s.split('');
-  s.sort((a, b) => {
-    const countA = frequencies.get(a);
-    const countB = frequencies.get(b);
+        let mut chars: Vec<char> = s.chars().collect();
+        chars.sort_by(|a, b| {
+            let count_a = frequencies.get(a).unwrap_or(&0);
+            let count_b = frequencies.get(b).unwrap_or(&0);
 
-    return countB - countA || a.charCodeAt() - b.charCodeAt();
-  });
+            count_b.cmp(count_a).then(b.cmp(a)) // Secondary sort by char code
+        });
 
-  return s.join('');
-};
+        chars.iter().collect()
+    }
+}
 
 /**
  * Bucket Sort Approach: Using a bucket to store characters based on its frequency, and then build sorted string using frequency bucket.
@@ -68,23 +71,26 @@ const frequencySort = (s) => {
  *
  * Space complexity: O(n) - because we use a Map to store the character frequencies, a bucket array to store characters based on their frequency, and a string to store the final sorted string.
  */
-const frequencySortBucketSort = (s) => {
-  const frequencies = new Map();
-  for (const char of s) {
-    frequencies.set(char, (frequencies.get(char) || 0) + 1);
-  }
+impl Solution {
+    pub fn frequency_sort(s: String) -> String {
+        let mut frequencies: HashMap<char, usize> = HashMap::new();
+        for c in s.chars() {
+            *frequencies.entry(c).or_insert(0) += 1;
+        }
 
-  const bucket = Array.from({ length: s.length + 1 }, () => []);
-  for (const [char, freq] of frequencies.entries()) {
-    bucket[freq].push(char);
-  }
+        let mut bucket: Vec<Vec<char>> = vec![Vec::new(); s.len() + 1];
+        for (char, freq) in frequencies.iter() {
+            bucket[*freq].push(*char);
+        }
 
-  let sortedString = '';
-  for (let freq = s.length; freq >= 0; freq--) {
-    for (const char of bucket[freq]) {
-      sortedString += char.repeat(freq);
+        let mut sorted_string = String::new();
+        for freq in (0..=s.len()).rev() {
+            // Iterate frequencies in descending order
+            for &char in &bucket[freq] {
+                sorted_string.push_str(&char.to_string().repeat(freq));
+            }
+        }
+
+        sorted_string
     }
-  }
-
-  return sortedString;
-};
+}
