@@ -1,66 +1,157 @@
 /**
  * https://leetcode.com/problems/kth-largest-element-in-an-array/description/
- * The function "findKthLargest" takes an array of numbers and an integer "k" as input, sorts the array
- * in ascending order, and returns the kth largest number.
- * @param nums - An array of numbers.
- * @param k - The parameter `k` represents the position of the largest element we want to find in the
- * array `nums`.
- * @returns The kth largest element in the given array.
  *
- * Time complexity : O(klogn)
- * Space complexity : O(1)
+ * Sorting Approach: We want to find the largest element at the k position. We'll sort the array in descending order and retrieve the element at the k position.
+ *
+ * Because the array starts from `0`, thus we have to get the element at the `k - 1` position
+ *
+ * Time complexity: O(n log n) - where n is the length of the array and we sort the array in descending order
+ *
+ * Space complexity: O(1)
  */
-const findKthLargestWithSorting = (nums, k) => {
-  const sortedNums = nums.sort();
-  return sortedNums[nums.length - k];
-};
-
-console.log(findKthLargestWithSorting([3, 2, 1, 5, 6, 4], 2));
-console.log(findKthLargestWithSorting([3, 2, 3, 1, 2, 4, 5, 5, 6], 4));
-
 const findKthLargest = (nums, k) => {
-  const left = 0;
-  const right = nums.length - 1;
-  k = nums.length - k;
+  return nums.sort((a, b) => b - a)[k - 1];
+};
 
-  const quickSelect = (left, right) => {
-    const pivot = nums[right];
-    let pointer = left;
+/**
+ * Quickselect Approach
+ *
+ * 1. In the findKthLargest function, we call the quickSelect function with the original `nums` array and the calculated `kSmallest` index.
+ *
+ * 2. Inside the quickSelect function, we choose random element from the nums array.
+ *
+ * 3. We create 3 empty arrays:
+ * - left: used to store the elements which are smaller than the randomValue
+ * - mid: used to store the elements which are equal to the randomValue
+ * - right: used to store the elements which are greater than the randomValue
+ *
+ * 4. Partitioning: We iterate through each element (num) in the nums array.
+ * - 4.1: If current number is equal to the randomValue, we push it to the mid array (elements equal to the randomValue can be ignored for finding the kth largest).
+ *
+ * - 4.2: If current number is less than the randomValue, we push it to the left array which represents potential candidates for the kth largest element.
+ *
+ * - 4.3: If current number is greater than the randomValue, we push it to the right array which is not considered relevant for finding the kth largest.
+ *
+ * 5. Recursion: Based on the value of target kSmallest:
+ *
+ * - 5.1: If kSmallest is less than the length of the left array, it means the kth largest element resides in the left sub-array. We recursively call quickSelect function with the left sub-array and the same kSmallest value.
+ *
+ * - 5.2: If kSmallest is equal to the combined length of left and mid arrays, then kSmallest points to the randomValue itself, which is the kth largest element. In this case, we return the randomValue.
+ *
+ * - 5.3: If kSmallest is greater than the combined length of left and mid arrays, it means the kth largest element resides in the right sub-array. We recursively call quickSelect function with the right sub-array and a modified kSmallest value. This modified value is calculated by subtracting the combined lengths of left and mid arrays from the original kSmallest to adjust the index for the remaining sub-array.
+ *
+ * Time complexity: O(n) on average, where n is the number of elements in the nums array. O(n^2) on worst case if the algorithm consistently picks the smallest or largest element as the randomValue.
+ *
+ * Space complexity: O(n), where n is the number of elements in the left, mid and right arrays.
+ */
+const findKthLargest = (nums, k) => {
+  return quickSelect(nums, nums.length - k);
+};
 
-    for (let i = left; i < right; i++) {
-      // If the current value is less than the pivot
-      // We swap the previous pointer with the current index
-      // Then we increase the pointer by 1
-      if (nums[i] <= pivot) {
-        swap(nums, pointer, i);
-        pointer++;
-      }
-    }
+const quickSelect = (nums, kSmallest) => {
+  // Pick random element from the array
+  const randomValue = nums[Math.floor(Math.random() * nums.length)];
+  const left = [];
+  const mid = [];
+  const right = [];
 
-    // Otherwise swap the current pointer with the pivot
-    swap(nums, pointer, right);
-
-    // If the pointer is greater than the k
-    // We recursively find in the left side
-    if (pointer > k) {
-      return quickSelect(left, pointer - 1);
-    } else if (pointer < k) {
-      // If the pointer is less than the k
-      // We recursively find in the right side
-      return quickSelect(pointer + 1, right);
+  for (const num of nums) {
+    if (num === randomValue) {
+      mid.push(num);
+    } else if (num < randomValue) {
+      // Push all the smaller element to the left
+      left.push(num);
     } else {
-      // Otherwise, I'd be the pointer
-      return nums[pointer];
+      // Push all the bigger element to the right
+      right.push(num);
     }
-  };
+  }
 
-  // We pick the left pointer as first element and the pivot in the right as the last element
-  return quickSelect(left, right);
+  // kSmallest is on the left side
+  if (kSmallest < left.length) {
+    return quickSelect(left, kSmallest);
+  }
+
+  // kSmallest is in the middle
+  if (kSmallest < left.length + mid.length) {
+    return pivot;
+  }
+
+  // kSmallest is in the right side
+  return quickSelect(right, kSmallest - left.length - mid.length);
 };
 
-const swap = (array, idx1, idx2) => {
-  [array[idx1], array[idx2]] = [array[idx2], array[idx1]];
+/**
+ * Quickselect Approach (Optimal Space)
+ *
+ * Similar approach with previous solution, but with optimized space complexity
+ *
+ * 1. The quickSelect function takes four arguments:
+ * - nums: The array to search.
+ * - start: The starting index of the sub-array to consider.
+ * - end: The ending index of the sub-array to consider.
+ * - kSmallest: The index of the kth smallest element we're searching for within the current sub-array.
+ *
+ * 2. We choose a random value within the current sub-array.
+ *
+ * 3. Partitioning: We initialize a left index starting at start.
+ * - 3.1: We iterate through the sub-array, and check if the current element (nums[i]) is less than the pivot (randomValue), we swap the current element (nums[i]) with the element at the left index to move all the smaller element to the left of the current random element.
+ *
+ * - 3.2: We then increase the left index to point to the next position for a smaller element.
+ *
+ * 4. We initialize a right index starting at end.
+ * - 4.1:  We iterate from the end of the sub-array, and check if the current element (nums[i]) is greater than the pivot (randomValue), we swap the current element (nums[i]) with the element at the right index to move all the larger element to the right of the current random element.
+ *
+ * - 4.2: We then decrease the right index to point to the next position for a larger element.
+ *
+ * 5. Recursion: Based on the value of target kSmallest:
+ * - 5.1: If the kSmallest index (kSmallest) is less than the final position of the smaller elements (left - 1), it means the kth smallest element must be in the left sub-array. We recursively call quickSelect function with the left sub-array.
+ *
+ * - 5.2: If the kSmallest index (kSmallest) is less than or equal to the final position of the larger elements (right), it means the pivot element (randomValue) is the kth smallest element. We return the randomValue as the kth largest element.
+ *
+ * - 5.3: Otherwise, the kth smallest element must be in the right sub-array. We recursively call quickSelect function with the right sub-array.
+ *
+ * Time complexity: O(n), where n is the number of elements in the nums array.
+ *
+ * Space complexity: O(1)
+ */
+const findKthLargest = (nums, k) => {
+  const n = nums.length;
+  return quickSelect(nums, 0, n - 1, n - k);
 };
 
-console.log(findKthLargest([3, 2, 1, 5, 6, 4], 2));
-console.log(findKthLargest([3, 2, 3, 1, 2, 4, 5, 5, 6], 4));
+const quickSelect = (nums, start, end, kSmallest) => {
+  // Pick random element from the array
+  const randomIndex = Math.floor(Math.random() * (end - start + 1)) + start;
+  const randomValue = nums[randomIndex];
+
+  // Move all the smaller element to the left
+  let left = start;
+  for (let i = start; i <= end; i++) {
+    if (nums[i] < randomValue) {
+      [nums[left], nums[i]] = [nums[i], nums[left]];
+      left += 1;
+    }
+  }
+
+  // Move all the bigger element to the right
+  let right = end;
+  for (let i = end; i >= start; i--) {
+    if (nums[i] > randomValue) {
+      [nums[right], nums[i]] = [nums[i], nums[right]];
+      right -= 1;
+    }
+  }
+
+  // kSmallest is on the left side
+  if (kSmallest < left) {
+    return quickSelect(nums, start, left - 1, kSmallest);
+  }
+  // kSmallest is in the middle
+  if (kSmallest <= right) {
+    return randomValue;
+  }
+
+  // kSmallest is in the right side
+  return quickSelect(nums, right + 1, end, kSmallest);
+};
