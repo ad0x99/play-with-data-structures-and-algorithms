@@ -1,11 +1,13 @@
 /**
  * https://leetcode.com/problems/sort-an-array/description/
  *
- * Merge Sort Approach: We split the original array into 2 parts, and then we sort the first part and second part individually. After sorting the first and second parts, we have 2 sorted parts. We will merge those 2 parts together to form a single sorted array.
+ * Merge Sort Approach
+ *
+ * Idea: We split the original array into 2 parts, and then we sort the first part and second part individually. After sorting the first and second parts, we have 2 sorted parts. We will merge those 2 parts together to form a single sorted array.
  *
  * Time complexity: O(n * log n) - where n is length of the array. Because the array is divided into halves recursively until each subarray contains only one element, and then merged back together in sorted order.
  *
- * Space complexity: O(n) - because the additional space is required to store the left and right subarrays during the merge process
+ * Space complexity: O(n) - because the additional space is required to store the left and right sub-arrays during the merge process
  *
  */
 const sortArray = (nums) => {
@@ -65,7 +67,11 @@ const mergeSortedArray = (left, leftLength, right, rightLength, nums) => {
 };
 
 /**
- * Quick Sort Approach: We will randomly pick a element in the array. After that, we use that random element for comparison to move all the elements are less than the random element to the left of the array, and move all the elements are greater than the random element to the right of the array.
+ * Quick Sort Approach
+ *
+ * We will randomly pick a element in the array. After that, we use that random element for comparison to move all the elements are less than the random element to the left of the array, and move all the elements are greater than the random element to the right of the array.
+ *
+ * Implementation:
  *
  * This implementation utilizes a random pivot selection strategy. Instead of choosing the first or last element as the pivot, it picks a random element within the sub-section.
  *
@@ -88,7 +94,7 @@ const mergeSortedArray = (left, leftLength, right, rightLength, nums) => {
  *
  * Time complexity:
  * - Average Case: O(n log n)
- * - Worst Case: O(n^2)
+ * - Worst Case: O(n ^ 2)
  *
  * Space complexity: O(log n)
  *
@@ -154,7 +160,7 @@ const quickSort = (nums, start, end) => {
  *
  * Time complexity:
  * - Average Case: O(n log n)
- * - Worst Case: O(n^2)
+ * - Worst Case: O(n ^ 2)
  *
  * Space complexity: O(log n)
  *
@@ -197,4 +203,106 @@ const quickSortMoreOptimal = (nums, start, end) => {
 
 const swap = (nums, left, right) => {
   [[nums[left], nums[right]]] = [[nums[right], nums[left]]];
+};
+
+/**
+ * Radix Sort Approach
+ *
+ * The idea is to use radix sort algorithm to sort numbers by their digits. Radix sort only supports for sorting non-negative numbers, therefore, in order to handle negative numbers, we will use separate buckets for storing the positive and negative numbers.
+ *
+ * 1. First, we need to get the most digits in the nums array.
+ * - 1.1: We find the absolute value of the largest number. Using absolute here to handle the negative value.
+ *
+ * - 1.2: We then then call `mostDigits` function to calculate the most significant digit.
+ *
+ * 2. We iterate through each digit position (from least significant to most significant) up to the maxDigitCount.
+ *
+ * 3. Inside the outer loop, we create two bucket arrays: `positiveBuckets` and `negativeBuckets`. These arrays will hold numbers based on their digits at the current position (k). Each bucket index represents a digit (`0-9`).
+ *
+ * 4. In the inner loop, we iterate through each number.
+ * - 4.1: We call `getDigit` function to get the digit at the current position (k) of the current number.
+ *
+ * - 4.2: Based on the sign of the number: If the number is non-negative, we push it to the corresponding bucket (`positiveBuckets`[digit]) based on the digit at position k.
+ *
+ * - 4.3: Otherwise, if the number is negative, we push it to the corresponding bucket (`negativeBuckets`[digit]) in the `negativeBuckets` array.
+ *
+ * 5. After iterating through all numbers, we merge the buckets back into the nums array.
+ * - 5.1: We first reverse the `negativeBuckets` array because negative numbers should appear before positive numbers in the final sorted array.
+ *
+ * - 5.2: We concatenate the reversed `negativeBuckets`, followed by `positiveBuckets`, into a new array. This merges the numbers based on their digit at the current position (k). We assign the merged array back to the nums array, effectively sorting the numbers based on the digit at the current position (k).
+ *
+ * 6. The loop iterates through different digit positions (k) until it reaches the `maxDigitCount`. This ensures that the sorting happens from the least significant digit to the most significant digit, achieving a stable sort.
+ *
+ * 7. After iterating through all digit positions, we return the sorted nums array.
+ *
+ * Time complexity: O(n * k), where n is the number of elements in the nums array, and k is the max digit number.
+ *
+ * Space complexity: O(n), where n is the number of elements in the nums array
+ */
+const sortArray = (nums) => {
+  const maxDigitCount = mostDigits(Math.max(...nums.map(Math.abs)));
+
+  for (let k = 0; k < maxDigitCount; k++) {
+    let positiveBuckets = Array.from({ length: 10 }, () => []);
+    let negativeBuckets = Array.from({ length: 10 }, () => []);
+
+    for (let i = 0; i < nums.length; i++) {
+      const digit = getDigit(nums[i], k);
+      const currentNumber = nums[i];
+
+      if (currentNumber >= 0) {
+        positiveBuckets[digit].push(currentNumber);
+      } else {
+        negativeBuckets[digit].push(currentNumber);
+      }
+    }
+
+    nums = [].concat(...negativeBuckets.reverse()).concat(...positiveBuckets);
+  }
+
+  return nums;
+};
+
+/**
+ * Radix Sort Approach (Optimized Space)
+ *
+ * The idea is similar to previous solution, but instead of having separate positive and negative buckets, we use a single buckets array of length 20, where:
+ *
+ * - Indices 0-9 will store negative numbers (buckets[9 - digit]).
+ * - Indices 10-19 will store positive numbers (buckets[digit + 10]).
+ *
+ * Time complexity: O(n * k), where n is the number of elements in the nums array, and k is the max digit number.
+ *
+ * Space complexity: O(n), where n is the number of elements in the nums array
+ */
+const sortArray = (nums) => {
+  const maxDigitCount = mostDigits(Math.max(...nums.map(Math.abs)));
+
+  for (let k = 0; k < maxDigitCount; k++) {
+    const digitBuckets = Array.from({ length: 20 }, () => []);
+
+    for (let i = 0; i < nums.length; i++) {
+      const digit = getDigit(nums[i], k);
+      const currentNumber = nums[i];
+
+      if (currentNumber >= 0) {
+        digitBuckets[digit + 10].push(currentNumber);
+      } else {
+        digitBuckets[9 - digit].push(currentNumber);
+      }
+    }
+
+    nums = [].concat(...digitBuckets);
+  }
+
+  return nums;
+};
+
+const mostDigits = (value) => {
+  if (value < 10) return 1;
+  return Math.floor(Math.log10(value)) + 1;
+};
+
+const getDigit = (num, index) => {
+  return Math.floor(Math.abs(num) / Math.pow(10, index)) % 10;
 };
