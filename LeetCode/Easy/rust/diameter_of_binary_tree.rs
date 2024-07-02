@@ -14,12 +14,12 @@
  * 2. If `root.left` and `root.right` are both `null` (meaning a leaf node), we return `[0, 0]` as diameter: 0 (diameter through a single node is 0) and height: 0 (height of a leaf node is 0).
  *
  * 3. Otherwise, we perform recursive calls to dfs for the left (root.left) and right (root.right) subtrees.
- * - 3.1: `[leftDiameter, leftHeight]`: Represents the diameter and height calculated from the left subtree.
+ * - 3.1: `[left_diameter, left_height]`: Represents the diameter and height calculated from the left subtree.
  *
- * - 3.2: `[rightDiameter, rightHeight]`: Represents the diameter and height calculated from the right subtree.
+ * - 3.2: `[right_diameter, right_height]`: Represents the diameter and height calculated from the right subtree.
  *
  * 4. And then, we calculate the diameter at the current node (root) using the following possibilities:
- * - 4.1: We get the maximum diameter found in either the left or right subtree, and the potential diameter if the longest paths from the left and right subtrees pass through the current node (`leftHeight + rightHeight + 2` - adding 2 for the edges connecting the current node to the left and right subtrees).
+ * - 4.1: We get the maximum diameter found in either the left or right subtree, and the potential diameter if the longest paths from the left and right subtrees pass through the current node (`left_height + rightHeight + 2` - adding 2 for the edges connecting the current node to the left and right subtrees).
  *
  * - 4.3: Finally, we return an array containing the calculated diameter (diameter) and the maximum height (`height`) from the current node.
  *
@@ -29,20 +29,26 @@
  *
  * Space complexity: O(h) - where h <= n and h is the height of the tree
  */
-const diameterOfBinaryTree = (root) => {
-  const dfs = (root) => {
-    if (!root) return [0, -1];
-    if (!root.left && !root.right) return [0, 0];
+use std::cell::RefCell;
+use std::rc::Rc;
+impl Solution {
+    pub fn diameter_of_binary_tree(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
+        Self::dfs(root).0
+    }
 
-    const [leftDiameter, leftHeight] = dfs(root.left);
-    const [rightDiameter, rightHeight] = dfs(root.right);
-    const diameter = Math.max(
-      leftDiameter,
-      rightDiameter,
-      leftHeight + rightHeight + 2
-    );
-    return [diameter, Math.max(leftHeight, rightHeight) + 1];
-  };
+    fn dfs(node: Option<Rc<RefCell<TreeNode>>>) -> (i32, i32) {
+        if let Some(node) = node {
+            let (left_diameter, left_height) = Self::dfs(node.borrow().left.clone());
+            let (right_diameter, right_height) = Self::dfs(node.borrow().right.clone());
 
-  return dfs(root)[0];
-};
+            let diameter = left_diameter
+                .max(right_diameter)
+                .max(left_height + right_height + 2);
+            let height = left_height.max(right_height) + 1;
+
+            (diameter, height)
+        } else {
+            (0, -1)
+        }
+    }
+}
