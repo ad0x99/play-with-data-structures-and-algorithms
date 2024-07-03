@@ -50,7 +50,7 @@
 | Min Cost Climbing Stairs                                     | [JS Solution](./easy/minCostClimbingStairs.js) - [Rust Solution](./easy/rust/min_cost_climbing_stairs.rs) | Easy       | ✅     |
 | Fibonacci Number                                             | [JS Solution](./easy/fibonacciNumber.js) - [Rust Solution](./easy/rust/fibonacci_number.rs)               | Easy       | ✅     |
 | Diameter of Binary Tree                                      | [JS Solution](./easy/diameterOfBinaryTree.js) - [Rust Solution](./easy/rust/diameter_of_binary_tree.rs)   | Easy       | ✅     |
-| Design HashMap                                               | [JS Solution](./easy/designHashmap.js)                                                                    | Easy       | ✅     |
+| Design HashMap                                               | [JS Solution](./easy/designHashmap.js) - [Rust Solution](./easy/rust/design_hash_map.rs)                  | Easy       | ✅     |
 | Design HashSet                                               | [JS Solution](./easy/designHashset.js)                                                                    | Easy       | ❌     |
 | Binary Tree Postorder Traversal                              | [JS Solution](./easy/binaryTreePostorderTraversal.js)                                                     | Easy       | ❌     |
 | Symmetric Tree                                               | [JS Solution](./easy/symmetricTree.js)                                                                    | Easy       | ❌     |
