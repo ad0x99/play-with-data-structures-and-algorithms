@@ -52,3 +52,33 @@ impl Solution {
         }
     }
 }
+
+/**
+ * Same approach as previous solution with small improvement
+ *
+ * Instead of calculate the diameter and height at the same time at each recursive calls for each node, we just pass by the height to calculate the height of each node, then using a diameter variable to keep track the found longest diameter so far.
+ */
+use std::cell::RefCell;
+use std::rc::Rc;
+
+impl Solution {
+    pub fn diameter_of_binary_tree(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
+        let mut diameter = 0;
+
+        fn height(node: &Option<Rc<RefCell<TreeNode>>>, diameter: &mut i32) -> i32 {
+            if let Some(node) = node {
+                let left_height = height(&node.borrow().left, diameter);
+                let right_height = height(&node.borrow().right, diameter);
+
+                *diameter = std::cmp::max(*diameter, left_height + right_height + 2);
+
+                std::cmp::max(left_height, right_height) + 1
+            } else {
+                -1
+            }
+        }
+
+        height(&root, &mut diameter);
+        diameter
+    }
+}

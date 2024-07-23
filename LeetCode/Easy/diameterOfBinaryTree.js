@@ -46,3 +46,29 @@ const diameterOfBinaryTree = (root) => {
 
   return dfs(root)[0];
 };
+
+/**
+ * Same approach as previous solution with small improvement
+ * 
+ * Instead of calculate the diameter and height at the same time at each recursive calls for each node, we just pass by the height to calculate the height of each node, then using a diameter variable to keep track the found longest diameter so far.
+ */
+const diameterOfBinaryTree = (root) => {
+  let diameter = 0;
+
+  const height = (node) => {
+    if (!node) return -1;
+
+    const leftHeight = height(node.left);
+    const rightHeight = height(node.right);
+
+    // Update the diameter at this node
+    diameter = Math.max(diameter, leftHeight + rightHeight + 2);
+
+    // Return the height of the current node
+    return Math.max(leftHeight, rightHeight) + 1;
+  };
+
+  height(root);
+
+  return diameter;
+};
