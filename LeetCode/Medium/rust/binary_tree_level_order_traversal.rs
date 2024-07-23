@@ -3,7 +3,7 @@
  *
  * Breadth-First Search (BFS)
  *
- * The core logic of bsf is Node -> Left -> Right. It means we will traverse the current node (parent) first, then move to the left and right of the current node.
+ * The core logic of bfs is Node -> Left -> Right. It means we will traverse the current node (parent) first, then move to the left and right of the current node.
  *
  * Implementation
  *
