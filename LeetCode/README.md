@@ -60,7 +60,7 @@
 | Path Sum                                                     | [JS Solution](./easy/pathSum.js) - [Rust Solution](./easy/rust/path_sum.rs)                                                                                              | Easy       | ✅     |
 | Range Sum of BST                                             | [JS Solution](./easy/rangeSumOfBST.js) - [Rust Solution](./easy/rust/range_sum_of_bst.rs)                                                                                | Easy       | ✅     |
 | Binary Tree Inorder Traversal                                | [JS Solution](./easy/binaryTreeInorderTraversal.js) - [Rust Solution](./easy/rust/binary_tree_inorder_traversal.rs)                                                      | Easy       | ✅     |
-| Two Sum IV - Input is BST                                    | [JS Solution](./easy/twoSumIVInputIsABST.js)                                                                                                                             | Easy       | ❌     |
+| Two Sum IV - Input is BST                                    | [JS Solution](./easy/twoSumIVInputIsABST.js) - [Rust Solution](./easy/rust/two_sum_iv_input_is_a_bst.rs)                                                                 | Easy       | ✅     |
 | Special Array I                                              | [JS Solution](./easy/specialArrayI.js) - [Rust Solution](./easy/rust/special_array_I.rs)                                                                                 | Easy       | ✅     |
 
 ## Medium Challenges
