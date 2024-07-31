@@ -11,7 +11,7 @@
  *
  * 4. Calculate sum: If the current node's value is within the range [low, high], we add the value of the current node to the sum to calculate the sum.
  *
- * 5. Recursive Calls: In the BST, the parent node is always greater than or equal to its left nodes, and is always less than or equal to its right nodes. We can leverage this characteristic to find the node in the correct range.
+ * 5. Recursive Calls: In the BST, the parent node is always greater than to its left nodes, and is always less than to its right nodes. We can leverage this characteristic to find the node in the correct range.
  * - 5.1: If the current node is greater than the lowest range, we want to find greater value in the left subtree. In this case, we will recursively call dfs function on the left subtree to find smaller node's value.
  *
  * - 5.2: Similarly, If the current node is less than the highest range, we want to find smaller value in the right subtree. In this case, we will recursively call dfs function on the right subtree to find bigger node's value.
