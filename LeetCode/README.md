@@ -224,5 +224,5 @@
 | Maximum Score of a Good Subarray                        | [JS Solution](./hard/maximumScoreOfAGoodSubarray.js)                                                           | Hard       | ✅     |
 | Sliding Window Maximum                                  | [JS Solution](./hard/slidingWindowMaximum.js) - [Rust Solution](./hard/rust/sliding_window_maximum.rs)         | Hard       | ✅     |
 | Course Schedule III                                     | [JS Solution](./hard/courseScheduleIII.js)                                                                     | Hard       | ❌     |
-| Similar String Groups                                   | [JS Solution](./hard/similarStringGroups.js)                                                                   | Hard       | ❌     |
+| Similar String Groups                                   | [JS Solution](./hard/similarStringGroups.js) - [Rust Solution](./hard/rust/similar_string_groups.rs)           | Hard       | ✅     |
 | Number of Islands II                                    | [JS Solution](./hard/numberOfIslandsII.js)                                                                     | Hard       | ❌     |
