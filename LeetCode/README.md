@@ -225,4 +225,4 @@
 | Sliding Window Maximum                                  | [JS Solution](./hard/slidingWindowMaximum.js) - [Rust Solution](./hard/rust/sliding_window_maximum.rs)         | Hard       | ✅     |
 | Course Schedule III                                     | [JS Solution](./hard/courseScheduleIII.js)                                                                     | Hard       | ❌     |
 | Similar String Groups                                   | [JS Solution](./hard/similarStringGroups.js) - [Rust Solution](./hard/rust/similar_string_groups.rs)           | Hard       | ✅     |
-| Number of Islands II                                    | [JS Solution](./hard/numberOfIslandsII.js)                                                                     | Hard       | ❌     |
+| Number of Islands II                                    | [JS Solution](./hard/numberOfIslandsII.js) - [Rust Solution](./hard/rust/number_of_islands_ii.rs)              | Hard       | ✅     |
