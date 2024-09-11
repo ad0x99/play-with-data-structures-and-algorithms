@@ -208,7 +208,7 @@
 | Find The Longest Valid Obstacle Course At Each Position | [JS Solution](./hard/findTheLongestValidObstacleCourseAtEachPosition.js)                                       | Hard       | ✅     |
 | 24 Game                                                 | [JS Solution](./hard/24Game.js)                                                                                | Hard       | ❌     |
 | Remove Invalid Parentheses                              | [JS Solution](./hard/removeInvalidParentheses.js) - [Rust Solution](./hard/rust/remove_invalid_parentheses.rs) | Hard       | ✅     |
-| Merge K Sorted Lists                                    | [JS Solution](./hard/mergeKSortedLists.js)                                                                     | Hard       | ❌     |
+| Merge K Sorted Lists                                    | [JS Solution](./hard/mergeKSortedLists.js)                                                                     | Hard       | ✅     |
 | Stream of Characters                                    | [JS Solution](./hard/streamOfCharacters.js) - [Rust Solution](./hard/rust/stream_of_characters.rs)             | Hard       | ✅     |
 | Find Median from Data Stream                            | [JS Solution](./hard/findMedianFromDataStream.js)                                                              | Hard       | ❌     |
 | Word Break II                                           | [JS Solution](./hard/wordBreakII.js) - [Rust Solution](./hard/rust/word_break_ii.rs)                           | Hard       | ✅     |
