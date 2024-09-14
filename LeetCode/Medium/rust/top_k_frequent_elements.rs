@@ -107,3 +107,117 @@ impl Solution {
         sorted_unique_nums
     }
 }
+
+/**
+ * Max Heap Approach
+ *
+ * Idea:
+ *
+ * - Count the frequency of each element
+ * - Store the each element to the max heap based on the its frequency. The biggest one would be at first of the max heap
+ * - Extract first k element(s) from max heap, representing k largest elements.
+ *
+ * Time complexity: O(n log n), where n is the number of elements in the nums array.
+ *
+ * Space complexity: O(n), where n is the size of the heap.
+ */
+use std::collections::HashMap;
+
+struct MaxHeap {
+    heap: Vec<(i32, i32)>, // (frequency, number)
+}
+
+impl MaxHeap {
+    pub fn new() -> Self {
+        MaxHeap { heap: Vec::new() }
+    }
+
+    pub fn insert(&mut self, value: (i32, i32)) {
+        self.heap.push(value);
+        self.bubble_up(self.heap.len() - 1);
+    }
+
+    pub fn extract_max(&mut self) -> (i32, i32) {
+        if self.heap.len() == 1 {
+            return self.heap.pop().unwrap();
+        }
+
+        let max = self.heap[0];
+        let last = self.heap.pop().unwrap();
+        self.heap[0] = last;
+        self.sink_down(0);
+
+        max
+    }
+
+    fn bubble_up(&mut self, mut index: usize) {
+        while index > 0 {
+            let parent_idx = (index - 1) / 2;
+            if self.heap[index].0 > self.heap[parent_idx].0 {
+                self.swap(index, parent_idx);
+                index = parent_idx;
+            } else {
+                break;
+            }
+        }
+    }
+
+    fn sink_down(&mut self, mut index: usize) {
+        let length = self.heap.len();
+        loop {
+            let left_child_idx = 2 * index + 1;
+            let right_child_idx = 2 * index + 2;
+            let mut largest = index;
+
+            if left_child_idx < length && self.heap[left_child_idx].0 > self.heap[largest].0 {
+                largest = left_child_idx;
+            }
+
+            if right_child_idx < length && self.heap[right_child_idx].0 > self.heap[largest].0 {
+                largest = right_child_idx;
+            }
+
+            if largest != index {
+                self.swap(index, largest);
+                index = largest;
+            } else {
+                break;
+            }
+        }
+    }
+
+    fn swap(&mut self, i: usize, j: usize) {
+        self.heap.swap(i, j);
+    }
+
+    pub fn size(&self) -> usize {
+        self.heap.len()
+    }
+}
+
+impl Solution {
+    pub fn top_k_frequent(nums: Vec<i32>, k: i32) -> Vec<i32> {
+        // Build frequency map
+        let mut frequencies = HashMap::new();
+        for &num in &nums {
+            *frequencies.entry(num).or_insert(0) += 1;
+        }
+
+        // Create a max heap
+        let mut max_heap = MaxHeap::new();
+
+        // Insert all elements from the frequency map into the heap
+        for (&num, &frequency) in frequencies.iter() {
+            max_heap.insert((frequency, num));
+        }
+
+        // Extract the top k frequent elements
+        let mut result = Vec::new();
+        for _ in 0..k {
+            let (_, num) = max_heap.extract_max();
+            result.push(num);
+        }
+
+        result
+    }
+}

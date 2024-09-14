@@ -93,3 +93,109 @@ const topKFrequent = (nums, k) => {
 
   return sortedUniqueNums.slice(0, k);
 };
+
+/**
+ * Max Heap Approach
+ *
+ * Idea:
+ *
+ * - Count the frequency of each element
+ * - Store the each element to the max heap based on the its frequency. The biggest one would be at first of the max heap
+ * - Extract first k element(s) from max heap, representing k largest elements.
+ *
+ * Time complexity: O(n log n), where n is the number of elements in the nums array.
+ *
+ * Space complexity: O(n), where n is the size of the heap.
+ */
+class MaxHeap {
+  constructor() {
+    this.heap = [];
+  }
+
+  insert(value) {
+    this.heap.push(value);
+    this.bubbleUp(this.heap.length - 1);
+  }
+
+  extractMax() {
+    if (this.heap.length === 1) return this.heap.pop();
+
+    const max = this.heap[0];
+    const min = this.heap.pop();
+    this.heap[0] = min;
+    this.sinkDown(0);
+
+    return max;
+  }
+
+  bubbleUp(index) {
+    let parentIdx = Math.floor((index - 1) / 2);
+
+    while (index > 0 && this.heap[index][0] > this.heap[parentIdx][0]) {
+      this.swap(index, parentIdx);
+      index = parentIdx;
+      parentIdx = Math.floor((index - 1) / 2);
+    }
+  }
+
+  sinkDown(index) {
+    const length = this.heap.length;
+    const current = this.heap[index];
+    const leftChildIdx = 2 * index + 1;
+    const rightChildIdx = 2 * index + 2;
+    let largest = index;
+
+    if (
+      leftChildIdx < length &&
+      this.heap[leftChildIdx][0] > this.heap[largest][0]
+    ) {
+      largest = leftChildIdx;
+    }
+
+    if (
+      rightChildIdx < length &&
+      this.heap[rightChildIdx][0] > this.heap[largest][0]
+    ) {
+      largest = rightChildIdx;
+    }
+
+    if (largest !== index) {
+      this.swap(index, largest);
+      this.sinkDown(largest);
+    }
+  }
+
+  swap(current, parent) {
+    [this.heap[current], this.heap[parent]] = [
+      this.heap[parent],
+      this.heap[current],
+    ];
+  }
+
+  size() {
+    return this.heap.length;
+  }
+}
+const topKFrequent = (nums, k) => {
+  // Build frequency map
+  const frequencies = new Map();
+  for (const num of nums) {
+    frequencies.set(num, (frequencies.get(num) || 0) + 1);
+  }
+
+  // Create a max heap
+  const maxHeap = new MaxHeap();
+
+  // Insert all elements from the frequency map into the heap
+  for (const [num, frequency] of frequencies.entries()) {
+    maxHeap.insert([frequency, num]);
+  }
+
+  // Extract the top k frequent elements
+  const result = [];
+  while (maxHeap.size() && result.length !== k) {
+    const [_, num] = maxHeap.extractMax();
+    result.push(num);
+  }
+  return result;
+};
