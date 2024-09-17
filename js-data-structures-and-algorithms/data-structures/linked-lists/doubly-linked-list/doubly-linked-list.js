@@ -9,7 +9,7 @@ export class DoublyLinkedList {
   }
 
   /**
-   * This is a method to add a new node to the end of a doubly linked list.
+   * This function adds a new node to the end of a doubly linked list.
    *
    * Pseudocode - Push
    *
@@ -21,18 +21,17 @@ export class DoublyLinkedList {
    * 6. Return the doubly linked list
    *
    * @param value - The value to be added to the end of the doubly linked list.
-   * @returns The `push` method is returning the updated instance of the DoublyLinkedList class, which
-   * allows for method chaining.
+   * @returns The `push` method is returning the updated instance of the DoublyLinkedList class, which allows for method chaining.
    */
   push(value) {
     const newNode = new DoublyNode(value);
 
-    if (!this.length) {
+    if (!this.head) {
       this.head = newNode;
       this.tail = newNode;
     } else {
       this.tail.next = newNode;
-      newNode.previous = this.tail;
+      newNode.prev = this.tail;
       this.tail = newNode;
     }
 
@@ -41,10 +40,7 @@ export class DoublyLinkedList {
   }
 
   /**
-   *
-   */
-  /**
-   * This is a pop function that removes the last node from a doubly linked list.
+   * This function removes the last node from a doubly linked list.
    *
    * Pseudocode - Pop
    *
@@ -62,32 +58,32 @@ export class DoublyLinkedList {
   pop() {
     if (!this.head) return undefined;
 
-    let poppedNode = this.tail;
+    let removedNode = this.tail;
 
     if (this.length === 1) {
       this.head = null;
       this.tail = null;
     } else {
-      this.tail = poppedNode.previous;
+      this.tail = removedNode.prev;
       this.tail.next = null;
     }
 
     this.length--;
-    return poppedNode;
+    return removedNode;
   }
 
   /**
-   * This is a shift function that removes the first element from a doubly linked list and returns it.
+   * This function removes the first element from a doubly linked list and returns it.
    *
    * Pseudocode - Shift
    *
    * 1. If there is no node, return undefined
-   * 2. Store the current head in the variable which is called `old head`
+   * 2. Store the current head in the variable which is called `removed head`
    * 3. If the length is 1, then set the head and tail to be null
-   * 4. Otherwise, update the head to be the next of the old head
+   * 4. Otherwise, update the head to be the next of the removed head
    * 5. Set the head's previous value to null
-   * 6. Set the old head's next to null
-   * 7. Decrement the length and return old head
+   * 6. Set the removed head's next to null
+   * 7. Decrement the length and return removed head
    *
    * @returns The `shift()` method is returning the old head node that was removed from the doubly linked
    * list.
@@ -95,19 +91,19 @@ export class DoublyLinkedList {
   shift() {
     if (!this.length) return undefined;
 
-    let oldHead = this.head;
+    let removedHead = this.head;
 
     if (this.length === 1) {
       this.head = null;
       this.tail = null;
     } else {
-      this.head = oldHead.next;
+      this.head = removedHead.next;
       this.head.previous = null;
-      oldHead.next = null;
+      removedHead.next = null;
     }
 
     this.length--;
-    return oldHead;
+    return removedHead;
   }
 
   /**
@@ -116,7 +112,7 @@ export class DoublyLinkedList {
    * Pseudocode - Unshift
    *
    * 1. Create a new node with the value passed to the function
-   * 2. If the length is, then set the head and tail to be the new node
+   * 2. If there is no node, then set the head and tail to be the new node
    * 3. Otherwise, set the previous node on the head of the list to be the new node
    * 4. Set the next node on the new node to be the head property
    * 5. Update the head to be the new node
@@ -152,8 +148,7 @@ export class DoublyLinkedList {
    *
    * @param index - The index of the node to be retrieved from the doubly linked list.
    * @returns The method `get(index)` returns the node at the specified index in the doubly linked list.
-   * If the index is out of range (less than 0 or greater than or equal to the length of the list), it
-   * returns `null`.
+   * If the index is out of range (less than 0 or greater than or equal to the length of the list), it returns `null`.
    */
   get(index) {
     if (index < 0 || index >= this.length) return null;
@@ -183,7 +178,7 @@ export class DoublyLinkedList {
   }
 
   /**
-   * The "set" function updates the value of a node at a given index in a doubly linked list.
+   * The function updates the value of a node at a given index in a doubly linked list.
    *
    * Pseudocode - Set
    *
@@ -273,8 +268,8 @@ export class DoublyLinkedList {
    */
   remove(index) {
     if (index < 0 || index >= this.length) return undefined;
-    if (index === 0) return this.shift(index);
-    if (index === this.length - 1) return this.pop(index);
+    if (index === 0) return this.shift();
+    if (index === this.length - 1) return this.pop();
 
     let removedNode = this.get(index);
     let beforeNode = removedNode.previous;
@@ -302,6 +297,6 @@ export class DoublyLinkedList {
       current = current.next;
     }
 
-    console.log('Doubly Linked List as Array: ', array);
+    return array;
   }
 }

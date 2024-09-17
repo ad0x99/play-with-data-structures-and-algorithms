@@ -154,12 +154,9 @@ export class SinglyLinkedList {
   get(index) {
     if (index < 0 || index >= this.length) return null;
 
-    let counter = 0;
     let current = this.head;
-
-    while (counter !== index) {
+    for (let i = 0; i < index; i++) {
       current = current.next;
-      counter++;
     }
 
     return current;
@@ -196,7 +193,7 @@ export class SinglyLinkedList {
   /**
    * This function inserts a new node with a given value at a specified index in a linked list.
    *
-   * Pseudocode - Insert
+   * Pseudocode - Insert At
    *
    * 1. This function should accept a value and an index
    * 2. If the index is less than 0 or greater than the length, return false
@@ -212,8 +209,8 @@ export class SinglyLinkedList {
    * @returns The method is returning a boolean value indicating whether the insertion was successful or
    * not. It returns `true` if the insertion was successful and `false` if the index is out of bounds.
    */
-  insert(index, value) {
-    if (index < 0 || index >= this.length) return false;
+  insertAt(index, value) {
+    if (index < 0 || index >= this.length) return undefined;
 
     if (index === this.length) return this.push(value);
     if (index === 0) return this.unshift(value);
@@ -224,7 +221,8 @@ export class SinglyLinkedList {
     previous.next = newNode;
     newNode.next = temp;
     this.length++;
-    return true;
+
+    return this;
   }
 
   /**
@@ -256,6 +254,7 @@ export class SinglyLinkedList {
     let removed = previousNode.next;
     previousNode.next = removed.next;
     this.length--;
+
     return removed;
   }
 
@@ -306,6 +305,6 @@ export class SinglyLinkedList {
       current = current.next;
     }
 
-    console.log(array);
+    return array;
   }
 }
