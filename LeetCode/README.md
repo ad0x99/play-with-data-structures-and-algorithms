@@ -200,29 +200,29 @@
 
 ## Hard Challenges
 
-| Name                                                    | Solution                                                                                                       | Difficulty | Status |
-| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ---------- | ------ |
-| Minimum Window Substring                                | [JS Solution](./hard/minimumWindowSubstring.js)                                                                | Hard       | ❌     |
-| Russian Doll Envelopes                                  | [JS Solution](./hard/russianDollEnvelopes.js)                                                                  | Hard       | ✅     |
-| Split Array Largest Sum                                 | [JS Solution](./hard/splitArrayLargestSum.js) - [Rust Solution](./hard/rust/split_array_largest_sum.rs)        | Hard       | ✅     |
-| Find The Longest Valid Obstacle Course At Each Position | [JS Solution](./hard/findTheLongestValidObstacleCourseAtEachPosition.js)                                       | Hard       | ✅     |
-| 24 Game                                                 | [JS Solution](./hard/24Game.js)                                                                                | Hard       | ❌     |
-| Remove Invalid Parentheses                              | [JS Solution](./hard/removeInvalidParentheses.js) - [Rust Solution](./hard/rust/remove_invalid_parentheses.rs) | Hard       | ✅     |
-| Merge K Sorted Lists                                    | [JS Solution](./hard/mergeKSortedLists.js)                                                                     | Hard       | ✅     |
-| Stream of Characters                                    | [JS Solution](./hard/streamOfCharacters.js) - [Rust Solution](./hard/rust/stream_of_characters.rs)             | Hard       | ✅     |
-| Find Median from Data Stream                            | [JS Solution](./hard/findMedianFromDataStream.js)                                                              | Hard       | ❌     |
-| Word Break II                                           | [JS Solution](./hard/wordBreakII.js) - [Rust Solution](./hard/rust/word_break_ii.rs)                           | Hard       | ✅     |
-| Count Special Integers                                  | [JS Solution](./hard/countSpecialIntegers.js)                                                                  | Hard       | ❌     |
-| Shortest Common Subsequence                             | [JS Solution](./hard/shortestCommonSubsequence.js)                                                             | Hard       | ❌     |
-| Maximize Score After N Operations                       | [JS Solution](./hard/maximizeScoreAfterNOperations.js)                                                         | Hard       | ❌     |
-| Count Stepping Numbers In Range                         | [JS Solution](./hard/countSteppingNumbersInRange.js)                                                           | Hard       | ❌     |
-| Minimum Sum Partition                                   | [JS Solution](./hard/minimumSumPartition.js)                                                                   | Hard       | ❌     |
-| Range Rum Query 2D - Mutable                            | [JS Solution](./hard/rangeSumQuery2DMutable.js)                                                                | Hard       | ❌     |
-| Create Sorted Array Through Instructions                | [JS Solution](./hard/createSortedArraythroughInstructions.js)                                                  | Hard       | ❌     |
-| Longest Increasing Subsequence II                       | [JS Solution](./hard/longestIncreasingSubsequenceII.js)                                                        | Hard       | ❌     |
-| Count of Smaller Numbers After Self                     | [JS Solution](./hard/countofSmallerNumbersAfterSelf.js)                                                        | Hard       | ❌     |
-| Maximum Score of a Good Subarray                        | [JS Solution](./hard/maximumScoreOfAGoodSubarray.js)                                                           | Hard       | ✅     |
-| Sliding Window Maximum                                  | [JS Solution](./hard/slidingWindowMaximum.js) - [Rust Solution](./hard/rust/sliding_window_maximum.rs)         | Hard       | ✅     |
-| Course Schedule III                                     | [JS Solution](./hard/courseScheduleIII.js)                                                                     | Hard       | ❌     |
-| Similar String Groups                                   | [JS Solution](./hard/similarStringGroups.js) - [Rust Solution](./hard/rust/similar_string_groups.rs)           | Hard       | ✅     |
-| Number of Islands II                                    | [JS Solution](./hard/numberOfIslandsII.js) - [Rust Solution](./hard/rust/number_of_islands_ii.rs)              | Hard       | ✅     |
+| Name                                                    | Solution                                                                                                         | Difficulty | Status |
+| ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------- | ------ |
+| Minimum Window Substring                                | [JS Solution](./hard/minimumWindowSubstring.js)                                                                  | Hard       | ❌     |
+| Russian Doll Envelopes                                  | [JS Solution](./hard/russianDollEnvelopes.js)                                                                    | Hard       | ✅     |
+| Split Array Largest Sum                                 | [JS Solution](./hard/splitArrayLargestSum.js) - [Rust Solution](./hard/rust/split_array_largest_sum.rs)          | Hard       | ✅     |
+| Find The Longest Valid Obstacle Course At Each Position | [JS Solution](./hard/findTheLongestValidObstacleCourseAtEachPosition.js)                                         | Hard       | ✅     |
+| 24 Game                                                 | [JS Solution](./hard/24Game.js)                                                                                  | Hard       | ❌     |
+| Remove Invalid Parentheses                              | [JS Solution](./hard/removeInvalidParentheses.js) - [Rust Solution](./hard/rust/remove_invalid_parentheses.rs)   | Hard       | ✅     |
+| Merge K Sorted Lists                                    | [JS Solution](./hard/mergeKSortedLists.js)                                                                       | Hard       | ✅     |
+| Stream of Characters                                    | [JS Solution](./hard/streamOfCharacters.js) - [Rust Solution](./hard/rust/stream_of_characters.rs)               | Hard       | ✅     |
+| Find Median from Data Stream                            | [JS Solution](./hard/findMedianFromDataStream.js) - [Rust Solution](./hard/rust/find_median_from_data_stream.rs) | Hard       | ✅     |
+| Word Break II                                           | [JS Solution](./hard/wordBreakII.js) - [Rust Solution](./hard/rust/word_break_ii.rs)                             | Hard       | ✅     |
+| Count Special Integers                                  | [JS Solution](./hard/countSpecialIntegers.js)                                                                    | Hard       | ❌     |
+| Shortest Common Subsequence                             | [JS Solution](./hard/shortestCommonSubsequence.js)                                                               | Hard       | ❌     |
+| Maximize Score After N Operations                       | [JS Solution](./hard/maximizeScoreAfterNOperations.js)                                                           | Hard       | ❌     |
+| Count Stepping Numbers In Range                         | [JS Solution](./hard/countSteppingNumbersInRange.js)                                                             | Hard       | ❌     |
+| Minimum Sum Partition                                   | [JS Solution](./hard/minimumSumPartition.js)                                                                     | Hard       | ❌     |
+| Range Rum Query 2D - Mutable                            | [JS Solution](./hard/rangeSumQuery2DMutable.js)                                                                  | Hard       | ❌     |
+| Create Sorted Array Through Instructions                | [JS Solution](./hard/createSortedArraythroughInstructions.js)                                                    | Hard       | ❌     |
+| Longest Increasing Subsequence II                       | [JS Solution](./hard/longestIncreasingSubsequenceII.js)                                                          | Hard       | ❌     |
+| Count of Smaller Numbers After Self                     | [JS Solution](./hard/countofSmallerNumbersAfterSelf.js)                                                          | Hard       | ❌     |
+| Maximum Score of a Good Subarray                        | [JS Solution](./hard/maximumScoreOfAGoodSubarray.js)                                                             | Hard       | ✅     |
+| Sliding Window Maximum                                  | [JS Solution](./hard/slidingWindowMaximum.js) - [Rust Solution](./hard/rust/sliding_window_maximum.rs)           | Hard       | ✅     |
+| Course Schedule III                                     | [JS Solution](./hard/courseScheduleIII.js)                                                                       | Hard       | ❌     |
+| Similar String Groups                                   | [JS Solution](./hard/similarStringGroups.js) - [Rust Solution](./hard/rust/similar_string_groups.rs)             | Hard       | ✅     |
+| Number of Islands II                                    | [JS Solution](./hard/numberOfIslandsII.js) - [Rust Solution](./hard/rust/number_of_islands_ii.rs)                | Hard       | ✅     |
