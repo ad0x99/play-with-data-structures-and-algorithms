@@ -62,6 +62,12 @@
 | Binary Tree Inorder Traversal                                | [JS Solution](./easy/binaryTreeInorderTraversal.js) - [Rust Solution](./easy/rust/binary_tree_inorder_traversal.rs)                                                      | Easy       | ✅     |
 | Two Sum IV - Input is BST                                    | [JS Solution](./easy/twoSumIVInputIsABST.js) - [Rust Solution](./easy/rust/two_sum_iv_input_is_a_bst.rs)                                                                 | Easy       | ✅     |
 | Special Array I                                              | [JS Solution](./easy/specialArrayI.js) - [Rust Solution](./easy/rust/special_array_I.rs)                                                                                 | Easy       | ✅     |
+| Palindrome Number                                            | [JS Solution](./easy/palindromeNumber.js) - [Rust Solution]()                                                                                                            | Easy       | ❌     |
+| Longest Common Prefix                                        | [JS Solution](./easy/longestCommonPrefix.js) - [Rust Solution]()                                                                                                         | Easy       | ❌     |
+| Longest Palindromic Substring                                | [JS Solution](./easy/longestPalindromicSubstring.js) - [Rust Solution]()                                                                                                 | Easy       | ❌     |
+| Check If String Is a Prefix of Array                         | [JS Solution](./easy/checkIfStringIsAPrefixOfArray.js) - [Rust Solution]()                                                                                               | Easy       | ❌     |
+| Palindromic Substrings                                       | [JS Solution](./easy/palindromicSubstrings.js) - [Rust Solution]()                                                                                                       | Easy       | ❌     |
+| Valid Palindrome                                             | [JS Solution](./easy/validPalindrome.js) - [Rust Solution]()                                                                                                             | Easy       | ❌     |
 
 ## Medium Challenges
 
