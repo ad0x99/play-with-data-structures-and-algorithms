@@ -67,7 +67,7 @@
 | Longest Palindromic Substring                                | [JS Solution](./easy/longestPalindromicSubstring.js) - [Rust Solution](./easy/rust/longest_palindrome_substring.rs)                                                      | Easy       | ✅     |
 | Check If String Is a Prefix of Array                         | [JS Solution](./easy/checkIfStringIsAPrefixOfArray.js) - [Rust Solution](./easy/rust/check_if_string_is_a_prefix_of_array.rs)                                            | Easy       | ✅     |
 | Palindromic Substrings                                       | [JS Solution](./easy/palindromicSubstrings.js) - [Rust Solution]()                                                                                                       | Easy       | ❌     |
-| Valid Palindrome                                             | [JS Solution](./easy/validPalindrome.js) - [Rust Solution]()                                                                                                             | Easy       | ❌     |
+| Valid Palindrome                                             | [JS Solution](./easy/validPalindrome.js) - [Rust Solution](./easy/rust/valid_palindrome.rs)                                                                              | Easy       | ✅     |
 
 ## Medium Challenges
 
