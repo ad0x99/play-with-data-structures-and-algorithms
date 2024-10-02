@@ -24,22 +24,27 @@
  *
  * Space complexity: O(n) - where n is the length of the dp array.
  */
-const lengthOfLISWithDynamicProgramming = (nums) => {
-  let dp = new Array(nums.length).fill(1);
+impl Solution {
+    pub fn length_of_lis(nums: Vec<i32>) -> i32 {
+        if nums.is_empty() {
+            return 0;
+        }
 
-  for (let i = 0; i < nums.length; i++) {
-    for (let j = 0; j < i; j++) {
-      // If the previous number is less than the current number
-      // and, the LIS at the current position is less than previous one
-      if (nums[j] < nums[i] && dp[i] < dp[j] + 1) {
-        // Extend the previous LIS to the current LIS
-        dp[i] = dp[j] + 1;
-      }
+        let mut dp = vec![1; nums.len()];
+        for i in 0..nums.len() {
+            for j in 0..i {
+                // If the previous number is less than the current number
+                // and, the LIS at the current position is less than the previous one
+                if nums[j] < nums[i] && dp[i] < dp[j] + 1 {
+                    // Extend the previous LIS to the current LIS
+                    dp[i] = dp[j] + 1
+                }
+            }
+        }
+
+        *dp.iter().max().unwrap()
     }
-  }
-
-  return Math.max(...dp);
-};
+}
 
 /**
  * Binary Search Approach
@@ -67,42 +72,39 @@ const lengthOfLISWithDynamicProgramming = (nums) => {
  *
  * Space complexity: O(n) - where n is the length of the subsequence array.
  */
-const lengthOfLIS = (nums) => {
-  const subsequence = [];
+impl Solution {
+    pub fn length_of_lis(nums: Vec<i32>) -> i32 {
+        let mut subsequence: Vec<i32> = Vec::new();
 
-  for (const currentNumber of nums) {
-    if (
-      subsequence.length === 0 ||
-      currentNumber > subsequence[subsequence.length - 1]
-    ) {
-      subsequence.push(currentNumber);
-    } else {
-      let idx = lowerBound(subsequence, currentNumber);
-      subsequence[idx] = currentNumber;
+        for &current_number in nums.iter() {
+            if subsequence.is_empty() || current_number > *subsequence.last().unwrap() {
+                subsequence.push(current_number);
+            } else {
+                let idx = Self::lower_bound(&subsequence, current_number);
+                subsequence[idx] = current_number;
+            }
+        }
+
+        subsequence.len() as i32
     }
-  }
 
-  return subsequence.length;
-};
+    /**
+     * Find the first element that is greater than or equal to the target.
+     */
+    fn lower_bound(subsequence: &Vec<i32>, target: i32) -> usize {
+        let mut left = 0;
+        let mut right = subsequence.len();
 
-/**
- * Find the first element that is greater than or equal to the target
- */
-const lowerBound = (subsequence, target) => {
-  let left = 0;
-  let right = subsequence.length - 1;
-  let ans = 0;
+        while left < right {
+            let mid = left + (right - left) / 2;
 
-  while (left <= right) {
-    let mid = Math.floor((left + right) / 2);
+            if subsequence[mid] >= target {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
 
-    if (subsequence[mid] >= target) {
-      ans = mid;
-      right = mid - 1;
-    } else {
-      left = mid + 1;
+        left
     }
-  }
-
-  return ans;
-};
+}
