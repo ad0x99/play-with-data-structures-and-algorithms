@@ -218,7 +218,7 @@
 | Stream of Characters                                    | [JS Solution](./hard/streamOfCharacters.js) - [Rust Solution](./hard/rust/stream_of_characters.rs)               | Hard       | ✅     |
 | Find Median from Data Stream                            | [JS Solution](./hard/findMedianFromDataStream.js) - [Rust Solution](./hard/rust/find_median_from_data_stream.rs) | Hard       | ✅     |
 | Word Break II                                           | [JS Solution](./hard/wordBreakII.js) - [Rust Solution](./hard/rust/word_break_ii.rs)                             | Hard       | ✅     |
-| Count Special Integers                                  | [JS Solution](./hard/countSpecialIntegers.js)                                                                    | Hard       | ❌     |
+| Count Special Integers                                  | [JS Solution](./hard/countSpecialIntegers.js) - [Rust Solution](./hard/rust/count_special_integers.rs)           | Hard       | ✅     |
 | Shortest Common Subsequence                             | [JS Solution](./hard/shortestCommonSubsequence.js)                                                               | Hard       | ❌     |
 | Maximize Score After N Operations                       | [JS Solution](./hard/maximizeScoreAfterNOperations.js)                                                           | Hard       | ❌     |
 | Count Stepping Numbers In Range                         | [JS Solution](./hard/countSteppingNumbersInRange.js)                                                             | Hard       | ❌     |
